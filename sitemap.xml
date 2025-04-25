@@ -2,187 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.aqtiveguard.com/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/accessibility-statement/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/changelog/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/use-conditions-statement/</loc>
-         <lastmod>2025-04-18</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/api/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/linux-getting-started-guide/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/reference/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/supported-formats/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/windows-getting-started-guide/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/getting-started/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/reference/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/reference/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/troubleshooting/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/dashboard/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/exports/</loc>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/external-data-sources/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/external-data-sources/aws-kms/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/external-data-sources/cbom/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/external-data-sources/crowdstrike/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/pcap/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <loc>https://docs.aqtiveguard.com/external-data-sources/palo-alto-networks/</loc>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/external-data-sources/qualys/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/external-data-sources/servicenow/</loc>
+         <lastmod>2025-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/filters-and-data-enrichment/</loc>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/getting-started/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/glossary/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/inventory/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/inventory/exclusions/</loc>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/issues/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/issues/knowledge-base/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/it-assets/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/login-and-user-roles/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/navigation/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.aqtiveguard.com/rules/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <loc>https://docs.aqtiveguard.com/profiles/</loc>
+         <lastmod>2025-04-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/profiles/rules/</loc>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/settings/</loc>
-         <lastmod>2025-04-18</lastmod>
+         <lastmod>2025-04-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

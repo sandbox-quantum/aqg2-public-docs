@@ -5,18 +5,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.aqtiveguard.com/getting-started/" rel="canonical"/>
-<link href=".." rel="prev"/>
-<link href="../login-and-user-roles/" rel="next"/>
-<link href="../images/icons/favicon.ico" rel="icon"/>
+<link href="https://docs.aqtiveguard.com/external-data-sources/servicenow/" rel="canonical"/>
+<link href="../crowdstrike/" rel="prev"/>
+<link href="../aws-kms/" rel="next"/>
+<link href="../../images/icons/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.27" name="generator"/>
-<title>Getting started - AQtive Guard User Guide</title>
-<link href="../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
-<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../gen/style.css" rel="stylesheet"/>
-<link href="../__static__/css/style.css" rel="stylesheet"/>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+<title>ServiceNow - AQtive Guard User Guide</title>
+<link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../gen/style.css" rel="stylesheet"/>
+<link href="../../__static__/css/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta flags="EnableServiceNow" flagvalues="" name="flags" redirectto="../..">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -25,22 +26,23 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></link></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></link></meta></head>
 <body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#getting-started">
+<a class="md-skip" href="#servicenow">
           Skip to content
         </a>
 </div>
 <div data-md-component="announce">
 </div>
+<div id="saq-ff-overlay"></div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href=".." title="AQtive Guard User Guide">
-<img alt="logo" src="../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -53,8 +55,7 @@
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
-            
-              Getting started
+<ff flags="EnableServiceNow"></ff>ServiceNow
             
           </span>
 </div>
@@ -100,50 +101,49 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href=".." title="AQtive Guard User Guide">
-<img alt="logo" src="../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
     AQtive Guard User Guide
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="..">
+<a class="md-nav__link" href="../..">
 <span class="md-ellipsis">
     Welcome
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../login-and-user-roles/">
+<a class="md-nav__link" href="../../login-and-user-roles/">
 <span class="md-ellipsis">
     Login &amp; user roles
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../navigation/">
+<a class="md-nav__link" href="../../navigation/">
 <span class="md-ellipsis">
     Navigation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../filters-and-data-enrichment/">
+<a class="md-nav__link" href="../../filters-and-data-enrichment/">
 <span class="md-ellipsis">
     Filters and data enrichment
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../dashboard/">
+<a class="md-nav__link" href="../../dashboard/">
 <span class="md-ellipsis">
     Dashboard
   </span>
@@ -152,7 +152,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../inventory/">
+<a class="md-nav__link" href="../../inventory/">
 <span class="md-ellipsis">
     Inventory
   </span>
@@ -168,7 +168,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../inventory/exclusions/">
+<a class="md-nav__link" href="../../inventory/exclusions/">
 <span class="md-ellipsis">
 <ff flags="EnableExclusions"></ff>Exclusions
   </span>
@@ -178,7 +178,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../it-assets/">
+<a class="md-nav__link" href="../../it-assets/">
 <span class="md-ellipsis">
     IT assets
   </span>
@@ -187,7 +187,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../profiles/">
+<a class="md-nav__link" href="../../profiles/">
 <span class="md-ellipsis">
     Profiles
   </span>
@@ -203,7 +203,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../profiles/rules/">
+<a class="md-nav__link" href="../../profiles/rules/">
 <span class="md-ellipsis">
     Rules
   </span>
@@ -215,7 +215,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../issues/">
+<a class="md-nav__link" href="../../issues/">
 <span class="md-ellipsis">
     Issues
   </span>
@@ -231,7 +231,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../issues/knowledge-base/">
+<a class="md-nav__link" href="../../issues/knowledge-base/">
 <span class="md-ellipsis">
     Knowledge base
   </span>
@@ -241,14 +241,14 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../exports/">
+<a class="md-nav__link" href="../../exports/">
 <span class="md-ellipsis">
 <ff flags="EnableExports"></ff>Exports
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../settings/">
+<a class="md-nav__link" href="../../settings/">
 <span class="md-ellipsis">
     Settings
   </span>
@@ -257,7 +257,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../aqtive-guard-sensors/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/">
 <span class="md-ellipsis">
     AQtive Guard sensors
   </span>
@@ -275,7 +275,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-filesystem-scanner/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
@@ -291,28 +291,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-filesystem-scanner/windows-getting-started-guide/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/windows-getting-started-guide/">
 <span class="md-ellipsis">
     Windows getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-filesystem-scanner/linux-getting-started-guide/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/linux-getting-started-guide/">
 <span class="md-ellipsis">
     Linux getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-filesystem-scanner/supported-formats/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/supported-formats/">
 <span class="md-ellipsis">
     Supported formats
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-filesystem-scanner/reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -324,7 +324,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-java-tracer/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
@@ -340,14 +340,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-java-tracer/getting-started/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-java-tracer/reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -359,7 +359,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
@@ -375,35 +375,35 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/">
 <span class="md-ellipsis">
     Getting started with PCAP Upload
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
 <span class="md-ellipsis">
     Getting started with Live Network Traffic Monitoring
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
 <span class="md-ellipsis">
     GCP Packet Mirroring Tutorial
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/troubleshooting/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/troubleshooting/">
 <span class="md-ellipsis">
     Troubleshooting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../aqtive-guard-sensors/aqg-network-analyzer/reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -415,10 +415,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../external-data-sources/">
+<a class="md-nav__link" href="../">
 <span class="md-ellipsis">
     External data sources
   </span>
@@ -427,49 +427,110 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_14">
 <span class="md-nav__icon md-icon"></span>
             External data sources
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/qualys/">
+<a class="md-nav__link" href="../qualys/">
 <span class="md-ellipsis">
     Qualys
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/crowdstrike/">
+<a class="md-nav__link" href="../crowdstrike/">
 <span class="md-ellipsis">
     CrowdStrike
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/servicenow/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+<ff flags="EnableServiceNow"></ff>ServiceNow
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
 <ff flags="EnableServiceNow"></ff>ServiceNow
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#servicenow-requirements">
+<span class="md-ellipsis">
+      ServiceNow requirements
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/aws-kms/">
+<a class="md-nav__link" href="#configure-the-servicenow-integration">
+<span class="md-ellipsis">
+      Configure the ServiceNow integration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trigger-servicenow-ingestion">
+<span class="md-ellipsis">
+      Trigger ServiceNow ingestion
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-servicenow-ingestion-data">
+<span class="md-ellipsis">
+      View ServiceNow ingestion data
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unlink-the-servicenow-integration">
+<span class="md-ellipsis">
+      Unlink the ServiceNow integration
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aws-kms/">
 <span class="md-ellipsis">
 <ff flags="EnableAwsKms"></ff>AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/palo-alto-networks/">
+<a class="md-nav__link" href="../palo-alto-networks/">
 <span class="md-ellipsis">
 <ff flags="EnablePanw"></ff>Palo Alto Networks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../external-data-sources/cbom/">
+<a class="md-nav__link" href="../cbom/">
 <span class="md-ellipsis">
     CBOM
   </span>
@@ -479,28 +540,28 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../glossary/">
+<a class="md-nav__link" href="../../glossary/">
 <span class="md-ellipsis">
     Cryptography glossary
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../accessibility-statement/">
+<a class="md-nav__link" href="../../accessibility-statement/">
 <span class="md-ellipsis">
     Accessibility statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../use-conditions-statement/">
+<a class="md-nav__link" href="../../use-conditions-statement/">
 <span class="md-ellipsis">
     Use conditions statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../changelog/">
+<a class="md-nav__link" href="../../changelog/">
 <span class="md-ellipsis">
     Changelog
   </span>
@@ -515,48 +576,122 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#servicenow-requirements">
+<span class="md-ellipsis">
+      ServiceNow requirements
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-the-servicenow-integration">
+<span class="md-ellipsis">
+      Configure the ServiceNow integration
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trigger-servicenow-ingestion">
+<span class="md-ellipsis">
+      Trigger ServiceNow ingestion
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-servicenow-ingestion-data">
+<span class="md-ellipsis">
+      View ServiceNow ingestion data
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unlink-the-servicenow-integration">
+<span class="md-ellipsis">
+      Unlink the ServiceNow integration
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">↑</a></h1>
-<p>AQtive Guard (AQG) is a comprehensive, centralized cryptographic management platform offering a unified view for Non-Human Identity (NHI) and Cryptography management. It empowers you to manage, strengthen, and adapt your IT systems and policies centrally from a single, unified platform. With a focus on long-term security and compliance, AQG will help you future-proof against emerging threats, including the potential impact of quantum computing.</p>
-<p>This guide introduces the key components of AQG and how they work together. The following diagram illustrates the principal elements and data flow.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/aqg-data-diagram.png"><img alt="img" src="../images/aqg-data-diagram.png"/></a></p>
+<h1 id="servicenow">ServiceNow<a class="headerlink" href="#servicenow" title="Permanent link">↑</a></h1>
+<p>AQtive Guard can ingest certificate data from ServiceNow for centralized certificate management and enhanced security posture.</p>
+<h2 id="servicenow-requirements">ServiceNow requirements<a class="headerlink" href="#servicenow-requirements" title="Permanent link">↑</a></h2>
+<p>To enable the ServiceNow integration, you’ll need:</p>
+<ul>
+<li>Admin access to AQtive Guard.</li>
+<li>Coordination with a ServiceNow Administrator to create a ServiceNow user account.</li>
+</ul>
+<h2 id="configure-the-servicenow-integration">Configure the ServiceNow integration<a class="headerlink" href="#configure-the-servicenow-integration" title="Permanent link">↑</a></h2>
+<p>In your ServiceNow instance, your ServiceNow administrator will need to create a user account to be linked with AQtive Guard.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure your ServiceNow administrator adds the <code>sn_disco_certmgmt.pki_user</code> role to the integration user account.</p>
+</div>
+<p>Log in to AQtive Guard to complete the following steps.</p>
 <ol>
-<li><strong>Host Machines and Cloud Network</strong>: The AQG <code>yanadump</code> tool processes live network traffic in real time. Using cloud-native traffic mirroring, <code>yanadump</code> extends monitoring to cloud assets, enabling seamless coverage in hybrid environments. Learn more: <ul>
-<li><a href="../aqtive-guard-sensors/aqg-network-analyzer/">AQG Network analyzer</a></li>
-<li><a href="../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">Getting started capturing live network traffic monitoring</a></li>
-<li><a href="../aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/">GCP packet mirroring tutorial</a></li>
+<li>Select <strong>Data sources</strong> from the main menu, then select <strong>Configure</strong> in the <em>ServiceNow</em> panel.  </li>
+<li>Enter the information from ServiceNow into the designated fields:<ul>
+<li>Your ServiceNow <strong>Instance URL</strong>.</li>
+<li>The <strong>User ID</strong> of the integration user account your ServiceNow administrator created.</li>
+<li>The <strong>Password</strong> for the user account.</li>
 </ul>
 </li>
-<li><strong>Data Sources</strong>: AQG offers powerful AQG sensors, for in-depth cryptographic analysis of filesystems, applications, and physical and virtual networks. It also integrates with a variety of external data sources to centralize your IT assets and crypto inventory. Learn more:<ul>
-<li><a href="../aqtive-guard-sensors/aqg-filesystem-scanner/">AQG Filesystem Scanner</a></li>
-<li><a href="../aqtive-guard-sensors/aqg-java-tracer/">AQG Java Tracer</a></li>
-<li><a href="../aqtive-guard-sensors/aqg-network-analyzer/">AQG Network Analyzer</a></li>
-<li><a href="../external-data-sources/qualys/">Qualys</a></li>
-<li><a href="../external-data-sources/crowdstrike/">CrowdStrike</a></li>
-<li><a href="../external-data-sources/cbom/">CBOM</a></li>
-<li><span data-ff-hide-closest="li" data-ff-with="EnableAwsKms"><a href="../external-data-sources/aws-kms/">AWS Key Management Service (KMS)</a></span></li>
-<li><span data-ff-hide-closest="li" data-ff-with="EnableServiceNow"><a href="../external-data-sources/servicenow/">ServiceNow</a></span></li>
-</ul>
-</li>
-<li><strong>Analysis</strong>: When AQtive Guard analyzes data, it evaluates detected cryptographic objects and NPI against the active rules. Learn more: <ul>
-<li><a href="../profiles/">Profiles</a></li>
-<li><a href="../profiles/rules/">Rules</a></li>
-</ul>
-</li>
-<li><strong>API</strong>: The AQG API enables integration and automation, and powers the AQG web UI. Learn more: </li>
-<li><strong>UI</strong>: Provides a user-friendly interface for monitoring your cryptography and NPI data. Learn more:<ul>
-<li><a href="../dashboard/">Dashboard</a></li>
-<li><a href="../filters-and-data-enrichment/">Filters and data enrichment</a></li>
-<li><a href="../inventory/">Inventory</a></li>
-<li><a href="../issues/">Issues</a></li>
-<li><a href="../it-assets/">IT Assets</a></li>
-</ul>
-</li>
+<li>(Optional) Select <strong>Test Connection</strong> to check the connection to the ServiceNow API.</li>
+<li>Select <strong>Submit</strong> to update the settings.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Selecting <strong>Submit</strong> performs the same check as the <em>Test connection</em> button, in addition to verifying the user ID and password are valid.</p>
+</div>
+<h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">↑</a></h2>
+<p>Once the integration is configured, you can trigger a ServiceNow certificate ingestion. </p>
+<p>This process:</p>
+<ol>
+<li>Pings the ServiceNow API.</li>
+<li>Extracts the relevant data.</li>
+<li>Maps the data into the AQtive Guard format.</li>
+<li>Ingests the data into AQtive Guard for analysis.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the ServiceNow settings aren’t configured, the ingestion options will be disabled.</p>
+</div>
+<h3 id="trigger-servicenow-ingestion">Trigger ServiceNow ingestion<a class="headerlink" href="#trigger-servicenow-ingestion" title="Permanent link">↑</a></h3>
+<p>To ingest certificate data from ServiceNow:</p>
+<ol>
+<li>Select <strong>Data sources</strong> from the main menu, then select <strong>Details</strong> in the <em>ServiceNow</em> panel.</li>
+<li>Select <strong>Start certificates ingestion</strong> to trigger ingestion of certificate data into AQtive Guard.</li>
+</ol>
+<h3 id="view-servicenow-ingestion-data">View ServiceNow ingestion data<a class="headerlink" href="#view-servicenow-ingestion-data" title="Permanent link">↑</a></h3>
+<p>Once the ingestion is complete, any relevant data will begin populating. To find it, select <strong>Hosts</strong> from <a href="../../it-assets/"><strong>IT Assets</strong></a> and look for the <em>ServiceNow</em> tag in the <em>Data sources</em> column.</p>
+<h2 id="unlink-the-servicenow-integration">Unlink the ServiceNow integration<a class="headerlink" href="#unlink-the-servicenow-integration" title="Permanent link">↑</a></h2>
+<p>Unlink the ServiceNow integration only if your organization needs to reconfigure or stop data sharing with ServiceNow.</p>
+<p>To unlink the ServiceNow configuration:</p>
+<ol>
+<li>Select <strong>Data sources</strong> from the main menu, then select <strong>Details</strong> in the <em>ServiceNow</em> panel.  </li>
+<li>Select <strong>Unlink</strong>. </li>
+<li>Select <strong>Confirm and unlink ServiceNow</strong>.</li>
 </ol>
 </article>
 </div>
@@ -584,10 +719,10 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
-<script src="../gen/main.js"></script>
-<script src="../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+<script src="../../gen/main.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
 <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
