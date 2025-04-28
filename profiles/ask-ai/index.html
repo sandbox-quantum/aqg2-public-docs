@@ -5,18 +5,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/" rel="canonical"/>
+<link href="https://docs.aqtiveguard.com/profiles/ask-ai/" rel="canonical"/>
 <link href="../" rel="prev"/>
-<link href="../getting-started-with-live-network-traffic-monitoring/" rel="next"/>
-<link href="../../../images/icons/favicon.ico" rel="icon"/>
+<link href="../../issues/" rel="next"/>
+<link href="../../images/icons/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.27" name="generator"/>
-<title>Getting started with PCAP Upload - AQtive Guard User Guide</title>
-<link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../../../gen/style.css" rel="stylesheet"/>
-<link href="../../../__static__/css/style.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+<title>Ask AI - AQtive Guard User Guide</title>
+<link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../gen/style.css" rel="stylesheet"/>
+<link href="../../__static__/css/style.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta flags="EnableRagu" flagvalues="" name="flags" redirectto="../..">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -25,22 +26,23 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></link></meta></head>
 <body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#getting-started-with-pcap-upload">
+<a class="md-skip" href="#ask-ai">
           Skip to content
         </a>
 </div>
 <div data-md-component="announce">
 </div>
+<div id="saq-ff-overlay"></div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
-<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -53,8 +55,7 @@
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
-            
-              Getting started with PCAP Upload
+<ff flags="EnableRagu"></ff>Ask AI
             
           </span>
 </div>
@@ -100,49 +101,49 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
-<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
     AQtive Guard User Guide
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+<a class="md-nav__link" href="../..">
 <span class="md-ellipsis">
     Welcome
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../getting-started/">
+<a class="md-nav__link" href="../../getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../login-and-user-roles/">
+<a class="md-nav__link" href="../../login-and-user-roles/">
 <span class="md-ellipsis">
     Login &amp; user roles
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../navigation/">
+<a class="md-nav__link" href="../../navigation/">
 <span class="md-ellipsis">
     Navigation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../filters-and-data-enrichment/">
+<a class="md-nav__link" href="../../filters-and-data-enrichment/">
 <span class="md-ellipsis">
     Filters and data enrichment
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../dashboard/">
+<a class="md-nav__link" href="../../dashboard/">
 <span class="md-ellipsis">
     Dashboard
   </span>
@@ -151,7 +152,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../inventory/">
+<a class="md-nav__link" href="../../inventory/">
 <span class="md-ellipsis">
     Inventory
   </span>
@@ -167,7 +168,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../inventory/exclusions/">
+<a class="md-nav__link" href="../../inventory/exclusions/">
 <span class="md-ellipsis">
 <ff flags="EnableExclusions"></ff>Exclusions
   </span>
@@ -177,16 +178,16 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../it-assets/">
+<a class="md-nav__link" href="../../it-assets/">
 <span class="md-ellipsis">
     IT assets
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../profiles/">
+<a class="md-nav__link" href="../">
 <span class="md-ellipsis">
     Profiles
   </span>
@@ -195,18 +196,47 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             Profiles
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../profiles/ask-ai/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+<ff flags="EnableRagu"></ff>Ask AI
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
 <ff flags="EnableRagu"></ff>Ask AI
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#guidelines-and-limitations">
+<span class="md-ellipsis">
+      Guidelines and limitations
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-started-with-ask-ai">
+<span class="md-ellipsis">
+      Getting started with Ask AI
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -214,7 +244,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../issues/">
+<a class="md-nav__link" href="../../issues/">
 <span class="md-ellipsis">
     Issues
   </span>
@@ -230,7 +260,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../issues/knowledge-base/">
+<a class="md-nav__link" href="../../issues/knowledge-base/">
 <span class="md-ellipsis">
     Knowledge base
   </span>
@@ -240,23 +270,23 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../exports/">
+<a class="md-nav__link" href="../../exports/">
 <span class="md-ellipsis">
 <ff flags="EnableExports"></ff>Exports
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../settings/">
+<a class="md-nav__link" href="../../settings/">
 <span class="md-ellipsis">
     Settings
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/">
 <span class="md-ellipsis">
     AQtive Guard sensors
   </span>
@@ -265,7 +295,7 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_13">
 <span class="md-nav__icon md-icon"></span>
             AQtive Guard sensors
@@ -274,7 +304,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../aqg-filesystem-scanner/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
@@ -290,28 +320,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-filesystem-scanner/windows-getting-started-guide/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/windows-getting-started-guide/">
 <span class="md-ellipsis">
     Windows getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-filesystem-scanner/linux-getting-started-guide/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/linux-getting-started-guide/">
 <span class="md-ellipsis">
     Linux getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-filesystem-scanner/supported-formats/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/supported-formats/">
 <span class="md-ellipsis">
     Supported formats
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-filesystem-scanner/reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-filesystem-scanner/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -323,7 +353,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../aqg-java-tracer/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
@@ -339,14 +369,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-java-tracer/getting-started/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-java-tracer/reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-java-tracer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -355,10 +385,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_13_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
@@ -367,78 +397,42 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_13_4_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_13_4_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_13_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Getting started with PCAP Upload
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/">
 <span class="md-ellipsis">
     Getting started with PCAP Upload
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#create-a-pcap-file">
-<span class="md-ellipsis">
-      Create a PCAP file
-    </span>
-</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#upload-a-pcap-file">
-<span class="md-ellipsis">
-      Upload a PCAP file
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#run-an-analysis-using-pcap">
-<span class="md-ellipsis">
-      Run an analysis using PCAP
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../getting-started-with-live-network-traffic-monitoring/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
 <span class="md-ellipsis">
     Getting started with Live Network Traffic Monitoring
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../gcp-packet-mirroring-tutorial/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
 <span class="md-ellipsis">
     GCP Packet Mirroring Tutorial
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../troubleshooting/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/troubleshooting/">
 <span class="md-ellipsis">
     Troubleshooting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../reference/">
+<a class="md-nav__link" href="../../aqtive-guard-sensors/aqg-network-analyzer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -453,7 +447,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../external-data-sources/">
+<a class="md-nav__link" href="../../external-data-sources/">
 <span class="md-ellipsis">
     External data sources
   </span>
@@ -469,42 +463,42 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/qualys/">
+<a class="md-nav__link" href="../../external-data-sources/qualys/">
 <span class="md-ellipsis">
     Qualys
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/crowdstrike/">
+<a class="md-nav__link" href="../../external-data-sources/crowdstrike/">
 <span class="md-ellipsis">
     CrowdStrike
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/servicenow/">
+<a class="md-nav__link" href="../../external-data-sources/servicenow/">
 <span class="md-ellipsis">
 <ff flags="EnableServiceNow"></ff>ServiceNow
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/aws-kms/">
+<a class="md-nav__link" href="../../external-data-sources/aws-kms/">
 <span class="md-ellipsis">
 <ff flags="EnableAwsKms"></ff>AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/palo-alto-networks/">
+<a class="md-nav__link" href="../../external-data-sources/palo-alto-networks/">
 <span class="md-ellipsis">
 <ff flags="EnablePanw"></ff>Palo Alto Networks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../external-data-sources/cbom/">
+<a class="md-nav__link" href="../../external-data-sources/cbom/">
 <span class="md-ellipsis">
     CBOM
   </span>
@@ -514,28 +508,28 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../glossary/">
+<a class="md-nav__link" href="../../glossary/">
 <span class="md-ellipsis">
     Cryptography glossary
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../accessibility-statement/">
+<a class="md-nav__link" href="../../accessibility-statement/">
 <span class="md-ellipsis">
     Accessibility statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../use-conditions-statement/">
+<a class="md-nav__link" href="../../use-conditions-statement/">
 <span class="md-ellipsis">
     Use conditions statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../changelog/">
+<a class="md-nav__link" href="../../changelog/">
 <span class="md-ellipsis">
     Changelog
   </span>
@@ -556,23 +550,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-a-pcap-file">
+<a class="md-nav__link" href="#guidelines-and-limitations">
 <span class="md-ellipsis">
-      Create a PCAP file
+      Guidelines and limitations
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#upload-a-pcap-file">
+<a class="md-nav__link" href="#getting-started-with-ask-ai">
 <span class="md-ellipsis">
-      Upload a PCAP file
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#run-an-analysis-using-pcap">
-<span class="md-ellipsis">
-      Run an analysis using PCAP
+      Getting started with Ask AI
     </span>
 </a>
 </li>
@@ -583,48 +570,31 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="getting-started-with-pcap-upload">Getting started with PCAP upload<a class="headerlink" href="#getting-started-with-pcap-upload" title="Permanent link">↑</a></h1>
-<p>The AQG Network Analyzer processes packet capture (PCAP) files to detect cryptographic objects within network captures.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>The AQG Network Analyzer also includes the <code>yanadump</code> tool that can be deployed as a standalone and portable Linux binary to prepare live network traffic for analysis. Refer to <a href="../getting-started-with-live-network-traffic-monitoring/">Getting started with live network traffic monitoring</a> for details. </p>
+<h1 id="ask-ai">Ask AI<a class="headerlink" href="#ask-ai" title="Permanent link">↑</a></h1>
+<p>AQtive Guard integrates Ask AI, an AI-powered assistant, to provide support related to understanding and resolving cryptographic issues identified by AQG. Ask AI uses Retrieval-augmented generation (RAG) to respond to questions related to the AQG cryptography knowledge base.</p>
+<p>Ask AI operates within a secure, isolated environment to ensure your questions and data remain confidential.</p>
+<div class="admonition important">
+<p class="admonition-title">IMPORTANT</p>
+<p>Ask AI is an optional feature and governed by the AQtive Guard terms of service, including Section 2.11 specific to optional features. By using Ask AI, you acknowledge that you have read, understood, and agreed to these terms.</p>
 </div>
-<h2 id="create-a-pcap-file">Create a PCAP file<a class="headerlink" href="#create-a-pcap-file" title="Permanent link">↑</a></h2>
-<p>You can use your preferred network sniffer to produce a PCAP file. For instance, to create a PCAP file using <a href="https://www.tcpdump.org/index.html" rel="noopener" target="_blank">tcpdump</a>, run:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>tcpdump -w file.cap
-</code></pre></div>
-<p>This <a href="http://www.alexonlinux.com/tcpdump-for-dummies#saving_captured_data" rel="noopener" target="_blank">tutorial</a> provides more information on using tcpdump.</p>
-<p>The AQG Network Analyzer can also process packet capture data through integrations with popular network security and monitoring platforms.</p>
-<h2 id="upload-a-pcap-file">Upload a PCAP file<a class="headerlink" href="#upload-a-pcap-file" title="Permanent link">↑</a></h2>
-<p>To upload a PCAP file to AQtive Guard:</p>
-<ol>
-<li>Select <strong>Settings</strong> from the main menu on the left.</li>
-<li>In the <em>Create Uploader Token</em> tile, select <strong>Create</strong>.</li>
-<li>Copy the provided token to a secure place.</li>
-<li>Use the code below to push a PCAP file to AQtive Guard.</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>export AQG_API_TOKEN='xxxxx'
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a># Parse and upload a trace to AQG
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>./yanadump --file capture.pcap --api-url https://API.AQG.DOMAIN/
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a># Optionally parameterize upload
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a># --slot-id “slt_&lt;32-hex-nibbles&gt;”
-</code></pre></div>
-<p>In the above query:</p>
+<h2 id="guidelines-and-limitations">Guidelines and limitations<a class="headerlink" href="#guidelines-and-limitations" title="Permanent link">↑</a></h2>
+<p>While Ask AI is a powerful tool, its responses are generated by an AI language model to provide general information and help you decide on next steps. Before proceeding, verify all information and seek professional guidance for your specific application. </p>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION</p>
+<p>Before taking any action, always consult organizational resources and adhere to up-to-date internal policies and industry regulations.</p>
+</div>
+<h2 id="getting-started-with-ask-ai">Getting started with Ask AI<a class="headerlink" href="#getting-started-with-ask-ai" title="Permanent link">↑</a></h2>
+<p>To ensure Ask AI provides the most accurate and helpful responses, it’s essential to craft clear and specific prompts. Here are some guidelines:</p>
 <ul>
-<li><code>xxxxx</code> is the is the token provided earlier in step 3.</li>
-<li><code>https://API.AQG.DOMAIN/</code> is the base URL of the AQtive Guard instance, eg. <code>https://your-domain.aqtiveguard.sandboxaq.com</code>.</li>
+<li><strong>Stick to the context of the documentation for the selected rule</strong>. Ask AI is instructed to provide you with accurate responses <em>only</em> from the screen text associated with the selected rule and issue.</li>
+<li><strong>Ask direct questions</strong>. Avoid general questions like “How do I fix this?” Phrase your prompts as clear questions to get direct and helpful answers. </li>
+<li><strong>Use AQtive Guard terminology</strong>. Ask AI responses rely heavily on AQG rule content, so using the same terminology you see in AQG will yield the most accurate results.</li>
+<li><strong>Iterate and refine</strong>. If the initial response isn’t quite what you need, try rephrasing your prompt or providing additional details. </li>
 </ul>
-<h2 id="run-an-analysis-using-pcap">Run an analysis using PCAP<a class="headerlink" href="#run-an-analysis-using-pcap" title="Permanent link">↑</a></h2>
-<p>Convert the PCAP to <code>protobuf</code> before uploading the resulting file to AQtive Guard to run an analysis and generate a report.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To save bandwidth and shorten the upload time, use <code>gzip</code> to compress the trace file before uploading: </p>
+<div class="admonition important">
+<p class="admonition-title">IMPORTANT</p>
+<p><strong>Be specific, but careful</strong>. Include relevant details like inventory or asset types, but do not enter confidential information such as specific locations, network addresses, credentials, or encryption keys.</p>
 </div>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>$<span class="w"> </span>yanadump<span class="w"> </span>-f<span class="w"> </span>/path/to/file.pcap<span class="w"> </span>--output-format<span class="w"> </span>protobuf<span class="w"> </span>-o<span class="w"> </span>/path/to/trace.bin
-<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>$<span class="w"> </span>gzip<span class="w"> </span>/path/to/trace.bin
-</code></pre></div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -651,10 +621,10 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
-<script src="../../../gen/main.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+<script src="../../gen/main.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
 <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
