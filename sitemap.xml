@@ -2,212 +2,562 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.aqtiveguard.com/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/accessibility-statement/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/changelog/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/manage-your-data/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/use-conditions-statement/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/api/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/linux-getting-started-guide/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/reference/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/supported-formats/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-filesystem-scanner/windows-getting-started-guide/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/getting-started/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-java-tracer/reference/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/gcp-packet-mirroring-tutorial/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/getting-started-with-pcap-upload/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/reference/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/aqtive-guard-sensors/aqg-network-analyzer/troubleshooting/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/dashboard/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/aws-kms/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/cbom/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/crowdstrike/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/palo-alto-networks/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/qualys/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/sentinelone/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/data-sources/servicenow/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/exports/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/aws-kms/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/cbom/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/crowdstrike/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/palo-alto-networks/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/qualys/</loc>
-         <lastmod>2025-04-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.aqtiveguard.com/external-data-sources/servicenow/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/filters-and-data-enrichment/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/getting-started/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/glossary/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/inventory/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/inventory/exclusions/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/issues/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/issues/knowledge-base/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/it-assets/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/block-and-stream-ciphers/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/certificates/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/chosen-ciphertext-attacks/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/computational-resources-in-cryptanalysis/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/cryptographic-keylengths/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/cryptography-bill-of-materials/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/elliptic-curve-cryptography/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/hash-functions/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/key-management-and-keystores/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/lack-of-strong-unforgeability/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/message-authentication-codes/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/password-based-key-derivation/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/preparing-for-fips-validation/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/quantum-threat/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/rsa-algorithm/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/timing-attacks-and-broader-side-channel-attacks/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/transport-layer-security-tls/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/kb-articles/weak-cryptography-keys/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/login-and-user-roles/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/navigation/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/profiles/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.aqtiveguard.com/profiles/ask-ai/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <loc>https://docs.aqtiveguard.com/rules/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.aqtiveguard.com/profiles/rules/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <loc>https://docs.aqtiveguard.com/rules/ask-ai/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules/rule-severity/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_offered-quantum-vulnerable-signature-algorithms-network-connection-81/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_psychic-signatures-72/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-a-non-nist-approved-hash-function-60/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-a-non-nist-approved-symmetric-cipher-59/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-default-cipher-mode-10/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-ecb-mode-8/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-low-encryption-exponent-58/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-md2-hash-function-34/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-pkcs1v15-encryption-9/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-pkcs1v15-signature-38/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-quantum-vulnerable-asymmetric-encryption-67/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-quantum-vulnerable-ciphersuite-in-tls-75/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-quantum-vulnerable-hash-function-69/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-quantum-vulnerable-key-establishment-68/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-quantum-vulnerable-signature-66/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/algorithm_use-of-stream-cipher-rc4-31/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/certificate_invalid-certificate-63/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/certificate_validity-too-long-64/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/certificate_weak-hash-function-74/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_offered-ciphersuite-with-3des-tls-47/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_offered-ciphersuite-with-des-tls-46/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_offered-ciphersuite-with-rc4-tls-50/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_offered-quantum-vulnerable-kex-005/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_offered-tls-less-1-2-77/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-anonymous-ciphersuite-tls-002/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-ciphersuite-with-3des-tls-79/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-ciphersuite-with-des-tls-78/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-ciphersuite-with-rc4-tls-80/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-quantum-vulnerable-server-auth-003/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/ciphersuite_use-of-tls-less-1-2-76/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/hashfunction_use-of-sha1-11/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/hashfunction_use-of-the-md5-hash-function-12/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_diffie-hellman-group-too-small-4/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_dsa_key-too-short-42/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_elliptic-curve_key-too-short-3/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_rsa_key-too-short-1/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_stale-private-key-202/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_storage-of-keys-in-a-weak-keystore-21/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_symmetric-key-too-short-2/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_unencrypted-private-key-201/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_use-of-a-non-nist-approved-diffie-hellman-group-62/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_use-of-a-non-nist-approved-elliptic-curve-61/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_use-of-common-diffie-hellman-group-5/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/key_use-of-non-nist-approved-dsa-001/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/symmetric-key_use-of-quantum-vulnerable-65/</loc>
+         <lastmod>2025-06-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.aqtiveguard.com/rules-reference/tls-config-version-vuln-004/</loc>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.aqtiveguard.com/settings/</loc>
-         <lastmod>2025-04-28</lastmod>
+         <lastmod>2025-06-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
