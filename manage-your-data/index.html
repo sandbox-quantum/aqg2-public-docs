@@ -474,21 +474,21 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/servicenow/">
 <span class="md-ellipsis">
-<ff flags="EnableServiceNow"></ff>ServiceNow
+    ServiceNow
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/aws-kms/">
 <span class="md-ellipsis">
-<ff flags="EnableAwsKms"></ff>AWS Key Management Service
+    AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/palo-alto-networks/">
 <span class="md-ellipsis">
-<ff flags="EnablePanw"></ff>Palo Alto Networks
+    Palo Alto Networks
   </span>
 </a>
 </li>
@@ -502,7 +502,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/sentinelone/">
 <span class="md-ellipsis">
-<ff flags="EnableSentinelOneDataIngestion"></ff>SentinelOne
+    SentinelOne
   </span>
 </a>
 </li>
@@ -972,6 +972,24 @@
       How your data flows across AQtive Guard
     </span>
 </a>
+<nav aria-label="How your data flows across AQtive Guard" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#network-connections">
+<span class="md-ellipsis">
+      Network connections
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-handling">
+<span class="md-ellipsis">
+      Data handling
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#data-retention-and-storage">
@@ -1102,6 +1120,24 @@
       How your data flows across AQtive Guard
     </span>
 </a>
+<nav aria-label="How your data flows across AQtive Guard" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#network-connections">
+<span class="md-ellipsis">
+      Network connections
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-handling">
+<span class="md-ellipsis">
+      Data handling
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#data-retention-and-storage">
@@ -1196,6 +1232,21 @@
 <li><strong>Visualization</strong>: Transforming data into actionable insights.</li>
 <li><strong>Storage</strong>: Securing data with access controls and encryption.</li>
 </ol>
+<p>Refer to the <strong><a href="../getting-started/">Getting started</a></strong> diagram for a data flow diagram and details.</p>
+<h3 id="network-connections">Network connections<a class="headerlink" href="#network-connections" title="Permanent link">↑</a></h3>
+<p>AQtive Guard maintains secure communication channels for all data exchanges:</p>
+<ul>
+<li><strong>Web-Browser connections</strong>: AQtive Guard SaaS accepts incoming connections on <strong>TCP/443</strong>. These connections require <strong>TLS</strong> for authenticity and content fidelity. Server authenticity is verified via the signing key in every web browser’s certificate-authority trust tree.</li>
+<li><strong>AQtive Guard sensors</strong>: Data from native AQG sensors, such as the Filesystem Scanner or Network Analyzer, is pushed to AQtive Guard SaaS using <strong>HTTP TLS on TCP/443</strong>, which verifies server authenticity.</li>
+<li><strong>Third-party data sources</strong>: Connections are initiated from the AQtive Guard SaaS backend to third-party APIs. These connections use user-defined endpoints and ports. <strong>TLS is optional</strong> for third-party integrations, depending on the specific configuration.</li>
+</ul>
+<h3 id="data-handling">Data handling<a class="headerlink" href="#data-handling" title="Permanent link">↑</a></h3>
+<p>AQG sensors collect system observations and securely transmit summaries to AQtive Guard. The platform processes this data through a robust pipeline, ensuring sensitive information remains protected.</p>
+<ul>
+<li><strong>Data transmission</strong>: Data is sent via <strong>TLS-wrapped HTTP</strong>. It’s encapsulated in length-delimited protobuf messages, ensuring that no actual secrets are transmitted.</li>
+<li><strong>Data processing</strong>: The data is processed for analysis through a pipeline of rules and filters.</li>
+<li><strong>Secure storage</strong>: Processed data is stored in a secure database, accessible only by authorized API servers.</li>
+</ul>
 <h2 id="data-retention-and-storage">Data retention and storage<a class="headerlink" href="#data-retention-and-storage" title="Permanent link">↑</a></h2>
 <p>We handle your data with a focus on balancing the ability to recall historical information for purposes like audits and trend analysis with robust data privacy and security practices. Our approach ensures that we retain data only as long as necessary, optimizing for both utility and the protection of your information.</p>
 <h3 id="data-retention-periods"><strong>Data retention periods</strong><a class="headerlink" href="#data-retention-periods" title="Permanent link">↑</a></h3>

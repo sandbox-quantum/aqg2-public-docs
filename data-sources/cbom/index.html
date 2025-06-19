@@ -474,21 +474,21 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../servicenow/">
 <span class="md-ellipsis">
-<ff flags="EnableServiceNow"></ff>ServiceNow
+    ServiceNow
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../aws-kms/">
 <span class="md-ellipsis">
-<ff flags="EnableAwsKms"></ff>AWS Key Management Service
+    AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../palo-alto-networks/">
 <span class="md-ellipsis">
-<ff flags="EnablePanw"></ff>Palo Alto Networks
+    Palo Alto Networks
   </span>
 </a>
 </li>
@@ -531,7 +531,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../sentinelone/">
 <span class="md-ellipsis">
-<ff flags="EnableSentinelOneDataIngestion"></ff>SentinelOne
+    SentinelOne
   </span>
 </a>
 </li>
@@ -1012,8 +1012,16 @@
 CBOM provides a comprehensive inventory of an application’s cryptographic objects and dependencies to expand your cryptographic and IT asset inventory in AQtive Guard.  </p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">↑</a></h2>
 <ul>
-<li>A valid CBOM JSON file (supported versions: 1.4 and 1.6)</li>
+<li>A valid Cryptographic Bill of Materials (CBOM) JSON file. AQtive Guard supports the following formats:<ul>
+<li>CycloneDX version 1.4 - AQtive Guard validated this version with outputs from <a href="https://github.com/Santandersecurityresearch/cryptobom-forge" rel="noopener" target="_blank">CryptoBOM Forge</a> by Santander.</li>
+<li>CycloneDX version 1.6 - AQtive Guard validated this version using outputs from <a href="https://github.com/PQCA/sonar-cryptography" rel="noopener" target="_blank">Sonarqube</a> by IBM.</li>
 </ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The OWASP <a href="https://cyclonedx.org/tool-center/" rel="noopener" target="_blank">CycloneDX Tool Center</a> lists numerous tools capable of generating CycloneDX 1.4 or 1.6 files. While some of these tools may produce compatible outputs, they aren’t formally tested or supported by AQtive Guard, and functionality cannot be guaranteed.</p>
+</div>
 <h2 id="upload-a-cbom-file">Upload a CBOM file<a class="headerlink" href="#upload-a-cbom-file" title="Permanent link">↑</a></h2>
 <p>To upload a CBOM file, follow these steps:</p>
 <ol>
