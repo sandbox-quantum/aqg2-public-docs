@@ -485,6 +485,13 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#memory-errors">
+<span class="md-ellipsis">
+      Memory errors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#problem-self-signed-certificate-verification-failure">
 <span class="md-ellipsis">
       Problem: Self-signed certificate verification failure
@@ -743,6 +750,13 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-3DES-in-operations/">
+<span class="md-ellipsis">
+    Use of 3DES encryption algorithm in operations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../../rules-reference/key_dsa_key-too-short-42/">
 <span class="md-ellipsis">
     Use of DSA
@@ -816,6 +830,13 @@
 <a class="md-nav__link" href="../../../rules-reference/certificate_weak-hash-function-74/">
 <span class="md-ellipsis">
     Weak hash function in certificate
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_quantum-vulnerable-public-key-operation/">
+<span class="md-ellipsis">
+    Quantum-vulnerable public-key cryptography operation
   </span>
 </a>
 </li>
@@ -1044,6 +1065,13 @@
 </nav>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#memory-errors">
+<span class="md-ellipsis">
+      Memory errors
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#problem-self-signed-certificate-verification-failure">
 <span class="md-ellipsis">
       Problem: Self-signed certificate verification failure
@@ -1068,10 +1096,21 @@
 <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>$<span class="w"> </span><span class="nv">AQG_LOG</span><span class="o">=</span>info,yanadump<span class="o">=</span>debug<span class="w"> </span>yanadump
 </code></pre></div>
 <p>For more detailed information about using the environment variable, refer to the <a href="https://docs.rs/env_logger/latest/env_logger/#enabling-logging" rel="noopener" target="_blank">env_logger documentation</a>.</p>
+<h2 id="memory-errors">Memory errors<a class="headerlink" href="#memory-errors" title="Permanent link">↑</a></h2>
+<p>Depending on the system configuration, errors related to the ring buffer memory can ben encountered on Linux, eg.:</p>
+<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>ERROR yana::driver::live::rx_ring: Too much memory has been locked. Consider increasing the locked-in-memory limit with the following command-line `ulimit -S -l 4096`.
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>ERROR yanadump: Error while running: Failed to mmap ring buffer: Resource temporarily unavailable (os error 11)
+</code></pre></div>
+<p>The limit of memory that can be locked can be increased with the <code>ulimit</code> command, and should be set before running yanadump. The following command sets the limit to 4096KB:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>$<span class="w"> </span><span class="nb">ulimit</span><span class="w"> </span>-S<span class="w"> </span>-l<span class="w"> </span><span class="m">4096</span>
+</code></pre></div>
+<p>If yanadump is ran within a container, the <code>--ulimit</code> argument can be given to docker to set the memory lock limit to an appropriate value (in bytes):</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--ulimit<span class="w"> </span><span class="nv">memlock</span><span class="o">=</span><span class="m">4194304</span>:4194304
+</code></pre></div>
 <h2 id="problem-self-signed-certificate-verification-failure">Problem: Self-signed certificate verification failure<a class="headerlink" href="#problem-self-signed-certificate-verification-failure" title="Permanent link">↑</a></h2>
 <p>Self-signed certificates must have a valid <em>Subject Alternative Name</em> and a <em>Basic Constraint extension</em> with the CA value set to <code>FALSE</code> in order to be accepted. </p>
 <p>The following OpenSSL command line example generates a self-signed certificate for localhost:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>$<span class="w"> </span>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span>-keyout<span class="w"> </span>key.pem<span class="w"> </span>-out<span class="w"> </span>cert.pem<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-nodes<span class="w"> </span>-subj<span class="w"> </span><span class="s1">'/CN=localhost'</span><span class="w"> </span>-addext<span class="w"> </span><span class="s1">'basicConstraints=CA:FALSE'</span><span class="w"> </span>-addext<span class="w"> </span><span class="s1">'subjectAltName=DNS:localhost'</span>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>$<span class="w"> </span>openssl<span class="w"> </span>req<span class="w"> </span>-x509<span class="w"> </span>-newkey<span class="w"> </span>rsa:4096<span class="w"> </span>-keyout<span class="w"> </span>key.pem<span class="w"> </span>-out<span class="w"> </span>cert.pem<span class="w"> </span>-days<span class="w"> </span><span class="m">3650</span><span class="w"> </span>-nodes<span class="w"> </span>-subj<span class="w"> </span><span class="s1">'/CN=localhost'</span><span class="w"> </span>-addext<span class="w"> </span><span class="s1">'basicConstraints=CA:FALSE'</span><span class="w"> </span>-addext<span class="w"> </span><span class="s1">'subjectAltName=DNS:localhost'</span>
 </code></pre></div>
 </article>
 </div>

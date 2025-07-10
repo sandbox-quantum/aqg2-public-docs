@@ -778,6 +778,13 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-3DES-in-operations/">
+<span class="md-ellipsis">
+    Use of 3DES encryption algorithm in operations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../rules-reference/key_dsa_key-too-short-42/">
 <span class="md-ellipsis">
     Use of DSA
@@ -851,6 +858,13 @@
 <a class="md-nav__link" href="../../rules-reference/certificate_weak-hash-function-74/">
 <span class="md-ellipsis">
     Weak hash function in certificate
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../rules-reference/algorithm_quantum-vulnerable-public-key-operation/">
+<span class="md-ellipsis">
+    Quantum-vulnerable public-key cryptography operation
   </span>
 </a>
 </li>
@@ -1202,7 +1216,7 @@ If you do lose access to the credentials, you can reset an API client’s <em>Se
 <ol>
 <li>Select <strong>Data sources</strong> from the main menu, then select <strong>Details</strong> in the <em>CrowdStrike</em> panel.</li>
 <li>In the <em>Scans</em> section, select <strong>Start Scan</strong> and configure the following:<ul>
-<li><strong>Scan name</strong> - a default date and time stamp is provided. You can change this to any unique name.</li>
+<li><strong>Scan name</strong> - a default date and timestamp is provided. You can change this to any unique name.</li>
 <li><strong>Scan Settings Profile</strong> - the impact that the scan will have on your infrastructure. There are 3 options:<ul>
 <li><strong>High impact</strong> - this will use a workload of 100%. There’s also no limit to the number of files that can be scanned per second, and the max file size is 1 GB.</li>
 <li><strong>Standard impact</strong> (default) - this will use a workload of 50%. The number of files that can be scanned per second is 10,000 and the max file size is 1 MB.</li>
@@ -1235,19 +1249,23 @@ If you do lose access to the credentials, you can reset an API client’s <em>Se
 </ul>
 <p>You can view more information for a specific scan by selecting <strong>Details</strong> in the row of the scan you’re interested in. The <em>Scan Results</em> table appears, which displays the following:</p>
 <ul>
-<li><strong>IT Asset</strong> - the name of the asset. </li>
-<li><strong>Status</strong> - the status of the scan on the asset. The possible values are:<ul>
-<li>Pending</li>
-<li>Scanning</li>
-<li>Retrieval</li>
-<li>Downloading</li>
-<li>Success</li>
-<li>Fail</li>
+<li><strong>IT Asset</strong> - the name of the asset (host or device) included in the scan.</li>
+<li><strong>Scan Status</strong>: The current status of an asset’s scan within AQtive Guard, indicating its progress and outcome:<ul>
+<li><strong>Pending</strong>: The asset is in the scan queue, waiting for processing.</li>
+<li><strong>Setting Up</strong>: AQtive Guard is preparing the environment and resources necessary to initiate the scan on the asset.</li>
+<li><strong>Scanning</strong>: The scan is actively running on the asset.</li>
+<li><strong>Pending Trace Retrieval</strong>: The scan has completed on the asset, and AQtive Guard is preparing to begin collecting the generated scan data.</li>
+<li><strong>Retrieving Trace</strong>: AQtive Guard is actively collecting the scan data from the asset.</li>
+<li><strong>Retrieved Trace</strong>: The scan data has been successfully collected from the asset by AQtive Guard.</li>
+<li><strong>Downloading Trace</strong>: AQtive Guard is actively ingesting and transferring the scan results into its processing pipeline.</li>
+<li><strong>Downloaded Trace</strong>: The scan results have been successfully transferred and are ready for processing within AQtive Guard.</li>
+<li><strong>Success</strong>: The scan data was successfully ingested and processed by AQtive Guard.</li>
+<li><strong>Fail</strong>: The scan on this asset encountered an error and didn’t complete successfully.</li>
 </ul>
 </li>
-<li><strong>Platform</strong> - the asset’s platform. This is either <em>Linux</em> or <em>Windows</em>.</li>
+<li><strong>OS</strong> - the asset’s Operating System (OS). This is either <em>Linux</em> or <em>Windows</em>.</li>
 </ul>
-<p>Any successful asset scans will be also be shown in <a href="../../it-assets/">IT assets</a>.</p>
+<p>Any assets successfully scanned will also appear in <a href="../../it-assets/">IT assets</a>.</p>
 <h2 id="unlink-the-crowdstrike-integration">Unlink the CrowdStrike integration<a class="headerlink" href="#unlink-the-crowdstrike-integration" title="Permanent link">↑</a></h2>
 <p>Unlink the CrowdStrike integration only if your organization needs to reconfigure or stop data sharing with CrowdStrike.</p>
 <p>To unlink the CrowdStrike configuration:</p>
