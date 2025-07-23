@@ -1,0 +1,59 @@
+/* Style the admonition block itself */
+.md-typeset .admonition.custom-admonition {
+  background-color: rgba(255, 255, 255, 1);
+  border-left-color: #d9d9d9;
+  border-right-color: #d9d9d9;
+  border-top-color: #d9d9d9;
+  border-bottom-color: #d9d9d9;
+}
+
+/* Style the admonition title background */
+.md-typeset .admonition.custom-admonition > .admonition-title {
+  background-color: #ebb028; /* Your desired title background color */
+  color: #000000;
+}
+
+/* IMPORTANT - THIS HIDES THE OLD MKDOCS ADMONITION ICON*/
+.md-typeset .admonition.custom-admonition > .admonition-title::before {
+  content: '' !important; /* This is the key to remove the font icon */
+
+  /* Then add your custom SVG as a background-image */
+  background-image: url('../images/icons/sandboxaq-logo-black.svg') !important;
+  background-repeat: no-repeat !important;
+  background-color: #ebb028 !important;
+  background-position: center !important;
+  background-size: 70% !important;
+
+  /* Ensure no mask is interfering */
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+
+  /* You might also need to explicitly reset font properties if inherited */
+  font-family: initial !important;
+  color: initial !important;
+}
+
+/* THIS IS FOR THE FONT THROUGHOUT THE DOCS SITE */
+
+@font-face {
+  font-family: 'DM Sans'; /* Use a unique name for your font family */
+  src: url('../fonts/dm-sans-v16-latin-regular.woff2') format('woff2'); /* WOFF2 for modern browsers */
+  font-weight: 400; /* Match the font file's weight */
+  font-style: normal;
+  font-display: swap; /* Recommended for better loading experience */
+}
+
+/* Apply the custom font to the body (general text) */
+body {
+  font-family: 'DM Sans', Arial, sans-serif; /* Add generic fallbacks */
+}
+
+/* (Optional) If you want to force the font for headings as well, or override other specific elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Sans', Arial, sans-serif;
+}
