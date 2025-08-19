@@ -231,7 +231,7 @@
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../">
 <span class="md-ellipsis">
-    AQG Protect
+    Protect
   </span>
 </a>
 <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -241,7 +241,7 @@
 <nav aria-expanded="true" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_11">
 <span class="md-nav__icon md-icon"></span>
-            AQG Protect
+            Protect
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
@@ -1143,10 +1143,18 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="getting-started-with-aqg-protect">Getting started with AQG Protect<a class="headerlink" href="#getting-started-with-aqg-protect" title="Permanent link">↑</a></h1>
-<p>This guide will show you how to enroll certificates in AQG Protect. Enrolling certificates brings them under centralized control in AQtive Guard, enabling continuous monitoring, policy application, and automated lifecycle management.</p>
+<p>AQtive Guard (AQG) Protect manages the entire lifecycle of non-human identities (NHI), securing them to the last mile. AQG Protect integrates with AQG Discover to provide an end-to-end workflow for finding and remediating cryptographic issues.</p>
+<p>Credentials managed in AQG Protect benefit from:</p>
+<ul>
+<li>Automated rotation</li>
+<li>Real-time usage observability</li>
+<li>Secure storage throughout the lifecycle</li>
+<li>Smooth cryptographic migrations for crypto-agility </li>
+</ul>
+<p>This guide explains how to enroll certificates in AQG Protect. Enrolling certificates brings them under centralized AQtive Guard control, which enables continuous monitoring, policy application, and automated lifecycle management.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Activating a certificate in AQG protect is a 2-stage process: <strong>enrollment</strong> and <strong>deployment</strong>. After a certificate is enrolled, it appears as <em>Awaiting deployment</em> in AQG Protect. It becomes <em>Active</em> once it’s deployed.     </p>
+<p>Activating a certificate in AQG Protect is a 2-stage process: <strong>enrollment</strong> and <strong>deployment</strong>. After a certificate is enrolled, it appears as <em>Awaiting deployment</em> in AQG Protect. It becomes <em>Active</em> once it’s deployed.     </p>
 </div>
 <h2 id="enroll-a-certificate">Enroll a certificate<a class="headerlink" href="#enroll-a-certificate" title="Permanent link">↑</a></h2>
 <ol>
@@ -1190,7 +1198,7 @@
 <li><strong>Let’s Encrypt</strong> </li>
 </ul>
 </li>
-<li><strong>Security policy</strong> - Select the security policy that will govern this certificate’s automated management from the dropdown menu.  </li>
+<li><strong>Security policy</strong> - Select the security policy that will govern this certificate’s automated management from the dropdown menu. Refer to <a href="../#policy-template-settings">Policy template settings</a> for details. </li>
 <li><strong>CNAME</strong> - The Canonical Name (CNAME) for the web server where this certificate will be deployed. This helps AQG associate the certificate with its operational environment.  </li>
 <li><strong>TTL (Time to Live)</strong> - Select the certificate’s validity duration from the dropdown menu:  <ul>
 <li>4 hours  </li>
