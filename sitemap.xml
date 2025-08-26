@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.aqtiveguard.com/aqg-protect/navigation/</loc>
+         <lastmod>2025-08-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.aqtiveguard.com/ask-ai/</loc>
          <lastmod>2025-08-26</lastmod>
          <changefreq>daily</changefreq>
