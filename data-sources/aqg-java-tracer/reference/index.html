@@ -1,0 +1,1501 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://docs.aqtiveguard.com/data-sources/aqg-java-tracer/reference/" rel="canonical"/>
+<link href="../getting-started/" rel="prev"/>
+<link href="../../aqg-network-analyzer/" rel="next"/>
+<link href="../../../images/icons/favicon.ico" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.27" name="generator"/>
+<title>Reference - AQtive Guard User Guide</title>
+<link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../gen/style.css" rel="stylesheet"/>
+<link href="../../../__static__/css/style.css" rel="stylesheet"/>
+<link href="../../../stylesheets/custom-admonition.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#aqg-java-tracer-reference">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+</a>
+    AQtive Guard User Guide
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
+    Welcome
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../getting-started/">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../login-and-user-roles/">
+<span class="md-ellipsis">
+    Login &amp; user roles
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../navigation/">
+<span class="md-ellipsis">
+    Navigation
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../ask-ai/">
+<span class="md-ellipsis">
+    Ask AI
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../filters-and-data-enrichment/">
+<span class="md-ellipsis">
+    Filters and data enrichment
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Filters and data enrichment
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filters-and-data-enrichment/filters/">
+<span class="md-ellipsis">
+    Filters
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../filters-and-data-enrichment/enrichments/">
+<span class="md-ellipsis">
+    Enrichments
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../dashboard/">
+<span class="md-ellipsis">
+    Dashboard
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../inventory/">
+<span class="md-ellipsis">
+    Inventory
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Inventory
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../inventory/exclusions/">
+<span class="md-ellipsis">
+    Exclusions
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../impact-assessment/">
+<span class="md-ellipsis">
+    Impact Assessment
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../it-assets/">
+<span class="md-ellipsis">
+    IT assets
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../aqg-protect/">
+<span class="md-ellipsis">
+    Protect
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_11_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_11">
+<span class="md-nav__icon md-icon"></span>
+            Protect
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../aqg-protect/getting-started/">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../aqg-protect/deployment-orchestration/">
+<span class="md-ellipsis">
+    Deployment orchestration
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_12" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../profiles/">
+<span class="md-ellipsis">
+    Profiles
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_12_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_12">
+<span class="md-nav__icon md-icon"></span>
+            Profiles
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rules/">
+<span class="md-ellipsis">
+    Rules
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_13_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_13">
+<span class="md-nav__icon md-icon"></span>
+            Rules
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules/rule-severity/">
+<span class="md-ellipsis">
+    Rule severity
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_14" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../issues/">
+<span class="md-ellipsis">
+    Issues
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_14_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_14">
+<span class="md-nav__icon md-icon"></span>
+            Issues
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../issues/knowledge-base/">
+<span class="md-ellipsis">
+    Knowledge base
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../security-knowledge-graph/">
+<span class="md-ellipsis">
+    Security Knowledge Graph
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../exports/">
+<span class="md-ellipsis">
+    Exports
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../settings/">
+<span class="md-ellipsis">
+    Settings
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_18" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../">
+<span class="md-ellipsis">
+    Data sources
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_18_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_18">
+<span class="md-nav__icon md-icon"></span>
+            Data sources
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-file-inspector/">
+<span class="md-ellipsis">
+    AQG File Inspector
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../aqg-filesystem-scanner/">
+<span class="md-ellipsis">
+    AQG Filesystem Scanner
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_3">
+<span class="md-nav__icon md-icon"></span>
+            AQG Filesystem Scanner
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-filesystem-scanner/windows-getting-started-guide/">
+<span class="md-ellipsis">
+    Windows getting started guide
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-filesystem-scanner/linux-getting-started-guide/">
+<span class="md-ellipsis">
+    Linux getting started guide
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-filesystem-scanner/supported-formats/">
+<span class="md-ellipsis">
+    Supported formats
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-filesystem-scanner/reference/">
+<span class="md-ellipsis">
+    Reference
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    AQG Java Tracer
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
+<span class="md-nav__icon md-icon"></span>
+            AQG Java Tracer
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../getting-started/">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Reference
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Reference
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration">
+<span class="md-ellipsis">
+      Configuration
+    </span>
+</a>
+<nav aria-label="Configuration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameters">
+<span class="md-ellipsis">
+      Parameters
+    </span>
+</a>
+<nav aria-label="Parameters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limiting-the-trace-size">
+<span class="md-ellipsis">
+      Limiting the trace size:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-prefix-to-the-trace-name">
+<span class="md-ellipsis">
+      Adding a prefix to the trace name:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#excluding-stack-traces-from-calls">
+<span class="md-ellipsis">
+      Excluding stack traces from calls:
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-tracer-in-application-frameworks">
+<span class="md-ellipsis">
+      Using the Tracer in Application Frameworks
+    </span>
+</a>
+<nav aria-label="Using the Tracer in Application Frameworks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tomcat">
+<span class="md-ellipsis">
+      Tomcat
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jboss">
+<span class="md-ellipsis">
+      JBoss
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weblogic">
+<span class="md-ellipsis">
+      WebLogic
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-frameworks">
+<span class="md-ellipsis">
+      Other frameworks
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#renaming-the-tracer-jar-file">
+<span class="md-ellipsis">
+      Renaming the tracer JAR file
+    </span>
+</a>
+<nav aria-label="Renaming the tracer JAR file" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-a-parameter">
+<span class="md-ellipsis">
+      Add a parameter
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extract-and-edit-the-manifest-file">
+<span class="md-ellipsis">
+      Extract and edit the manifest file
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#supported-operations">
+<span class="md-ellipsis">
+      Supported operations
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../aqg-network-analyzer/">
+<span class="md-ellipsis">
+    AQG Network Analyzer
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
+<span class="md-nav__icon md-icon"></span>
+            AQG Network Analyzer
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-network-analyzer/getting-started-with-pcap-upload/">
+<span class="md-ellipsis">
+    Getting started with PCAP Upload
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
+<span class="md-ellipsis">
+    Getting started with Live Network Traffic Monitoring
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
+<span class="md-ellipsis">
+    GCP Packet Mirroring Tutorial
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-network-analyzer/troubleshooting/">
+<span class="md-ellipsis">
+    Troubleshooting
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-network-analyzer/reference/">
+<span class="md-ellipsis">
+    Reference
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aws-kms/">
+<span class="md-ellipsis">
+    AWS Key Management Service
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../cbom/">
+<span class="md-ellipsis">
+    CBOM
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../crowdstrike/">
+<span class="md-ellipsis">
+    CrowdStrike
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../palo-alto-networks/">
+<span class="md-ellipsis">
+    Palo Alto Networks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../qualys/">
+<span class="md-ellipsis">
+    Qualys
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../sentinelone/">
+<span class="md-ellipsis">
+    SentinelOne
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../servicenow/">
+<span class="md-ellipsis">
+    ServiceNow
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_19" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../rules-reference/">
+<span class="md-ellipsis">
+    Rules reference
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_19_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_19">
+<span class="md-nav__icon md-icon"></span>
+            Rules reference
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/certificate_validity-too-long-64/">
+<span class="md-ellipsis">
+    Certificate validity too long
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_diffie-hellman-group-too-small-4/">
+<span class="md-ellipsis">
+    Diffie Hellman key too short
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_elliptic-curve_key-too-short-3/">
+<span class="md-ellipsis">
+    Elliptic curve key too short
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/certificate_invalid-certificate-63/">
+<span class="md-ellipsis">
+    Expired certificate
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/tls-config-version-vuln-004/">
+<span class="md-ellipsis">
+    Host supports usage of a TLS version strictly less than 1.2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-3des-tls-47/">
+<span class="md-ellipsis">
+    Offered ciphersuite with 3DES
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-des-tls-46/">
+<span class="md-ellipsis">
+    Offered ciphersuite with DES
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-rc4-tls-50/">
+<span class="md-ellipsis">
+    Offered ciphersuite with RC4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-quantum-vulnerable-kex-005/">
+<span class="md-ellipsis">
+    Offered quantum-vulnerable key exchange mechanism on network connection
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_offered-quantum-vulnerable-signature-algorithms-network-connection-81/">
+<span class="md-ellipsis">
+    Offered quantum-vulnerable signature algorithms on network connection
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-tls-less-1-2-77/">
+<span class="md-ellipsis">
+    Offered TLS version lower than 1.2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-low-encryption-exponent-58/">
+<span class="md-ellipsis">
+    RSA key exponent too low
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_rsa_key-too-short-1/">
+<span class="md-ellipsis">
+    RSA key too short
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_stale-private-key-202/">
+<span class="md-ellipsis">
+    Stale key
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_storage-of-keys-in-a-weak-keystore-21/">
+<span class="md-ellipsis">
+    Storage of keys in a weak keystore
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_symmetric-key-too-short-2/">
+<span class="md-ellipsis">
+    Symmetric key too short
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_unencrypted-private-key-201/">
+<span class="md-ellipsis">
+    Unencrypted private key
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-3des-tls-79/">
+<span class="md-ellipsis">
+    Use of cipher suite with 3DES
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-des-tls-78/">
+<span class="md-ellipsis">
+    Use of cipher suite with DES
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-rc4-tls-80/">
+<span class="md-ellipsis">
+    Use of cipher suite with RC4
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-default-cipher-mode-10/">
+<span class="md-ellipsis">
+    Use of default cipher mode
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-3DES-in-operations/">
+<span class="md-ellipsis">
+    Use of 3DES encryption algorithm in operations
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/key_dsa_key-too-short-42/">
+<span class="md-ellipsis">
+    Use of DSA
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-ecb-mode-8/">
+<span class="md-ellipsis">
+    Use of Electronic Code Book (ECB) mode
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-pkcs1v15-encryption-9/">
+<span class="md-ellipsis">
+    Use of PKCS#1v1.5 Encryption
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-pkcs1v15-signature-38/">
+<span class="md-ellipsis">
+    Use of PKCS#1v1.5 Signature
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-quantum-vulnerable-key-establishment-68/">
+<span class="md-ellipsis">
+    Use of quantum-vulnerable key-establishment scheme
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-quantum-vulnerable-server-auth-003/">
+<span class="md-ellipsis">
+    Use of quantum-vulnerable server authentication
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-md2-hash-function-34/">
+<span class="md-ellipsis">
+    Use of the MD2 hash function
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/hashfunction_use-of-the-md5-hash-function-12/">
+<span class="md-ellipsis">
+    Use of the MD5 hash function
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/hashfunction_use-of-sha1-11/">
+<span class="md-ellipsis">
+    Use of the SHA1 hash function
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-tls-less-1-2-76/">
+<span class="md-ellipsis">
+    Use of TLS version lower than 1.2
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/certificate_weak-hash-function-74/">
+<span class="md-ellipsis">
+    Weak hash function in certificate
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../rules-reference/algorithm_quantum-vulnerable-public-key-operation/">
+<span class="md-ellipsis">
+    Quantum-vulnerable public-key cryptography operation
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_20" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../kb-articles/">
+<span class="md-ellipsis">
+    Knowledge base
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_20_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_20">
+<span class="md-nav__icon md-icon"></span>
+            Knowledge base
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/block-and-stream-ciphers/">
+<span class="md-ellipsis">
+    Block and stream ciphers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/certificates/">
+<span class="md-ellipsis">
+    Certificates
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/chosen-ciphertext-attacks/">
+<span class="md-ellipsis">
+    Chosen ciphertext attacks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/computational-resources-in-cryptanalysis/">
+<span class="md-ellipsis">
+    Computational resources in cryptanalysis
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/cryptographic-keylengths/">
+<span class="md-ellipsis">
+    Cryptographic keylengths
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/cryptography-bill-of-materials/">
+<span class="md-ellipsis">
+    Cryptography Bill of Materials (CBOM)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/elliptic-curve-cryptography/">
+<span class="md-ellipsis">
+    Elliptic curve cryptography
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/hash-functions/">
+<span class="md-ellipsis">
+    Hash functions
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/key-management-and-keystores/">
+<span class="md-ellipsis">
+    Key management and keystores
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/lack-of-strong-unforgeability/">
+<span class="md-ellipsis">
+    Lack of strong unforgeability
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/message-authentication-codes/">
+<span class="md-ellipsis">
+    Message authentication codes (MACs)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/password-based-key-derivation/">
+<span class="md-ellipsis">
+    Password-based Key Derivation
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/preparing-for-fips-validation/">
+<span class="md-ellipsis">
+    Preparing for FIPS validation
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/quantum-threat/">
+<span class="md-ellipsis">
+    Quantum threat
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/rsa-algorithm/">
+<span class="md-ellipsis">
+    RSA algorithm
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/timing-attacks-and-broader-side-channel-attacks/">
+<span class="md-ellipsis">
+    Timing attacks and broader side-channel attacks
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/transport-layer-security-tls/">
+<span class="md-ellipsis">
+    Transport Layer Security (TLS)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../kb-articles/weak-cryptography-keys/">
+<span class="md-ellipsis">
+    Weak cryptography keys
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../glossary/">
+<span class="md-ellipsis">
+    Cryptography glossary
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../api/">
+<span class="md-ellipsis">
+    API Reference
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../manage-your-data/">
+<span class="md-ellipsis">
+    How we manage your data
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../accessibility-statement/">
+<span class="md-ellipsis">
+    Accessibility statement
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../use-conditions-statement/">
+<span class="md-ellipsis">
+    Use conditions statement
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../changelog/">
+<span class="md-ellipsis">
+    Changelog
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuration">
+<span class="md-ellipsis">
+      Configuration
+    </span>
+</a>
+<nav aria-label="Configuration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#parameters">
+<span class="md-ellipsis">
+      Parameters
+    </span>
+</a>
+<nav aria-label="Parameters" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#limiting-the-trace-size">
+<span class="md-ellipsis">
+      Limiting the trace size:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-a-prefix-to-the-trace-name">
+<span class="md-ellipsis">
+      Adding a prefix to the trace name:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#excluding-stack-traces-from-calls">
+<span class="md-ellipsis">
+      Excluding stack traces from calls:
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-the-tracer-in-application-frameworks">
+<span class="md-ellipsis">
+      Using the Tracer in Application Frameworks
+    </span>
+</a>
+<nav aria-label="Using the Tracer in Application Frameworks" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tomcat">
+<span class="md-ellipsis">
+      Tomcat
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#jboss">
+<span class="md-ellipsis">
+      JBoss
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#weblogic">
+<span class="md-ellipsis">
+      WebLogic
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#other-frameworks">
+<span class="md-ellipsis">
+      Other frameworks
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#renaming-the-tracer-jar-file">
+<span class="md-ellipsis">
+      Renaming the tracer JAR file
+    </span>
+</a>
+<nav aria-label="Renaming the tracer JAR file" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-a-parameter">
+<span class="md-ellipsis">
+      Add a parameter
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extract-and-edit-the-manifest-file">
+<span class="md-ellipsis">
+      Extract and edit the manifest file
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#supported-operations">
+<span class="md-ellipsis">
+      Supported operations
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="aqg-java-tracer-reference">AQG Java Tracer reference<a class="headerlink" href="#aqg-java-tracer-reference" title="Permanent link">↑</a></h1>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">↑</a></h2>
+<p>You can configure the AQG Java Tracer with JVM properties using the <code>-D</code> parameter in the command line.</p>
+<p>For instance, to specify the directory for trace writing, use the <code>cryptosense.agent.out</code> parameter as follows:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>java \
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    -Dcryptosense.agent.out=/path/to/trace-directory \
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    -javaagent:/path/to/cs-java-tracer.jar \
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    -jar /path/to/application.jar
+</code></pre></div>
+<p>With Java 9 and later, you can also pass these properties via the <code>JDK_JAVA_OPTIONS</code>
+environment variable. For example:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>JDK_JAVA_OPTIONS='-javaagent:/path/to/cs-java-tracer.jar …' \
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>    java -jar /path/to/application.jar
+</code></pre></div>
+<p>This is more flexible as it allows you to set the properties without modifying your
+application startup script. However, it is not supported by all JREs.</p>
+<p>If you’re not using the <code>java</code> command to launch your application directly, you can usually set those properties where you added the <code>javaagent:/path/to/cs-java-tracer.jar</code> parameter. Refer to the <a href="./#using-the-tracer-in-application-frameworks">examples below</a>.</p>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">↑</a></h3>
+<p>The supported properties are:</p>
+<ul>
+<li><code>cryptosense.agent.out</code>: path to the directory where traces are written. (default is <code>cs-tracer</code>). Make sure the application under test has write permissions in this directory.</li>
+<li><code>cryptosense.agent.compress</code>: on-the-fly gzip-compression of outputted JSON files (default is <code>true</code>). Note that you can upload either compressed or uncompressed traces to the analyzer.</li>
+<li><code>cryptosense.agent.unlimitedTraceSize</code>: Deprecated. Use <code>cryptosense.agent.maxTraceSize</code>.</li>
+<li><code>cryptosense.agent.maxTraceSize</code>: set a maximum uncompressed trace size in MB. The default is 4096, i.e. 4GB. Setting a value of 0 means there’s no limit.</li>
+<li><code>cryptosense.agent.prefix</code>: optional custom file name prefix for traces (default is <code>cs-trace</code>). The file name will consist of this prefix followed by an underscore and timestamp, and have a <code>.cst</code> or <code>.cst.gz</code> extension, depending on the compression. For example, if the prefix is <code>testprefix</code>, the file name would be <code>testprefix_2018-12-13-08-42-33-428_11435.cst</code> (depending on the trace time).</li>
+<li><code>cryptosense.agent.trace</code>: determines whether to include stack traces for each call in the report (default is <code>true</code> ). Setting this to <code>false</code> significantly reduces the trace file size, but the report will lack important information.</li>
+<li><code>cryptosense.agent.ignoreUpdate</code>: determines whether to discard the calls to various <code>update()</code> functions (such as <code>MessageDigest.update</code>). The default is <code>false</code>. Setting this to <code>true</code> significantly reduces the trace file size, but the report will lack important information.</li>
+<li><code>cryptosense.agent.excludeBuiltins</code>: determines whether to include the calls to certain internal crypto functions in the JRE in the trace (default is <code>false</code> ). The excluded calls consist of hash function calls to verify JAR files upon startup, and internal hash calls for certain internal PBKDFs with extensive iterations that might quickly fill up a trace. Note that this doesn’t affect the results since the calls are accounted for by the Analyzer.</li>
+<li><code>cryptosense.agent.tags</code>: comma-separated tags to include in the trace header. To include a space in the tag, uses single quotes like <code>cryptosense.agent.tags='spaced tag 1','spaced tag 2'</code>. The tags are written in the trace header as a list of strings (default is an empty list).</li>
+</ul>
+<p>Here are some examples with different parameters:</p>
+<h4 id="limiting-the-trace-size">Limiting the trace size:<a class="headerlink" href="#limiting-the-trace-size" title="Permanent link">↑</a></h4>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>java \
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>    -Dcryptosense.agent.out=/path/to/trace-directory \
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>    -Dcryptosense.agent.maxTraceSize=200 \
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>    -javaagent:/path/to/cs-java-tracer.jar \
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>    -jar /path/to/application.jar
+</code></pre></div>
+<h4 id="adding-a-prefix-to-the-trace-name">Adding a prefix to the trace name:<a class="headerlink" href="#adding-a-prefix-to-the-trace-name" title="Permanent link">↑</a></h4>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>java \
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    -Dcryptosense.agent.out=/path/to/trace-directory \
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>    -Dcryptosense.agent.prefix=prefix \
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>    -javaagent:/path/to/cs-java-tracer.jar \
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>    -jar /path/to/application.jar
+</code></pre></div>
+<h4 id="excluding-stack-traces-from-calls">Excluding stack traces from calls:<a class="headerlink" href="#excluding-stack-traces-from-calls" title="Permanent link">↑</a></h4>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>java \
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>    -Dcryptosense.agent.out=/path/to/trace-directory \
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>    -Dcryptosense.agent.trace=false \
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>    -javaagent:/path/to/cs-java-tracer.jar \
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>    -jar /path/to/application.jar
+</code></pre></div>
+<h2 id="using-the-tracer-in-application-frameworks">Using the Tracer in Application Frameworks<a class="headerlink" href="#using-the-tracer-in-application-frameworks" title="Permanent link">↑</a></h2>
+<p>Java applications are often launched from within application servers. In this case, you’ll need to add the necessary parameters to a config file:</p>
+<h3 id="tomcat">Tomcat<a class="headerlink" href="#tomcat" title="Permanent link">↑</a></h3>
+<p>The <code>bin/setenv.sh</code> file should be created or edited to contain:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>CATALINA_OPTS="$CATALINA_OPTS -javaagent:/path/to/cs-java-tracer.jar -Dcryptosense.agent.&lt;PARAM&gt;=&lt;VALUE&gt;"
+</code></pre></div>
+<h3 id="jboss">JBoss<a class="headerlink" href="#jboss" title="Permanent link">↑</a></h3>
+<p>For JBoss, you need to whitelist the cryptosense package in <code>standalone.conf</code>:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>JBOSS_MODULES_SYSTEM_PKGS="${JBOSS_MODULES_SYSTEM_PKGS:+$JBOSS_MODULES_SYSTEM_PKGS,}cryptosense"
+</code></pre></div>
+<p>You can then add:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>JAVA_OPTS="$JAVA_OPTS -javaagent:/path/to/cs-java-tracer.jar -Dcryptosense.agent.&lt;PARAM&gt;=&lt;VALUE&gt;"
+</code></pre></div>
+<h3 id="weblogic">WebLogic<a class="headerlink" href="#weblogic" title="Permanent link">↑</a></h3>
+<p>Before calling Java, edit the <code>startWebLogic.sh</code> file to include:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>export JAVA_OPTIONS="$JAVA_OPTIONS -javaagent:/path/to/cs-java-tracer.jar -Dcryptosense.agent.&lt;PARAM&gt;=&lt;VALUE&gt;"
+</code></pre></div>
+<h3 id="other-frameworks">Other frameworks<a class="headerlink" href="#other-frameworks" title="Permanent link">↑</a></h3>
+<p>Our AQG Java Tracer works with several other frameworks, including WebSphere and Firefly. Visit our <a href="https://support.sandboxaq.com" rel="noopener" target="_blank">support portal</a> if you have questions or need help.</p>
+<h2 id="renaming-the-tracer-jar-file">Renaming the tracer JAR file<a class="headerlink" href="#renaming-the-tracer-jar-file" title="Permanent link">↑</a></h2>
+<p>Renaming the JAR file is <strong>not</strong> recommended because the boot class path in the JAR manifest must match the file name <strong>exactly</strong>.</p>
+<p>If you do rename the JAR file, you need to modify the manifest accordingly. Otherwise, you’ll encounter <code>java.lang.NoClassDefFoundError</code> during runtime. While your application may not crash, the tracer won’t function correctly.</p>
+<p>You can rename the JAR file in one of two ways: adding a parameter to the JVM invocation or extracting and editing the JAR file manifest.</p>
+<h3 id="add-a-parameter">Add a parameter<a class="headerlink" href="#add-a-parameter" title="Permanent link">↑</a></h3>
+<p>You can rename the JAR file by adding the following parameter to the JVM invocation:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>-Xbootclasspath/a:path/to/cs-java-tracer-2.2.4.jar
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This needs to be added in addition to <code>-javaagent:path/to/cs-java-tracer-2.2.4.jar</code> in <code>JDK_JAVA_OPTIONS</code>.</p>
+</div>
+<p>An example command when run directly on an app is shown below:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>user@cs-java-tracer % java -javaagent:cs-java-tracer-2.2.4.jar -Xbootclasspath/a:cs-java-tracer-2.2.4.jar Demo
+</code></pre></div>
+<p>With this option, you don’t need to edit the manifest file.</p>
+<h3 id="extract-and-edit-the-manifest-file">Extract and edit the manifest file<a class="headerlink" href="#extract-and-edit-the-manifest-file" title="Permanent link">↑</a></h3>
+<p>You can rename the JAR file by extracting the <code>META-INF/MANIFEST.MF</code> file from the JAR and changing the boot class path line to:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>Boot-Class-Path: new-name.jar
+</code></pre></div>
+<p>The command above renames the JAR file to <code>new-name.jar</code>.</p>
+<p>You’ll then need to replace the old <code>META-INF/MANIFEST.MF</code> file with the modified version.</p>
+<h2 id="supported-operations">Supported operations<a class="headerlink" href="#supported-operations" title="Permanent link">↑</a></h2>
+<p>The AQG Java Tracer covers methods from the following classes for any cryptographic providers conforming to the <a href="https://docs.oracle.com/en/java/javase/22/security/java-cryptography-architecture-jca-reference-guide.html" rel="noopener" target="_blank">Java Cryptography Architecture (JCA)</a>, for example, <a href="https://www.bouncycastle.org/documentation/documentation-java/#documentation" rel="noopener" target="_blank">Bouncy Castle Java</a>, <a href="https://github.com/google/conscrypt/" rel="noopener" target="_blank">conscrypt</a> and other provider implementations. This coverage is at the JCA/JCE level, but there are some algorithm implementation specific parameters, from for example Bouncy Castle, that we also capture.</p>
+<ul>
+<li><code>java.security.KeyPairGenerator</code></li>
+<li><code>java.security.KeyStore</code></li>
+<li><code>java.security.MessageDigest</code></li>
+<li><code>java.security.Signature</code></li>
+<li><code>javax.crypto.Cipher</code></li>
+<li><code>javax.crypto.KeyAgreement</code></li>
+<li><code>javax.crypto.KeyGenerator</code></li>
+<li><code>javax.crypto.Mac</code></li>
+<li><code>javax.crypto.SecretKeyFactory</code></li>
+</ul>
+<p>From the <a href="https://docs.oracle.com/en/java/javase/22/security/java-generic-security-services-java-gss-api1.html" rel="noopener" target="_blank">Java Generic Security Services (Java GSS-API)</a> we cover the following class:</p>
+<ul>
+<li><code>javax.net.ssl.SSLServerSocket</code></li>
+</ul>
+<p>The AQG Java Tracer also covers methods from the following classes from vendor-specific APIs:</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/kms/AWSKMSClient.html" rel="noopener" target="_blank">com.amazonaws.services.kms.AWSKMSClient</a></li>
+<li><a href="https://learn.microsoft.com/en-us/java/api/com.azure.security.keyvault.keys.cryptography.cryptographyclient?view=azure-java-stable" rel="noopener" target="_blank">com.azure.security.keyvault.keys.cryptography.CryptographyClient</a></li>
+</ul>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2025 <a href="https://www.sandboxaq.com">SandboxAQ</a> | <a href="https://www.sandboxaq.com/legal/privacy-policy">Privacy Policy</a> | <a href="https://www.sandboxaq.com/legal/terms-conditions">Terms</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+<script src="../../../gen/main.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script><script>document$.subscribe(() => {
+            window.update_swagger_ui_iframe_height = function (id) {
+                var iFrameID = document.getElementById(id);
+                if (iFrameID) {
+                    full_height = (iFrameID.contentWindow.document.body.scrollHeight + 80) + "px";
+                    iFrameID.height = full_height;
+                    iFrameID.style.height = full_height;
+                }
+            }
+        
+            let iframe_id_list = []
+            var iframes = document.getElementsByClassName("swagger-ui-iframe");
+            for (var i = 0; i < iframes.length; i++) { 
+                iframe_id_list.push(iframes[i].getAttribute("id"))
+            }
+        
+            let ticking = true;
+            
+            document.addEventListener('scroll', function(e) {
+                if (!ticking) {
+                    window.requestAnimationFrame(()=> {
+                        let half_vh = window.innerHeight/2;
+                        for(var i = 0; i < iframe_id_list.length; i++) {
+                            let element = document.getElementById(iframe_id_list[i])
+                            if(element==null){
+                                return
+                            }
+                            let diff = element.getBoundingClientRect().top
+                            if(element.contentWindow.update_top_val){
+                                element.contentWindow.update_top_val(half_vh - diff)
+                            }
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        
+            const dark_scheme_name = "slate"
+            
+            window.scheme = document.body.getAttribute("data-md-color-scheme")
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("swagger-ui-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script></body>
+</html>
