@@ -5,19 +5,20 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.aqtiveguard.com/data-sources/aqg-filesystem-scanner/linux-getting-started-guide/" rel="canonical"/>
-<link href="../windows-getting-started-guide/" rel="prev"/>
-<link href="../supported-formats/" rel="next"/>
-<link href="../../../images/icons/favicon.ico" rel="icon"/>
+<link href="https://docs.aqtiveguard.com/data-sources/aws/" rel="canonical"/>
+<link href="../aqg-network-analyzer/reference/" rel="prev"/>
+<link href="../aws-kms/" rel="next"/>
+<link href="../../images/icons/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.27" name="generator"/>
-<title>Linux getting started guide - AQtive Guard User Guide</title>
-<link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<link href="../../../gen/style.css" rel="stylesheet"/>
-<link href="../../../__static__/css/style.css" rel="stylesheet"/>
-<link href="../../../stylesheets/custom-admonition.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
+<title>AWS - AQtive Guard User Guide</title>
+<link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../gen/style.css" rel="stylesheet"/>
+<link href="../../__static__/css/style.css" rel="stylesheet"/>
+<link href="../../stylesheets/custom-admonition.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta flags="EnableAwsV2" flagvalues="" name="flags" redirectto="../..">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -26,22 +27,23 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></link></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></link></meta></head>
 <body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#linux-filesystem-scanner-getting-started-guide">
+<a class="md-skip" href="#amazon-web-services-aws">
           Skip to content
         </a>
 </div>
 <div data-md-component="announce">
 </div>
+<div id="saq-ff-overlay"></div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
-<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -54,8 +56,7 @@
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
-            
-              Linux getting started guide
+<ff flags="EnableAwsV2"></ff>AWS
             
           </span>
 </div>
@@ -101,42 +102,42 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="AQtive Guard User Guide">
-<img alt="logo" src="../../../images/aqtiveguard-white.svg"/>
+<a aria-label="AQtive Guard User Guide" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
+<img alt="logo" src="../../images/aqtiveguard-white.svg"/>
 </a>
     AQtive Guard User Guide
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+<a class="md-nav__link" href="../..">
 <span class="md-ellipsis">
     Welcome
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../getting-started/">
+<a class="md-nav__link" href="../../getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../login-and-user-roles/">
+<a class="md-nav__link" href="../../login-and-user-roles/">
 <span class="md-ellipsis">
     Login &amp; user roles
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../navigation/">
+<a class="md-nav__link" href="../../navigation/">
 <span class="md-ellipsis">
     Navigation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../ask-ai/">
+<a class="md-nav__link" href="../../ask-ai/">
 <span class="md-ellipsis">
     Ask AI
   </span>
@@ -145,7 +146,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../filters-and-data-enrichment/">
+<a class="md-nav__link" href="../../filters-and-data-enrichment/">
 <span class="md-ellipsis">
     Filters and data enrichment
   </span>
@@ -161,14 +162,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../filters-and-data-enrichment/filters/">
+<a class="md-nav__link" href="../../filters-and-data-enrichment/filters/">
 <span class="md-ellipsis">
     Filters
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../filters-and-data-enrichment/enrichments/">
+<a class="md-nav__link" href="../../filters-and-data-enrichment/enrichments/">
 <span class="md-ellipsis">
     Enrichments
   </span>
@@ -178,7 +179,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../dashboard/">
+<a class="md-nav__link" href="../../dashboard/">
 <span class="md-ellipsis">
     Dashboard
   </span>
@@ -187,7 +188,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../inventory/">
+<a class="md-nav__link" href="../../inventory/">
 <span class="md-ellipsis">
     Inventory
   </span>
@@ -203,7 +204,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../inventory/exclusions/">
+<a class="md-nav__link" href="../../inventory/exclusions/">
 <span class="md-ellipsis">
     Exclusions
   </span>
@@ -213,7 +214,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../impact-assessment/">
+<a class="md-nav__link" href="../../impact-assessment/">
 <span class="md-ellipsis">
     Impact Assessment
   </span>
@@ -222,7 +223,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../aqg-protect/">
+<a class="md-nav__link" href="../../aqg-protect/">
 <span class="md-ellipsis">
     Protect
   </span>
@@ -238,21 +239,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../aqg-protect/navigation/">
+<a class="md-nav__link" href="../../aqg-protect/navigation/">
 <span class="md-ellipsis">
     Navigation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../aqg-protect/getting-started/">
+<a class="md-nav__link" href="../../aqg-protect/getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../aqg-protect/deployment-orchestration/">
+<a class="md-nav__link" href="../../aqg-protect/deployment-orchestration/">
 <span class="md-ellipsis">
     Deployment orchestration
   </span>
@@ -264,7 +265,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_11" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../profiles/">
+<a class="md-nav__link" href="../../profiles/">
 <span class="md-ellipsis">
     Profiles
   </span>
@@ -282,7 +283,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_12" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../rules/">
+<a class="md-nav__link" href="../../rules/">
 <span class="md-ellipsis">
     Rules
   </span>
@@ -298,7 +299,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules/rule-severity/">
+<a class="md-nav__link" href="../../rules/rule-severity/">
 <span class="md-ellipsis">
     Rule severity
   </span>
@@ -310,7 +311,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_13" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../issues/">
+<a class="md-nav__link" href="../../issues/">
 <span class="md-ellipsis">
     Issues
   </span>
@@ -326,7 +327,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../issues/knowledge-base/">
+<a class="md-nav__link" href="../../issues/knowledge-base/">
 <span class="md-ellipsis">
     Knowledge base
   </span>
@@ -336,21 +337,21 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../security-knowledge-graph/">
+<a class="md-nav__link" href="../../security-knowledge-graph/">
 <span class="md-ellipsis">
     Security Knowledge Graph
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../exports/">
+<a class="md-nav__link" href="../../exports/">
 <span class="md-ellipsis">
     Exports
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../settings/">
+<a class="md-nav__link" href="../../settings/">
 <span class="md-ellipsis">
     Settings
   </span>
@@ -359,7 +360,7 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_17" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../">
+<a class="md-nav__link" href="../">
 <span class="md-ellipsis">
     Data sources
   </span>
@@ -375,16 +376,16 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-file-inspector/">
+<a class="md-nav__link" href="../aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_17_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_17_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
@@ -393,71 +394,35 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_17_3_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_17_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_17_3">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../windows-getting-started-guide/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/windows-getting-started-guide/">
 <span class="md-ellipsis">
     Windows getting started guide
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Linux getting started guide
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/linux-getting-started-guide/">
 <span class="md-ellipsis">
     Linux getting started guide
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
-<span class="md-ellipsis">
-      Installation
-    </span>
-</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#scanning-a-filesystem">
-<span class="md-ellipsis">
-      Scanning a Filesystem
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#upload-a-trace">
-<span class="md-ellipsis">
-      Upload a trace
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../supported-formats/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/supported-formats/">
 <span class="md-ellipsis">
     Supported formats
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../reference/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -469,7 +434,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_17_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../aqg-java-tracer/">
+<a class="md-nav__link" href="../aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
@@ -485,14 +450,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-java-tracer/getting-started/">
+<a class="md-nav__link" href="../aqg-java-tracer/getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-java-tracer/reference/">
+<a class="md-nav__link" href="../aqg-java-tracer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -504,7 +469,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_17_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../aqg-network-analyzer/">
+<a class="md-nav__link" href="../aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
@@ -520,35 +485,35 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-network-analyzer/getting-started-with-pcap-upload/">
+<a class="md-nav__link" href="../aqg-network-analyzer/getting-started-with-pcap-upload/">
 <span class="md-ellipsis">
     Getting started with PCAP Upload
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
+<a class="md-nav__link" href="../aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
 <span class="md-ellipsis">
     Getting started with Live Network Traffic Monitoring
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
+<a class="md-nav__link" href="../aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
 <span class="md-ellipsis">
     GCP Packet Mirroring Tutorial
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-network-analyzer/troubleshooting/">
+<a class="md-nav__link" href="../aqg-network-analyzer/troubleshooting/">
 <span class="md-ellipsis">
     Troubleshooting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aqg-network-analyzer/reference/">
+<a class="md-nav__link" href="../aqg-network-analyzer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -557,57 +522,175 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../aws/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+<ff flags="EnableAwsV2"></ff>AWS
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
 <ff flags="EnableAwsV2"></ff>AWS
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-ingestion-overview">
+<span class="md-ellipsis">
+      Data ingestion overview
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../aws-kms/">
+<a class="md-nav__link" href="#aws-services-and-api-permissions">
+<span class="md-ellipsis">
+      AWS services and API permissions
+    </span>
+</a>
+<nav aria-label="AWS services and API permissions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-security-token-service-sts">
+<span class="md-ellipsis">
+      AWS Security Token Service (STS)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-key-management-service-kms">
+<span class="md-ellipsis">
+      AWS Key Management Service (KMS)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-certificate-manager-acm">
+<span class="md-ellipsis">
+      AWS Certificate Manager (ACM)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-the-integration">
+<span class="md-ellipsis">
+      Set up the integration
+    </span>
+</a>
+<nav aria-label="Set up the integration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#download-the-cloudformation-template-from-aqg">
+<span class="md-ellipsis">
+      Download the CloudFormation Template from AQG
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws">
+<span class="md-ellipsis">
+      Run the CloudFormation template and configure IAM role in AWS
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finish-setup-in-aqg">
+<span class="md-ellipsis">
+      Finish setup in AQG
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start-an-ingestion">
+<span class="md-ellipsis">
+      Start an ingestion
+    </span>
+</a>
+<nav aria-label="Start an ingestion" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#edit-a-connected-aws-account">
+<span class="md-ellipsis">
+      Edit a connected AWS account
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unlink-the-aws-integration">
+<span class="md-ellipsis">
+      Unlink the AWS integration
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aws-kms/">
 <span class="md-ellipsis">
 <ff flags="EnableAwsKmsDataSource"></ff>AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../cbom/">
+<a class="md-nav__link" href="../cbom/">
 <span class="md-ellipsis">
     CBOM
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../crowdstrike/">
+<a class="md-nav__link" href="../crowdstrike/">
 <span class="md-ellipsis">
     CrowdStrike
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../palo-alto-networks/">
+<a class="md-nav__link" href="../palo-alto-networks/">
 <span class="md-ellipsis">
     Palo Alto Networks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../qualys/">
+<a class="md-nav__link" href="../qualys/">
 <span class="md-ellipsis">
     Qualys
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../sentinelone/">
+<a class="md-nav__link" href="../sentinelone/">
 <span class="md-ellipsis">
     SentinelOne
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../servicenow/">
+<a class="md-nav__link" href="../servicenow/">
 <span class="md-ellipsis">
     ServiceNow
   </span>
@@ -619,7 +702,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_18" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../rules-reference/">
+<a class="md-nav__link" href="../../rules-reference/">
 <span class="md-ellipsis">
     Rules reference
   </span>
@@ -635,238 +718,238 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/certificate_validity-too-long-64/">
+<a class="md-nav__link" href="../../rules-reference/certificate_validity-too-long-64/">
 <span class="md-ellipsis">
     Certificate validity too long
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_diffie-hellman-group-too-small-4/">
+<a class="md-nav__link" href="../../rules-reference/key_diffie-hellman-group-too-small-4/">
 <span class="md-ellipsis">
     Diffie Hellman key too short
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_elliptic-curve_key-too-short-3/">
+<a class="md-nav__link" href="../../rules-reference/key_elliptic-curve_key-too-short-3/">
 <span class="md-ellipsis">
     Elliptic curve key too short
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/certificate_invalid-certificate-63/">
+<a class="md-nav__link" href="../../rules-reference/certificate_invalid-certificate-63/">
 <span class="md-ellipsis">
     Expired certificate
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/tls-config-version-vuln-004/">
+<a class="md-nav__link" href="../../rules-reference/tls-config-version-vuln-004/">
 <span class="md-ellipsis">
     Host supports usage of a TLS version strictly less than 1.2
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-3des-tls-47/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_offered-ciphersuite-with-3des-tls-47/">
 <span class="md-ellipsis">
     Offered ciphersuite with 3DES
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-des-tls-46/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_offered-ciphersuite-with-des-tls-46/">
 <span class="md-ellipsis">
     Offered ciphersuite with DES
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-ciphersuite-with-rc4-tls-50/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_offered-ciphersuite-with-rc4-tls-50/">
 <span class="md-ellipsis">
     Offered ciphersuite with RC4
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-quantum-vulnerable-kex-005/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_offered-quantum-vulnerable-kex-005/">
 <span class="md-ellipsis">
     Offered quantum-vulnerable key exchange mechanism on network connection
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_offered-quantum-vulnerable-signature-algorithms-network-connection-81/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_offered-quantum-vulnerable-signature-algorithms-network-connection-81/">
 <span class="md-ellipsis">
     Offered quantum-vulnerable signature algorithms on network connection
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_offered-tls-less-1-2-77/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_offered-tls-less-1-2-77/">
 <span class="md-ellipsis">
     Offered TLS version lower than 1.2
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-low-encryption-exponent-58/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-low-encryption-exponent-58/">
 <span class="md-ellipsis">
     RSA key exponent too low
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_rsa_key-too-short-1/">
+<a class="md-nav__link" href="../../rules-reference/key_rsa_key-too-short-1/">
 <span class="md-ellipsis">
     RSA key too short
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_stale-private-key-202/">
+<a class="md-nav__link" href="../../rules-reference/key_stale-private-key-202/">
 <span class="md-ellipsis">
     Stale key
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_storage-of-keys-in-a-weak-keystore-21/">
+<a class="md-nav__link" href="../../rules-reference/key_storage-of-keys-in-a-weak-keystore-21/">
 <span class="md-ellipsis">
     Storage of keys in a weak keystore
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_symmetric-key-too-short-2/">
+<a class="md-nav__link" href="../../rules-reference/key_symmetric-key-too-short-2/">
 <span class="md-ellipsis">
     Symmetric key too short
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_unencrypted-private-key-201/">
+<a class="md-nav__link" href="../../rules-reference/key_unencrypted-private-key-201/">
 <span class="md-ellipsis">
     Unencrypted private key
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-3des-tls-79/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_use-of-ciphersuite-with-3des-tls-79/">
 <span class="md-ellipsis">
     Use of cipher suite with 3DES
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-des-tls-78/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_use-of-ciphersuite-with-des-tls-78/">
 <span class="md-ellipsis">
     Use of cipher suite with DES
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-ciphersuite-with-rc4-tls-80/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_use-of-ciphersuite-with-rc4-tls-80/">
 <span class="md-ellipsis">
     Use of cipher suite with RC4
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-default-cipher-mode-10/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-default-cipher-mode-10/">
 <span class="md-ellipsis">
     Use of default cipher mode
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-3DES-in-operations/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-3DES-in-operations/">
 <span class="md-ellipsis">
     Use of 3DES encryption algorithm in operations
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/key_dsa_key-too-short-42/">
+<a class="md-nav__link" href="../../rules-reference/key_dsa_key-too-short-42/">
 <span class="md-ellipsis">
     Use of DSA
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-ecb-mode-8/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-ecb-mode-8/">
 <span class="md-ellipsis">
     Use of Electronic Code Book (ECB) mode
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-pkcs1v15-encryption-9/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-pkcs1v15-encryption-9/">
 <span class="md-ellipsis">
     Use of PKCS#1v1.5 Encryption
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-pkcs1v15-signature-38/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-pkcs1v15-signature-38/">
 <span class="md-ellipsis">
     Use of PKCS#1v1.5 Signature
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-quantum-vulnerable-key-establishment-68/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-quantum-vulnerable-key-establishment-68/">
 <span class="md-ellipsis">
     Use of quantum-vulnerable key-establishment scheme
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-quantum-vulnerable-server-auth-003/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_use-of-quantum-vulnerable-server-auth-003/">
 <span class="md-ellipsis">
     Use of quantum-vulnerable server authentication
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_use-of-md2-hash-function-34/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_use-of-md2-hash-function-34/">
 <span class="md-ellipsis">
     Use of the MD2 hash function
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/hashfunction_use-of-the-md5-hash-function-12/">
+<a class="md-nav__link" href="../../rules-reference/hashfunction_use-of-the-md5-hash-function-12/">
 <span class="md-ellipsis">
     Use of the MD5 hash function
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/hashfunction_use-of-sha1-11/">
+<a class="md-nav__link" href="../../rules-reference/hashfunction_use-of-sha1-11/">
 <span class="md-ellipsis">
     Use of the SHA1 hash function
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/ciphersuite_use-of-tls-less-1-2-76/">
+<a class="md-nav__link" href="../../rules-reference/ciphersuite_use-of-tls-less-1-2-76/">
 <span class="md-ellipsis">
     Use of TLS version lower than 1.2
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/certificate_weak-hash-function-74/">
+<a class="md-nav__link" href="../../rules-reference/certificate_weak-hash-function-74/">
 <span class="md-ellipsis">
     Weak hash function in certificate
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../rules-reference/algorithm_quantum-vulnerable-public-key-operation/">
+<a class="md-nav__link" href="../../rules-reference/algorithm_quantum-vulnerable-public-key-operation/">
 <span class="md-ellipsis">
     Quantum-vulnerable public-key cryptography operation
   </span>
@@ -878,7 +961,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_19" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../kb-articles/">
+<a class="md-nav__link" href="../../kb-articles/">
 <span class="md-ellipsis">
     Knowledge base
   </span>
@@ -894,126 +977,126 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/block-and-stream-ciphers/">
+<a class="md-nav__link" href="../../kb-articles/block-and-stream-ciphers/">
 <span class="md-ellipsis">
     Block and stream ciphers
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/certificates/">
+<a class="md-nav__link" href="../../kb-articles/certificates/">
 <span class="md-ellipsis">
     Certificates
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/chosen-ciphertext-attacks/">
+<a class="md-nav__link" href="../../kb-articles/chosen-ciphertext-attacks/">
 <span class="md-ellipsis">
     Chosen ciphertext attacks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/computational-resources-in-cryptanalysis/">
+<a class="md-nav__link" href="../../kb-articles/computational-resources-in-cryptanalysis/">
 <span class="md-ellipsis">
     Computational resources in cryptanalysis
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/cryptographic-keylengths/">
+<a class="md-nav__link" href="../../kb-articles/cryptographic-keylengths/">
 <span class="md-ellipsis">
     Cryptographic keylengths
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/cryptography-bill-of-materials/">
+<a class="md-nav__link" href="../../kb-articles/cryptography-bill-of-materials/">
 <span class="md-ellipsis">
     Cryptography Bill of Materials (CBOM)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/elliptic-curve-cryptography/">
+<a class="md-nav__link" href="../../kb-articles/elliptic-curve-cryptography/">
 <span class="md-ellipsis">
     Elliptic curve cryptography
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/hash-functions/">
+<a class="md-nav__link" href="../../kb-articles/hash-functions/">
 <span class="md-ellipsis">
     Hash functions
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/key-management-and-keystores/">
+<a class="md-nav__link" href="../../kb-articles/key-management-and-keystores/">
 <span class="md-ellipsis">
     Key management and keystores
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/lack-of-strong-unforgeability/">
+<a class="md-nav__link" href="../../kb-articles/lack-of-strong-unforgeability/">
 <span class="md-ellipsis">
     Lack of strong unforgeability
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/message-authentication-codes/">
+<a class="md-nav__link" href="../../kb-articles/message-authentication-codes/">
 <span class="md-ellipsis">
     Message authentication codes (MACs)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/password-based-key-derivation/">
+<a class="md-nav__link" href="../../kb-articles/password-based-key-derivation/">
 <span class="md-ellipsis">
     Password-based Key Derivation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/preparing-for-fips-validation/">
+<a class="md-nav__link" href="../../kb-articles/preparing-for-fips-validation/">
 <span class="md-ellipsis">
     Preparing for FIPS validation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/quantum-threat/">
+<a class="md-nav__link" href="../../kb-articles/quantum-threat/">
 <span class="md-ellipsis">
     Quantum threat
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/rsa-algorithm/">
+<a class="md-nav__link" href="../../kb-articles/rsa-algorithm/">
 <span class="md-ellipsis">
     RSA algorithm
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/timing-attacks-and-broader-side-channel-attacks/">
+<a class="md-nav__link" href="../../kb-articles/timing-attacks-and-broader-side-channel-attacks/">
 <span class="md-ellipsis">
     Timing attacks and broader side-channel attacks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/transport-layer-security-tls/">
+<a class="md-nav__link" href="../../kb-articles/transport-layer-security-tls/">
 <span class="md-ellipsis">
     Transport Layer Security (TLS)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../kb-articles/weak-cryptography-keys/">
+<a class="md-nav__link" href="../../kb-articles/weak-cryptography-keys/">
 <span class="md-ellipsis">
     Weak cryptography keys
   </span>
@@ -1023,42 +1106,42 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../glossary/">
+<a class="md-nav__link" href="../../glossary/">
 <span class="md-ellipsis">
     Cryptography glossary
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../api/">
+<a class="md-nav__link" href="../../api/">
 <span class="md-ellipsis">
     API Reference
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../manage-your-data/">
+<a class="md-nav__link" href="../../manage-your-data/">
 <span class="md-ellipsis">
     How we manage your data
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../accessibility-statement/">
+<a class="md-nav__link" href="../../accessibility-statement/">
 <span class="md-ellipsis">
     Accessibility statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../use-conditions-statement/">
+<a class="md-nav__link" href="../../use-conditions-statement/">
 <span class="md-ellipsis">
     Use conditions statement
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../changelog/">
+<a class="md-nav__link" href="../../changelog/">
 <span class="md-ellipsis">
     Changelog
   </span>
@@ -1079,23 +1162,105 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#installation">
+<a class="md-nav__link" href="#data-ingestion-overview">
 <span class="md-ellipsis">
-      Installation
+      Data ingestion overview
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#scanning-a-filesystem">
+<a class="md-nav__link" href="#aws-services-and-api-permissions">
 <span class="md-ellipsis">
-      Scanning a Filesystem
+      AWS services and API permissions
+    </span>
+</a>
+<nav aria-label="AWS services and API permissions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-security-token-service-sts">
+<span class="md-ellipsis">
+      AWS Security Token Service (STS)
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#upload-a-trace">
+<a class="md-nav__link" href="#aws-key-management-service-kms">
 <span class="md-ellipsis">
-      Upload a trace
+      AWS Key Management Service (KMS)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-certificate-manager-acm">
+<span class="md-ellipsis">
+      AWS Certificate Manager (ACM)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-up-the-integration">
+<span class="md-ellipsis">
+      Set up the integration
+    </span>
+</a>
+<nav aria-label="Set up the integration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#download-the-cloudformation-template-from-aqg">
+<span class="md-ellipsis">
+      Download the CloudFormation Template from AQG
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws">
+<span class="md-ellipsis">
+      Run the CloudFormation template and configure IAM role in AWS
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#finish-setup-in-aqg">
+<span class="md-ellipsis">
+      Finish setup in AQG
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start-an-ingestion">
+<span class="md-ellipsis">
+      Start an ingestion
+    </span>
+</a>
+<nav aria-label="Start an ingestion" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#edit-a-connected-aws-account">
+<span class="md-ellipsis">
+      Edit a connected AWS account
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unlink-the-aws-integration">
+<span class="md-ellipsis">
+      Unlink the AWS integration
     </span>
 </a>
 </li>
@@ -1106,39 +1271,116 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="linux-filesystem-scanner-getting-started-guide">Linux Filesystem Scanner getting started guide<a class="headerlink" href="#linux-filesystem-scanner-getting-started-guide" title="Permanent link">↑</a></h1>
-<p>This guide explains how to use the AQtive Guard Filesystem Scanner to obtain a cryptography scan from the filesystem in Linux.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">↑</a></h2>
-<p>You can <a href="../../#download-an-aqg-sensor">download the AQG Filesystem Scanner</a> from the web UI. </p>
-<p>The sensor is distributed as a zip package named <code>cs-host-scanner-&lt;VERSION&gt;-x86_64-&lt;PLATFORM&gt;.zip</code>. When you extract this package, it creates a directory named <code>cs-host-scanner-&lt;VERSION&gt;-x86_64-&lt;PLATFORM&gt;</code> that contains an executable <code>cs-host-scanner</code> file and a <code>README</code> file. For instance:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>cs-host-scanner-0.9.6-x86_64-linux/
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>├── cs-host-scanner
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>└── README.md
-</code></pre></div>
-<p>You can move the <code>cs-host-scanner-&lt;VERSION&gt;-x86_64-&lt;PLATFORM&gt;</code> directory anywhere on your system.</p>
-<div class="admonition warning">
-<p class="admonition-title">Caution</p>
-<p>If you move the executable file, make sure to also move the DLLs. They must be in the same directory.</p>
+<h1 id="amazon-web-services-aws">Amazon Web Services (AWS)<a class="headerlink" href="#amazon-web-services-aws" title="Permanent link">↑</a></h1>
+<p>The AQtive Guard (AQG) Amazon Web Services (AWS) integration provides a comprehensive view of cryptographic assets and how they’re used in your AWS environment.</p>
+<p>AQG connects to your AWS account in an agentless manner, using an IAM role that follows the least-privilege principle to scan and discover your cryptographic inventory.</p>
+<h2 id="data-ingestion-overview">Data ingestion overview<a class="headerlink" href="#data-ingestion-overview" title="Permanent link">↑</a></h2>
+<p>The AWS integration discovers and inventories a wide range of cryptographic assets, including:</p>
+<ul>
+<li>Certificates from AWS Certificate Manager (ACM)</li>
+<li>Keys from AWS Key Management Service (KMS)</li>
+</ul>
+<h2 id="aws-services-and-api-permissions">AWS services and API permissions<a class="headerlink" href="#aws-services-and-api-permissions" title="Permanent link">↑</a></h2>
+<p>The AWS integration uses specific API calls to discover and ingest cryptographic asset data from your AWS account. This section details the AWS services AQG interacts with and the corresponding APIs it calls.</p>
+<h3 id="aws-security-token-service-sts">AWS Security Token Service (STS)<a class="headerlink" href="#aws-security-token-service-sts" title="Permanent link">↑</a></h3>
+<p>AQG uses the STS service to assume roles within your AWS account.</p>
+<ul>
+<li><code>sts:GetCallerIdentity</code></li>
+</ul>
+<p>For more information, refer to the <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html" rel="noopener" target="_blank">AWS STS documentation</a>.</p>
+<h3 id="aws-key-management-service-kms">AWS Key Management Service (KMS)<a class="headerlink" href="#aws-key-management-service-kms" title="Permanent link">↑</a></h3>
+<p>AQG discovers cryptographic keys and their properties from the AWS KMS service.</p>
+<ul>
+<li><code>kms:ListKeys</code></li>
+<li><code>kms:ListAliases</code></li>
+<li><code>kms:DescribeKey</code></li>
+<li><code>kms:GetKeyPolicy</code></li>
+<li><code>kms:GetKeyRotationStatus</code></li>
+</ul>
+<p>For more information, refer to the <a href="https://docs.aws.amazon.com/general/latest/gr/kms.html" rel="noopener" target="_blank">AWS KMS documentation</a>.</p>
+<h3 id="aws-certificate-manager-acm">AWS Certificate Manager (ACM)<a class="headerlink" href="#aws-certificate-manager-acm" title="Permanent link">↑</a></h3>
+<p>For certificate discovery, AQG interacts with the ACM service.</p>
+<ul>
+<li><code>acm:GetCertificate</code></li>
+<li><code>acm:ListCertificates</code></li>
+<li><code>acm:DescribeCertificate</code></li>
+</ul>
+<p>For more information, refer to the <a href="https://docs.aws.amazon.com/acm/latest/userguide/acm-limits.html" rel="noopener" target="_blank">AWS ACM documentation</a>.</p>
+<h2 id="set-up-the-integration">Set up the integration<a class="headerlink" href="#set-up-the-integration" title="Permanent link">↑</a></h2>
+<p>To set up the AWS integration, you’ll need to:</p>
+<ol>
+<li>Download the <strong>Cloud Formation Template</strong> from AQG.</li>
+<li>Run the CloudFormation Template in your AWS account and copy the generated IAM role’s Amazon Resource Name (ARN) from the Cloud Formation output.</li>
+<li>Return to AQG to complete the integration.</li>
+</ol>
+<p>The following sections provide details for completing these steps. </p>
+<h3 id="download-the-cloudformation-template-from-aqg">Download the CloudFormation Template from AQG<a class="headerlink" href="#download-the-cloudformation-template-from-aqg" title="Permanent link">↑</a></h3>
+<p>Complete the following steps to retrieve the CloudFormation template.</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
+<li>Select <strong>Configure</strong> in the <em>AWS</em> panel, then <strong>Download CloudFormation template</strong></li>
+</ol>
+<h3 id="run-the-cloudformation-template-and-configure-iam-role-in-aws">Run the CloudFormation template and configure IAM role in AWS<a class="headerlink" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws" title="Permanent link">↑</a></h3>
+<p>Complete the following steps to configure an IAM role in AWS.</p>
+<ol>
+<li>Log into the AWS console.</li>
+<li>From the AWS dashboard, search for and then select <strong>CloudFormation</strong>.</li>
+<li>Under <em>Stacks</em> in the left navigation pane, select <strong>Create stack</strong>.</li>
+<li>In the <em>Prerequisite - Prepare template</em> section, select <em>Choose an existing template</em>.</li>
+<li>In the <em>Specify template</em> section, select <em>Upload a template file</em>.</li>
+<li>Select <strong>Choose file</strong>, upload the template you downloaded from AQG, and select <strong>Next</strong>.</li>
+<li>At the bottom of the next page, check the box that states <strong>I acknowledge that AWS CloudFormation might create IAM resources with customised names</strong> and select <strong>Next</strong>.</li>
+<li>Select <strong>Submit</strong> at the bottom of the page.</li>
+<li>Once the stack is created, navigate to the stack’s <em>Outputs</em> tab and copy the <strong>Amazon Resource Name (ARN)</strong> of the created role.</li>
+</ol>
+<h3 id="finish-setup-in-aqg">Finish setup in AQG<a class="headerlink" href="#finish-setup-in-aqg" title="Permanent link">↑</a></h3>
+<p>Complete the following steps in AQG to finish the setup.</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
+<li>Select <strong>Configure</strong> in the <em>AWS</em> panel.</li>
+<li>Enter the <em>Amazon Resource Name (ARN)</em> for the role you created in the AWS console.</li>
+<li>
+<p>Select <strong>Submit</strong>.</p>
+<p>You’ll see a notification confirming that the configuration has succeeded.</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can start the ingestion right away by selecting <strong>Start now</strong>.</p>
 </div>
-<h2 id="scanning-a-filesystem">Scanning a Filesystem<a class="headerlink" href="#scanning-a-filesystem" title="Permanent link">↑</a></h2>
-<p>Navigate to a directory where you have write permissions to store scan results.</p>
-<p>Move the <code>cs-host-scanner</code> executable file to your chosen directory and run:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>./cs-host-scanner<span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span>--root<span class="w"> </span>/path/to/root/directory<span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span>--output<span class="w"> </span>scan.cst.gz
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The AQG Filesystem Scanner only looks for regular files on Linux. It won’t scan block devices such as <code>/dev/sda</code>, but it will scan regular files in directories like <code>/proc</code> or <code>/sys</code>.</p>
-</div>
-<p>When the AQG Filesystem Scanner has finished executing, the directory you chose earlier will contain the generated trace file.</p>
-<p>You can change the directory where the AQG Filesystem Scanner generates traces with the <code>--output</code> option.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Refer to the <a href="../reference/">AQG Filesystem Scanner reference</a> for details on using the scanner on Linux and for a list of available parameters.</p>
-</div>
-<h2 id="upload-a-trace">Upload a trace<a class="headerlink" href="#upload-a-trace" title="Permanent link">↑</a></h2>
-<p>Refer to these instructions for uploading a trace using the <a href="../../#upload-a-trace-using-the-ui">web UI</a> or <a href="../../#upload-a-trace-using-the-api">API</a>.</p>
+<h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">↑</a></h2>
+<p>Once the integration is configured, you can trigger an AWS data ingestion.</p>
+<h2 id="start-an-ingestion">Start an ingestion<a class="headerlink" href="#start-an-ingestion" title="Permanent link">↑</a></h2>
+<p>To start an ingestion:</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
+<li>Select <strong>Details</strong> in the <em>AWS</em> panel.</li>
+<li>
+<p>Select <strong>Start now</strong>.</p>
+<p>You’ll see a notification confirming that the ingestion has started.</p>
+</li>
+</ol>
+<p>During an ingestion, AQtive Guard automatically:</p>
+<ul>
+<li>Crawls AWS regions to discover cryptographic assets.</li>
+<li>Ingests data on certificates from AWS Certificate Manager (ACM), keys from AWS Key Management Service (KMS), and secrets from both AWS Secrets Manager and SSM Parameter Store.</li>
+<li>Populates the <a href="../../inventory/">Inventory</a> tab with the discovered objects.</li>
+</ul>
+<h3 id="edit-a-connected-aws-account">Edit a connected AWS account<a class="headerlink" href="#edit-a-connected-aws-account" title="Permanent link">↑</a></h3>
+<p>To edit a connected AWS account:</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
+<li>Select <strong>Details</strong> in the <em>AWS</em> panel.</li>
+<li>Select <strong>Edit</strong> to make any changes you need, then <strong>Submit</strong>.</li>
+</ol>
+<h2 id="unlink-the-aws-integration">Unlink the AWS integration<a class="headerlink" href="#unlink-the-aws-integration" title="Permanent link">↑</a></h2>
+<p>Unlink the AWS integration only if your organization needs to reconfigure or stop data sharing with AWS.</p>
+<p>To unlink the AWS configuration:</p>
+<ol>
+<li>Select <strong>Data sources</strong> from the main menu, then select <strong>Details</strong> in the <em>AWS</em> panel.</li>
+<li>Select <strong>Edit</strong>, then <strong>Unlink</strong>.</li>
+<li>Select <strong>Confirm and unlink Amazon Web Services</strong>.</li>
+</ol>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -1165,10 +1407,10 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
-<script src="../../../gen/main.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.indexes", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+<script src="../../gen/main.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
 <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
