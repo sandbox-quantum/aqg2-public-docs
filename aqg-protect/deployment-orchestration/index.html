@@ -351,6 +351,31 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      Troubleshooting
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-deployment-health">
+<span class="md-ellipsis">
+      Check deployment health
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-the-targeted-service">
+<span class="md-ellipsis">
+      Change the targeted service
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -679,9 +704,9 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_18" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../rules-reference/">
+<a class="md-nav__link" href="../../aqg-mcp/">
 <span class="md-ellipsis">
-    Rules reference
+    AQtive Guard MCP server
   </span>
 </a>
 <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
@@ -690,6 +715,34 @@
 </div>
 <nav aria-expanded="false" aria-labelledby="__nav_18_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_18">
+<span class="md-nav__icon md-icon"></span>
+            AQtive Guard MCP server
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../aqg-mcp/getting-started/">
+<span class="md-ellipsis">
+    Getting started
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_19" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../rules-reference/">
+<span class="md-ellipsis">
+    Rules reference
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_19_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_19">
 <span class="md-nav__icon md-icon"></span>
             Rules reference
           </label>
@@ -936,19 +989,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_19" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_20" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../kb-articles/">
 <span class="md-ellipsis">
     Knowledge base
   </span>
 </a>
-<label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="0">
+<label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_19_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_19">
+<nav aria-expanded="false" aria-labelledby="__nav_20_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_20">
 <span class="md-nav__icon md-icon"></span>
             Knowledge base
           </label>
@@ -1219,6 +1272,31 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      Troubleshooting
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-deployment-health">
+<span class="md-ellipsis">
+      Check deployment health
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#change-the-targeted-service">
+<span class="md-ellipsis">
+      Change the targeted service
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -1245,8 +1323,8 @@
 <p>This diagram shows the components for deploying AQtive Guard Protect, and the order in which you install them on the desired endpoint. The following sections provide detailed deployment instructions for each component.</p>
 <ol>
 <li>Install the <strong>AQG Protect Client</strong> (1) and <strong>AQG Protect CertSync</strong> (2) service. This will generate an associated <strong>Public Certificate</strong> (3) and <strong>Protected Private Key Reference</strong> (4) for that endpoint.</li>
-<li>Install the required third-party PKCS#11 modules, <code>**pkcs11.so**</code> (5) and <code>**libp11.so**</code> (6).</li>
-<li>Configure <strong>OpenSSL</strong> (7) to use these libraries and the <strong>Protected Private Key Reference</strong>. This allows the <strong>Protect Client</strong> to communicate with AQtive Guard (8).</li>
+<li>Install the required third-party PKCS#11 modules, <strong><code>pkcs11.so</code></strong> (5) and <strong><code>libp11.so</code></strong> (6).</li>
+<li>Configure <strong>OpenSSL</strong> (7) to use these libraries and the <strong>Protected Private Key Reference</strong>. This allows the <strong>Protect Client</strong> to communicate with <strong>AQtive Guard</strong> (8).</li>
 <li>Configure your <strong>nginx</strong> (9) setup to use the updated OpenSSL configuration.</li>
 </ol>
 <h2 id="install-aqg-protect-dependencies">Install AQG Protect dependencies<a class="headerlink" href="#install-aqg-protect-dependencies" title="Permanent link">↑</a></h2>
@@ -1286,8 +1364,14 @@
 </code></pre></div>
 </li>
 <li>
+<p>Configure the necessary environment variables for your AQtive Guard instance and the Protect client. Replace <code>&lt;YOUR-DOMAIN-HERE&gt;</code> with your specific cluster or environment identifier:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AQG_ENV</span><span class="o">=</span>&lt;YOUR-DOMAIN-HERE&gt;.aqtiveguard.com
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AQG_PROTECT_ENV</span><span class="o">=</span>protect.&lt;YOUR-DOMAIN-HERE&gt;.cg.aws.sbt-infra.net
+</code></pre></div>
+</li>
+<li>
 <p>Run the provided installer script from the release package to install the AQG Protect Client and AQG Protect CertSync service:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>installer.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./installer.sh
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>chmod<span class="w"> </span>+x<span class="w"> </span>installer.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./installer.sh
 </code></pre></div>
 </li>
 </ol>
@@ -1310,29 +1394,30 @@
 </li>
 <li>
 <p>Configure OpenSSL to detect the new provider by editing the <code>/etc/ssl/openssl.cnf</code> file. In the <code>[provider_sect]</code> section, add the following line:</p>
-<p><code>pkcs11 = pkcs11_sect # Add this line to enable the PKCS#11 provider</code></p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>pkcs11 = pkcs11_sect # Add this line to enable the PKCS#11 provider
+</code></pre></div>
 <p>This section of the file should look like:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>[provider_sect]
-<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>default = default_sect
-<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>pkcs11 = pkcs11_sect
-<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>
-<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a>[default_sect]
-<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a>activate = 1
-<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>
-<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a>[pkcs11_sect]
-<a href="#__codelineno-5-9" id="__codelineno-5-9" name="__codelineno-5-9"></a># This is the provider module we build and install
-<a href="#__codelineno-5-10" id="__codelineno-5-10" name="__codelineno-5-10"></a>module = /usr/lib/x86_64-linux-gnu/ossl-modules/pkcs11.so
-<a href="#__codelineno-5-11" id="__codelineno-5-11" name="__codelineno-5-11"></a>
-<a href="#__codelineno-5-12" id="__codelineno-5-12" name="__codelineno-5-12"></a>pkcs11-module-path = /etc/protect/libp11client.so
-<a href="#__codelineno-5-13" id="__codelineno-5-13" name="__codelineno-5-13"></a>
-<a href="#__codelineno-5-14" id="__codelineno-5-14" name="__codelineno-5-14"></a># This allows us to use the pem encoded uri file for private keys
-<a href="#__codelineno-5-15" id="__codelineno-5-15" name="__codelineno-5-15"></a>pkcs11-module-encode-provider-uri-to-pem = true
-<a href="#__codelineno-5-16" id="__codelineno-5-16" name="__codelineno-5-16"></a>
-<a href="#__codelineno-5-17" id="__codelineno-5-17" name="__codelineno-5-17"></a># We don't store operation state in the pkcs11 interface
-<a href="#__codelineno-5-18" id="__codelineno-5-18" name="__codelineno-5-18"></a>pkcs11-module-quirks = no-operation-state
-<a href="#__codelineno-5-19" id="__codelineno-5-19" name="__codelineno-5-19"></a>pkcs11-module-allow-export = 1
-<a href="#__codelineno-5-20" id="__codelineno-5-20" name="__codelineno-5-20"></a>pkcs11-module-cache-sessions = 0
-<a href="#__codelineno-5-21" id="__codelineno-5-21" name="__codelineno-5-21"></a>activate = 1
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>[provider_sect]
+<a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>default = default_sect
+<a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>pkcs11 = pkcs11_sect
+<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>
+<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a>[default_sect]
+<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a>activate = 1
+<a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a>
+<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a>[pkcs11_sect]
+<a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a># This is the provider module we build and install
+<a href="#__codelineno-7-10" id="__codelineno-7-10" name="__codelineno-7-10"></a>module = /usr/lib/x86_64-linux-gnu/ossl-modules/pkcs11.so
+<a href="#__codelineno-7-11" id="__codelineno-7-11" name="__codelineno-7-11"></a>
+<a href="#__codelineno-7-12" id="__codelineno-7-12" name="__codelineno-7-12"></a>pkcs11-module-path = /etc/protect/libp11client.so
+<a href="#__codelineno-7-13" id="__codelineno-7-13" name="__codelineno-7-13"></a>
+<a href="#__codelineno-7-14" id="__codelineno-7-14" name="__codelineno-7-14"></a># This allows us to use the pem encoded uri file for private keys
+<a href="#__codelineno-7-15" id="__codelineno-7-15" name="__codelineno-7-15"></a>pkcs11-module-encode-provider-uri-to-pem = true
+<a href="#__codelineno-7-16" id="__codelineno-7-16" name="__codelineno-7-16"></a>
+<a href="#__codelineno-7-17" id="__codelineno-7-17" name="__codelineno-7-17"></a># We don't store operation state in the pkcs11 interface
+<a href="#__codelineno-7-18" id="__codelineno-7-18" name="__codelineno-7-18"></a>pkcs11-module-quirks = no-operation-state
+<a href="#__codelineno-7-19" id="__codelineno-7-19" name="__codelineno-7-19"></a>pkcs11-module-allow-export = 1
+<a href="#__codelineno-7-20" id="__codelineno-7-20" name="__codelineno-7-20"></a>pkcs11-module-cache-sessions = 0
+<a href="#__codelineno-7-21" id="__codelineno-7-21" name="__codelineno-7-21"></a>activate = 1
 </code></pre></div>
 </li>
 </ol>
@@ -1340,20 +1425,20 @@
 <ol>
 <li>
 <p>Set the <code>PROTECT_ADDRESS</code> environment variable to enable communication with the <code>protect-client</code> background service by running:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PROTECT_ADDRESS</span><span class="o">=</span>unix:///tmp/pc-sock
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PROTECT_ADDRESS</span><span class="o">=</span>unix:///tmp/pc-sock
 </code></pre></div>
 </li>
 <li>
 <p>Confirm that the <code>protect-cert-sync</code> service has generated the <code>protect.cert.pem</code> and <code>protect.key.pem</code> files in <code>/etc/protect/certs/</code>.</p>
 </li>
 <li>
-<p>Start an example web server using the generated certificate and key.</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>openssl<span class="w"> </span>s_server<span class="w"> </span>-key<span class="w"> </span>/etc/protect/certs/protect.key.pem<span class="w"> </span>-cert<span class="w"> </span>/etc/protect/certs/protect.cert.pem<span class="w"> </span>-www
+<p>Start an example web server using the generated certificate and key:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>openssl<span class="w"> </span>s_server<span class="w"> </span>-key<span class="w"> </span>/etc/protect/certs/protect.key.pem<span class="w"> </span>-cert<span class="w"> </span>/etc/protect/certs/protect.cert.pem<span class="w"> </span>-www
 </code></pre></div>
 </li>
 <li>
 <p>In a separate terminal, test the TLS web server connectivity:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost:4433
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost:4433
 </code></pre></div>
 </li>
 </ol>
@@ -1361,7 +1446,7 @@
 <h3 id="prerequisites_1">Prerequisites<a class="headerlink" href="#prerequisites_1" title="Permanent link">↑</a></h3>
 <ul>
 <li>Verify that the <code>protect-cert-sync</code> service has generated the <code>protect.cert.pem</code> and <code>protect.key.pem</code> files in <code>/etc/protect/certs/</code>.</li>
-<li>Make sure that nginx is installed on the system. If not, install it with:<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx
+<li>Make sure that nginx is installed on the system. If not, install it with:<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nginx
 </code></pre></div>
 </li>
 </ul>
@@ -1371,72 +1456,102 @@
 <li>
 <p>Set Up TLS offloading by editing the <code>/etc/nginx/nginx.conf</code> file. Insert <code>env PROTECT_ADDRESS;</code> at the beginning of the file, and add the <code>ssl_certificate</code> and <code>ssl_certificate_key</code> attributes within the <code>http</code> block.</p>
 <p>Your <code>nginx.conf</code> file should resemble the following structure:</p>
-<div class="highlight"><span class="filename">Nginx Configuration File</span><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">user</span><span class="w"> </span><span class="s">www-data</span><span class="p">;</span>
-<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="k">worker_processes</span><span class="w"> </span><span class="s">auto</span><span class="p">;</span>
-<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="k">pid</span><span class="w"> </span><span class="s">/run/nginx.pid</span><span class="p">;</span>
-<a href="#__codelineno-10-4" id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="k">include</span><span class="w"> </span><span class="n">/etc/nginx/modules-enabled/*.conf</span>;
-<a href="#__codelineno-10-5" id="__codelineno-10-5" name="__codelineno-10-5"></a>
-<a href="#__codelineno-10-6" id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="k">env</span><span class="w"> </span><span class="s">PROTECT_ADDRESS</span><span class="p">;</span>
-<a href="#__codelineno-10-7" id="__codelineno-10-7" name="__codelineno-10-7"></a>
-<a href="#__codelineno-10-8" id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="k">events</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-10-9" id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="w">    </span><span class="kn">worker_connections</span><span class="w"> </span><span class="mi">768</span><span class="p">;</span>
-<a href="#__codelineno-10-10" id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="w">    </span><span class="c1"># multi_accept on;</span>
-<a href="#__codelineno-10-11" id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="p">}</span>
-<a href="#__codelineno-10-12" id="__codelineno-10-12" name="__codelineno-10-12"></a>
-<a href="#__codelineno-10-13" id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="k">http</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-10-14" id="__codelineno-10-14" name="__codelineno-10-14"></a>
-<a href="#__codelineno-10-15" id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="w">    </span><span class="c1">#...</span>
-<a href="#__codelineno-10-16" id="__codelineno-10-16" name="__codelineno-10-16"></a><span class="w">    </span><span class="c1">#...</span>
-<a href="#__codelineno-10-17" id="__codelineno-10-17" name="__codelineno-10-17"></a>
-<a href="#__codelineno-10-18" id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="w">    </span><span class="c1"># SSL configuration</span>
-<a href="#__codelineno-10-19" id="__codelineno-10-19" name="__codelineno-10-19"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">"/etc/ssl/nginx/protect.cert.pem"</span><span class="p">;</span><span class="w">     </span>
-<a href="#__codelineno-10-20" id="__codelineno-10-20" name="__codelineno-10-20"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">"/etc/ssl/nginx/protect.key.pem"</span><span class="p">;</span>
-<a href="#__codelineno-10-21" id="__codelineno-10-21" name="__codelineno-10-21"></a>
-<a href="#__codelineno-10-22" id="__codelineno-10-22" name="__codelineno-10-22"></a><span class="w">    </span><span class="c1">#...</span>
-<a href="#__codelineno-10-23" id="__codelineno-10-23" name="__codelineno-10-23"></a><span class="w">    </span><span class="c1">#...</span>
-<a href="#__codelineno-10-24" id="__codelineno-10-24" name="__codelineno-10-24"></a>
-<a href="#__codelineno-10-25" id="__codelineno-10-25" name="__codelineno-10-25"></a><span class="p">}</span>
+<div class="highlight"><span class="filename">Nginx Configuration File</span><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">user</span><span class="w"> </span><span class="s">www-data</span><span class="p">;</span>
+<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="k">worker_processes</span><span class="w"> </span><span class="s">auto</span><span class="p">;</span>
+<a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="k">pid</span><span class="w"> </span><span class="s">/run/nginx.pid</span><span class="p">;</span>
+<a href="#__codelineno-12-4" id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="k">include</span><span class="w"> </span><span class="n">/etc/nginx/modules-enabled/*.conf</span>;
+<a href="#__codelineno-12-5" id="__codelineno-12-5" name="__codelineno-12-5"></a>
+<a href="#__codelineno-12-6" id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="k">env</span><span class="w"> </span><span class="s">PROTECT_ADDRESS</span><span class="p">;</span>
+<a href="#__codelineno-12-7" id="__codelineno-12-7" name="__codelineno-12-7"></a>
+<a href="#__codelineno-12-8" id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="k">events</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-12-9" id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="w">    </span><span class="kn">worker_connections</span><span class="w"> </span><span class="mi">768</span><span class="p">;</span>
+<a href="#__codelineno-12-10" id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">    </span><span class="c1"># multi_accept on;</span>
+<a href="#__codelineno-12-11" id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="p">}</span>
+<a href="#__codelineno-12-12" id="__codelineno-12-12" name="__codelineno-12-12"></a>
+<a href="#__codelineno-12-13" id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="k">http</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-12-14" id="__codelineno-12-14" name="__codelineno-12-14"></a>
+<a href="#__codelineno-12-15" id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">    </span><span class="c1">#...</span>
+<a href="#__codelineno-12-16" id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="w">    </span><span class="c1">#...</span>
+<a href="#__codelineno-12-17" id="__codelineno-12-17" name="__codelineno-12-17"></a>
+<a href="#__codelineno-12-18" id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="w">    </span><span class="c1"># SSL configuration</span>
+<a href="#__codelineno-12-19" id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="w">    </span><span class="kn">ssl_certificate</span><span class="w"> </span><span class="s">"/etc/ssl/nginx/protect.cert.pem"</span><span class="p">;</span><span class="w">     </span>
+<a href="#__codelineno-12-20" id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="w">    </span><span class="kn">ssl_certificate_key</span><span class="w"> </span><span class="s">"/etc/ssl/nginx/protect.key.pem"</span><span class="p">;</span>
+<a href="#__codelineno-12-21" id="__codelineno-12-21" name="__codelineno-12-21"></a>
+<a href="#__codelineno-12-22" id="__codelineno-12-22" name="__codelineno-12-22"></a><span class="w">    </span><span class="c1">#...</span>
+<a href="#__codelineno-12-23" id="__codelineno-12-23" name="__codelineno-12-23"></a><span class="w">    </span><span class="c1">#...</span>
+<a href="#__codelineno-12-24" id="__codelineno-12-24" name="__codelineno-12-24"></a>
+<a href="#__codelineno-12-25" id="__codelineno-12-25" name="__codelineno-12-25"></a><span class="p">}</span>
 </code></pre></div>
 </li>
 <li>
 <p>Configure nginx to listen for TLS traffic by editing the <code>/etc/nginx/sites-enabled/default</code> file. Modify the original HTTP (port 80) listeners to enable TLS traffic on port 443:</p>
-<div class="highlight"><span class="filename">Nginx Configuration File</span><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">default_server</span><span class="p">;</span>
-<a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="k">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">default_server</span><span class="p">;</span>
+<div class="highlight"><span class="filename">Nginx Configuration File</span><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">listen</span><span class="w"> </span><span class="mi">443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">default_server</span><span class="p">;</span>
+<a href="#__codelineno-13-2" id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="k">listen</span><span class="w"> </span><span class="s">[::]:443</span><span class="w"> </span><span class="s">ssl</span><span class="w"> </span><span class="s">default_server</span><span class="p">;</span>
 </code></pre></div>
 </li>
 <li>
 <p>Provide the Protect environment variable to the nginx service by running <code>sudo systemctl edit nginx.service</code> to add a service-specific environment variable configuration. This command typically creates an override drop-in file (for example <code>/etc/systemd/system/nginx.service.d/override.conf</code>), so you don’t need to edit the main service definition directly.</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="o">[</span>Service<span class="o">]</span>
-<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nv">Environment</span><span class="o">=</span><span class="s2">"PROTECT_ADDRESS=unix:///tmp/pc-sock"</span>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="o">[</span>Service<span class="o">]</span>
+<a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="nv">Environment</span><span class="o">=</span><span class="s2">"PROTECT_ADDRESS=unix:///tmp/pc-sock"</span>
 </code></pre></div>
 </li>
 <li>
 <p>Reload the systemd daemon to apply the new service configuration:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
 </code></pre></div>
 </li>
 <li>
 <p>Start the nginx service:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>nginx
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>nginx
 </code></pre></div>
 </li>
 <li>
 <p>Test the nginx TLS web server connectivity:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost:443
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>curl<span class="w"> </span>-k<span class="w"> </span>https://localhost:443
 </code></pre></div>
 </li>
 </ol>
 <h3 id="use-a-preconfigured-docker-based-deployment">Use a preconfigured Docker-based deployment<a class="headerlink" href="#use-a-preconfigured-docker-based-deployment" title="Permanent link">↑</a></h3>
-<p>For automated nginx configuration, we offer a preconfigured Docker image. This image includes a watchdog process that monitors and automatically applies changes from Protect to nginx.</p>
+<p>For containerized deployment, we provide a Docker image that runs nginx with native PKCS#11 integration. This image includes a watchdog process that monitors and automatically applies changes from Protect to nginx.</p>
 <p>To deploy this nginx image with Protect via Docker:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,src<span class="o">=</span>/tmp/pc-sock,dst<span class="o">=</span>/tmp/pc-sock<span class="w"> </span>-p<span class="w"> </span><span class="m">4433</span>:4433<span class="w"> </span>-e<span class="w"> </span><span class="nv">PROTECT_ADDRESS</span><span class="o">=</span>unix:///tmp/pc-sock<span class="w"> </span>-e<span class="w"> </span><span class="nv">SSL_SERVER_NAME</span><span class="o">=</span>localhost<span class="w"> </span>&lt;DOCKER-IMAGE-PATH&gt;
+<ol>
+<li>
+<p>Load the provided Docker image from the release package into the local Docker registry:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>docker<span class="w"> </span>load<span class="w"> </span>&lt;<span class="w"> </span>nginx-docker-img.tar
 </code></pre></div>
+</li>
+<li>
+<p>Configure access to the <code>protect-client</code> domain socket:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>/tmp/pc-sock
+</code></pre></div>
+</li>
+<li>
+<p>Start the nginx service:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,src<span class="o">=</span>/tmp/pc-sock,dst<span class="o">=</span>/tmp/pc-sock<span class="w"> </span>-p<span class="w"> </span><span class="m">4433</span>:4433<span class="w"> </span>-e<span class="w"> </span><span class="nv">PROTECT_ADDRESS</span><span class="o">=</span>unix:///tmp/pc-sock<span class="w"> </span>-e<span class="w"> </span><span class="nv">SSL_SERVER_NAME</span><span class="o">=</span>localhost<span class="w"> </span>&lt;DOCKER-IMAGE-PATH&gt;
+</code></pre></div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code>&lt;DOCKER-IMAGE-PATH&gt;</code> will be provided to you. </p>
 </div>
 <h2 id="understanding-deployed-certificate-status">Understanding deployed certificate status<a class="headerlink" href="#understanding-deployed-certificate-status" title="Permanent link">↑</a></h2>
 <p>Once a certificate has been deployed, it’s <em>State</em> will be <strong>Active</strong> in the <em>Certificates</em> tab in AQG Protect. The <em>Protect setting</em> indicates whether the certificate is enrolled in <strong>Store &amp; Track</strong> or <strong>Fully managed</strong>.</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">↑</a></h2>
+<h3 id="check-deployment-health">Check deployment health<a class="headerlink" href="#check-deployment-health" title="Permanent link">↑</a></h3>
+<p>Run the following command to view the live logs of the deployed <code>protect-client</code> service:</p>
+<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code>```bash
+journalctl -u protect-client -f
+```
+</code></pre></div>
+<h3 id="change-the-targeted-service">Change the targeted service<a class="headerlink" href="#change-the-targeted-service" title="Permanent link">↑</a></h3>
+<p>To change the service that Protect is targeting:</p>
+<ol>
+<li>Modify the <code>workloadID</code> field in <code>/etc/protect/pc_config.json</code> to use the <code>workloadID</code> of the new service you want Protect to target.</li>
+<li>Restart the protect service:<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a>sudo systemctl restart protect-client.service
+</code></pre></div>
+</li>
+</ol>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
