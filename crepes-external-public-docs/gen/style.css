@@ -1,0 +1,76 @@
+[data-ff-with][aria-hidden='true'],
+[data-ff-with]:not([aria-hidden]),
+ff[flags][aria-hidden='true'],
+ff[flags]:not([aria-hidden]),
+.force-hidden {
+  display: none !important;
+}
+
+[data-ff-with][aria-hidden='false'],
+ff[flags][aria-hidden='false'] {
+  display: initial !important;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+li.md-nav__item span {
+  position: relative;
+}
+
+li.md-nav__item span:before {
+  content: '';
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.navigation-loaded li.md-nav__item span:before {
+  animation: none;
+}
+
+.md-nav[data-md-level='1'] {
+  z-index: 2;
+}
+.md-nav[data-md-level='2'] {
+  z-index: 3;
+}
+.md-nav[data-md-level='3'] {
+  z-index: 4;
+}
+.md-nav[data-md-level='4'] {
+  z-index: 5;
+}
+.md-nav[data-md-level='5'] {
+  z-index: 6;
+}
+.md-nav[data-md-level='6'] {
+  z-index: 7;
+}
+.md-nav[data-md-level='7'] {
+  z-index: 8;
+}
+.md-nav[data-md-level='8'] {
+  z-index: 9;
+}
+.md-nav[data-md-level='9'] {
+  z-index: 10;
+}
+
+#saq-ff-overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
