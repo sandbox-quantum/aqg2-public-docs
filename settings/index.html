@@ -376,9 +376,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-an-api-token">
+<a class="md-nav__link" href="#create-api-credentials">
 <span class="md-ellipsis">
-      Create an API token
+      Create API credentials
     </span>
 </a>
 </li>
@@ -1107,9 +1107,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-an-api-token">
+<a class="md-nav__link" href="#create-api-credentials">
 <span class="md-ellipsis">
-      Create an API token
+      Create API credentials
     </span>
 </a>
 </li>
@@ -1121,18 +1121,14 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">↑</a></h1>
-<p>Admins can create tokens for working with the AQtive Guard API. There are two token types available, with each corresponding to a specific user role and associated privileges: </p>
+<p>Admins can generate credentials for working with the AQtive Guard API. These credentials authenticate automation and data exchanges, with each type corresponding to a specific user role and associated privileges:</p>
 <ul>
-<li><strong>Uploader token</strong> - Authenticates uploads of data generated using an <a href="../data-sources/">AQtive Guard sensor</a> or supported external file format.</li>
-<li><strong>Admin token</strong> - Grants full administrator privileges for configuring data sources and automation using the AQG API. </li>
+<li><strong>Uploader credentials</strong> - Authenticates uploads of data generated using an <a href="../data-sources/">AQtive Guard sensor</a> or supported external file format.</li>
+<li><strong>Admin credentials</strong> - Grants full administrator privileges for configuring data sources and automation using the AQG API. These credentials consist of a Client ID and Client Secret.</li>
 </ul>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>API tokens are valid for 90 days, after which they expire and must be replaced with a new token.</p>
-</div>
 <p>Refer to <a href="../login-and-user-roles/#assigning-user-roles">Assigning user roles</a> for more information about user roles and privileges. </p>
 <h2 id="important-security-considerations">Important Security Considerations<a class="headerlink" href="#important-security-considerations" title="Permanent link">↑</a></h2>
-<p><strong>Sharing Admin tokens poses a significant security risk</strong> to your AQtive Guard configuration and data. Admin tokens provide unrestricted access to your account, allowing the holder to:</p>
+<p><strong>Sharing Admin credentials poses a significant security risk</strong> to your AQtive Guard configuration and data. Admin credentials provide unrestricted access to your account, allowing the holder to:</p>
 <ul>
 <li>Create and modify configurations.</li>
 <li>Set up automation.</li>
@@ -1140,20 +1136,24 @@
 </ul>
 <p>To maintain the security and integrity of your AQtive Guard account: </p>
 <ul>
-<li><strong>Protect all tokens as confidential.</strong> </li>
-<li>Only share Admin tokens with trusted administrators who have a legitimate need for full access. </li>
-<li>Ensure that all tokens are properly managed and revoked when no longer needed.</li>
+<li><strong>Protect all credentials as confidential.</strong> </li>
+<li>Only share Admin credentials with trusted administrators who have a legitimate need for full access. </li>
+<li>Ensure that all credentials are properly managed and revoked when no longer needed.</li>
 </ul>
-<h2 id="create-an-api-token">Create an API token<a class="headerlink" href="#create-an-api-token" title="Permanent link">↑</a></h2>
-<p>To create an AQG API token: </p>
+<h2 id="create-api-credentials">Create API credentials<a class="headerlink" href="#create-api-credentials" title="Permanent link">↑</a></h2>
+<p>To generate AQG API credentials: </p>
 <ol>
 <li>Log in to AQtive Guard as an administrator. </li>
-<li>In <strong>Settings</strong>, select <strong>Create Uploader token</strong> or <strong>Create Admin token</strong>. </li>
-<li>Copy and securely save the token before closing the page. </li>
+<li>In <strong>Settings</strong>, select the option to create your desired credentials:<ul>
+<li>For the <em>Uploader</em> role, select <strong>Create Uploader</strong> token.</li>
+<li>For the <em>Admin</em> role, select <strong>Create Admin token</strong>.</li>
+</ul>
+</li>
+<li>Copy and securely save the generated credentials you require before closing the page. </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The token will not be displayed again for security reasons. </p>
+<p>For security reasons, the credentials will not be displayed again after you leave the page. </p>
 </div>
 </article>
 </div>

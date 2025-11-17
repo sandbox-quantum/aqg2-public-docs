@@ -1101,9 +1101,23 @@
 <nav aria-label="Upload a trace using the API" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#upload-command">
+<a class="md-nav__link" href="#retrieve-your-client-id-and-secret">
 <span class="md-ellipsis">
-      Upload command
+      Retrieve your Client ID and Secret
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#obtain-a-temporary-access-token">
+<span class="md-ellipsis">
+      Obtain a temporary access token
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-the-token-to-upload-a-trace-file">
+<span class="md-ellipsis">
+      Use the token to upload a trace file
     </span>
 </a>
 </li>
@@ -1173,21 +1187,44 @@
 <p>The maximum size for the trace file is 4GB. </p>
 </div>
 <h3 id="upload-a-trace-using-the-api">Upload a trace using the API<a class="headerlink" href="#upload-a-trace-using-the-api" title="Permanent link">↑</a></h3>
-<p>To upload a trace using the AQG API, you’ll need: </p>
+<p>To ensure enhanced security, AQtive Guard uses a short-lived access token for API uploads instead of a single, permanent token. This workflow involves a three-step process:</p>
+<ol>
+<li>Retrieve your Client ID and Client Secret.</li>
+<li>Obtain a temporary access token using your Client ID and Secret.</li>
+<li>Use your temporary access token to upload your trace file.</li>
+</ol>
+<p>You’ll also need cURL or another configurable HTTP client.</p>
+<h4 id="retrieve-your-client-id-and-secret">Retrieve your Client ID and Secret<a class="headerlink" href="#retrieve-your-client-id-and-secret" title="Permanent link">↑</a></h4>
+<p>To retrieve your Client ID and Secret, you’ll need to create a service identity to authenticate with the API. This process creates a persisted service identity.</p>
+<p>To generate this service identity, refer to <a href="../settings/#create-api-credentials">Settings</a> to create an API token, which will provide you with your Client ID and Secret.</p>
+<h4 id="obtain-a-temporary-access-token">Obtain a temporary access token<a class="headerlink" href="#obtain-a-temporary-access-token" title="Permanent link">↑</a></h4>
+<p>Once you have your Client ID and Client Secret, use the cURL command below to obtain the temporary access token:</p>
+<p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://&lt;cluster<span class="w"> </span>fqdn&gt;/authv2/realms/aqtiveguard/protocol/openid-connect/token<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/x-www-form-urlencoded"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">"grant_type=client_credentials"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">"client_id=YOUR_CLIENT_ID"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">  </span>-d<span class="w"> </span><span class="s2">"client_secret=YOUR_CLIENT_SECRET"</span>
+</code></pre></div>
+Replace the following placeholders:</p>
 <ul>
-<li>An AQG uploader token. Refer to <a href="../settings/">Settings</a> for instructions to retrieve the token. </li>
-<li>cURL or another configurable HTTP client.</li>
+<li><code>https://&lt;cluster fqdn&gt;</code> - the hostname of your AQtive Guard cluster.</li>
+<li><code>&lt;YOUR_CLIENT_ID&gt;</code> - the Client ID you generated earlier.</li>
+<li><code>&lt;YOUR_CLIENT_SECRET&gt;</code> - the Client Secret you generated earlier.</li>
 </ul>
-<h4 id="upload-command">Upload command<a class="headerlink" href="#upload-command" title="Permanent link">↑</a></h4>
-<p>To upload your trace file, construct a shell command using the following as an example:</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">AQG_API_TOKEN</span><span class="o">=</span>&lt;uploader_token&gt;
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>curl<span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span>-XPOST<span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$AQG_API_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/jsonl'</span><span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span>-H<span class="w"> </span><span class="s2">"Content-Encoding: gzip"</span><span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span>--data-binary<span class="w"> </span><span class="s2">"@&lt;path/to/example.cst.gz&gt;"</span><span class="w"> </span><span class="se">\</span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="s2">"https://&lt;aqg host&gt;/agent/trace/v0?slotid=slot</span><span class="k">$(</span>hostname<span class="k">)</span><span class="s2">&amp;sessionid=</span><span class="k">$(</span>uuidgen<span class="k">)</span><span class="s2">&amp;assetid=</span><span class="k">$(</span>hostname<span class="k">)</span><span class="s2">"</span>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The temporary access tokens are valid for 5 minutes, after which they expire and must be replaced with a new token.</p>
+</div>
+<h4 id="use-the-token-to-upload-a-trace-file">Use the token to upload a trace file<a class="headerlink" href="#use-the-token-to-upload-a-trace-file" title="Permanent link">↑</a></h4>
+<p>Once you have a valid token, construct a shell command using the following as an example:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">YOUR_ACCESS_TOKEN</span><span class="o">=</span>&lt;access_token_from_json_response&gt;
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>curl<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span>-XPOST<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span>-H<span class="w"> </span><span class="s2">"Authorization: Bearer </span><span class="nv">$YOUR_ACCESS_TOKEN</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span>-H<span class="w"> </span><span class="s1">'Content-Type: application/jsonl'</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span>-H<span class="w"> </span><span class="s2">"Content-Encoding: gzip"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">    </span>--data-binary<span class="w"> </span><span class="s2">"@&lt;path/to/example.cst.gz&gt;"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="s2">"https://&lt;aqg host&gt;/agent/trace/v0?slotid=slot</span><span class="k">$(</span>hostname<span class="k">)</span><span class="s2">&amp;sessionid=</span><span class="k">$(</span>uuidgen<span class="k">)</span><span class="s2">&amp;assetid=</span><span class="k">$(</span>hostname<span class="k">)</span><span class="s2">"</span>
 </code></pre></div>
 <p>Replace the following placeholders:</p>
 <ul>
@@ -1209,7 +1246,7 @@
 <p class="admonition-title">Tips</p>
 <ul>
 <li>You can run the export command independently and then use multiple cURL invocations to upload multiple files as long as the same shell session remains open.</li>
-<li>Trace names aren’t explicitly specified in the cURL command, but using unique and descriptive names will help you identify and organize trace files. </li>
+<li>Trace names aren’t explicitly specified in the cURL command, but using unique and descriptive names will help you identify and organize trace files.</li>
 </ul>
 </div>
 <h2 id="data-source-labels">Data source labels<a class="headerlink" href="#data-source-labels" title="Permanent link">↑</a></h2>
