@@ -625,13 +625,27 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#export-a-traffic-log-file">
+<a class="md-nav__link" href="#export-a-decryption-log-file">
 <span class="md-ellipsis">
-      Export a traffic log file
+      Export a decryption log file
     </span>
 </a>
-<nav aria-label="Export a traffic log file" class="md-nav">
+<nav aria-label="Export a decryption log file" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#required-headers">
+<span class="md-ellipsis">
+      Required headers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-headers">
+<span class="md-ellipsis">
+      Optional headers
+    </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#set-the-date-range-filter">
 <span class="md-ellipsis">
@@ -660,13 +674,6 @@
 <a class="md-nav__link" href="#upload-a-palo-alto-networks-log-file">
 <span class="md-ellipsis">
       Upload a Palo Alto Networks log file
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#palo-alto-networks-ngfw-data">
-<span class="md-ellipsis">
-      Palo Alto Networks NGFW data
     </span>
 </a>
 </li>
@@ -1195,13 +1202,27 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#export-a-traffic-log-file">
+<a class="md-nav__link" href="#export-a-decryption-log-file">
 <span class="md-ellipsis">
-      Export a traffic log file
+      Export a decryption log file
     </span>
 </a>
-<nav aria-label="Export a traffic log file" class="md-nav">
+<nav aria-label="Export a decryption log file" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#required-headers">
+<span class="md-ellipsis">
+      Required headers
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional-headers">
+<span class="md-ellipsis">
+      Optional headers
+    </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#set-the-date-range-filter">
 <span class="md-ellipsis">
@@ -1233,13 +1254,6 @@
     </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#palo-alto-networks-ngfw-data">
-<span class="md-ellipsis">
-      Palo Alto Networks NGFW data
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </div>
@@ -1248,49 +1262,75 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="palo-alto-networks-panw">Palo Alto Networks (PANW)<a class="headerlink" href="#palo-alto-networks-panw" title="Permanent link">↑</a></h1>
-<p>AQtive Guard seamlessly integrates with Palo Alto Networks Next-Generation Firewalls (NGFW) by ingesting and analyzing <a href="#palo-alto-networks-ngfw-data">TLS handshake data</a> directly from NGFW traffic log files. By integrating these logs, AQtive Guard provides a centralized platform for analyzing potential cryptographic risks and anomalies within your network traffic.</p>
+<p>AQtive Guard seamlessly integrates with Palo Alto Networks Next-Generation Firewalls (NGFW) by ingesting and analyzing TLS handshake data directly from NGFW traffic log files. By integrating these logs, AQtive Guard provides a centralized platform for analyzing potential cryptographic risks and anomalies within your network traffic.</p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">↑</a></h2>
 <ul>
+<li>A Palo Alto NGFW running PAN-OS version 11.2 or 12.1.</li>
 <li>A valid Comma-Separated Values (CSV) traffic log file exported from a Palo Alto NGFW.</li>
 </ul>
-<h2 id="export-a-traffic-log-file">Export a traffic log file<a class="headerlink" href="#export-a-traffic-log-file" title="Permanent link">↑</a></h2>
-<p>To export a traffic log file from a Palo Alto Networks NGFW:  </p>
+<h2 id="export-a-decryption-log-file">Export a decryption log file<a class="headerlink" href="#export-a-decryption-log-file" title="Permanent link">↑</a></h2>
+<p>To export a decryption log file from a Palo Alto Networks NGFW:  </p>
 <ol>
-<li>
-<p>Select <strong>MonitorLogs</strong>.  </p>
-</li>
-<li>
-<p>Select the <strong>Traffic</strong> log type.  </p>
-</li>
-<li>
-<p>Add any filters to the <strong>filter</strong> field.  </p>
-</li>
-<li>
-<p>Export to CSV.  </p>
-</li>
+<li>Select <strong>Monitor</strong> in the main navigation bar.</li>
+<li>Under <em>Logs</em> in the sidebar on the left, select <strong>Decryption</strong>.</li>
+<li>Add any filters to the <strong>filter</strong> field.</li>
+<li>Select <strong>Export to CSV</strong>, then <strong>Download file</strong>.</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Use a filter to set a smaller <a href="#set-the-date-range-filter">date range</a> or reduce the <a href="#reduce-the-number-of-rows-to-export"><strong>Max Rows</strong></a> in CSV Export if your exported log file does not include the complete results expected.</p>
 </div>
+<h3 id="required-headers">Required headers<a class="headerlink" href="#required-headers" title="Permanent link">↑</a></h3>
+<p>The exported CSV requires the following headers to be uploaded to AQtive Guard:</p>
+<ul>
+<li><code>cert_serial</code></li>
+<li><code>fingerprint</code></li>
+<li><code>notbefore</code></li>
+<li><code>notafter</code></li>
+<li><code>Hash Algorithm</code></li>
+<li><code>Subject Common Name</code></li>
+<li><code>Issuer Subject Common Name</code></li>
+<li><code>Root Subject Common Name</code></li>
+<li><code>tls_version</code></li>
+<li><code>Source address</code></li>
+<li><code>Destination address</code></li>
+<li><code>Source Port</code></li>
+<li><code>Destination Port</code></li>
+<li><code>IP Protocol</code></li>
+<li><code>High Res Timestamp</code></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>The headers are case-sensitive and must match exactly for a successful upload. </p>
+</div>
+<h3 id="optional-headers">Optional headers<a class="headerlink" href="#optional-headers" title="Permanent link">↑</a></h3>
+<p>The following headers are optional:</p>
+<ul>
+<li><code>Client Session Resumption</code></li>
+<li><code>Client TLS Cipher Suite</code></li>
+<li><code>Client TLS Elliptic Curve</code></li>
+<li><code>Client TLS Version</code></li>
+<li><code>Server Certificate Signature Algorithm</code></li>
+<li><code>Server PQC Selected Group</code></li>
+<li><code>Server Session Resumption</code></li>
+<li><code>Server TLS Cipher Suite</code></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>The headers are case-sensitive and must match exactly for a successful upload.</p>
+</div>
 <h3 id="set-the-date-range-filter">Set the date range filter<a class="headerlink" href="#set-the-date-range-filter" title="Permanent link">↑</a></h3>
 <p>Examples of date range filters for traffic logs are:  </p>
 <ul>
-<li>All traffic for a specific date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.  </li>
-</ul>
-<ul>
-<li>All traffic received on or before the date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.  </li>
-</ul>
-<ul>
-<li>All traffic received on or after the date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.  </li>
-</ul>
-<ul>
+<li>All traffic for a specific date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.</li>
+<li>All traffic received on or before the date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.</li>
+<li>All traffic received on or after the date <code>(yyyy/mm/dd)</code> and time <code>(hh:mm:ss)</code>.</li>
 <li>All traffic received between the date-time range of <code>yyyy/mm/dd hh:mm:ss</code> and <code>yyyy/mm/dd hh:mm:ss</code>.  </li>
 </ul>
 <p>For example, to export traffic logs using the date range 08/03/2025 to 08/04/2025, add <code>(receive_time geq '2025/08/03 00:00:00')</code> and <code>(receive_time leq '2025/08/04 23:59:59')</code>to the filter field and <strong>Apply Filter</strong>.  </p>
 <p>Refer to <a href="https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-admin/monitoring/view-and-manage-logs/filter-logs" rel="noopener" target="_blank">Filter Logs</a> in the official PANW NGFW documentation for additional details. </p>
 <h3 id="reduce-the-number-of-rows-to-export">Reduce the number of rows to export<a class="headerlink" href="#reduce-the-number-of-rows-to-export" title="Permanent link">↑</a></h3>
-<p>You can export the contents of a traffic log file to a CSV-formatted report. By default, the report contains up to 2,000 rows of log entries.</p>
+<p>You can export the contents of a decryption log file to a CSV-formatted report. By default, the report contains up to 2,000 rows of log entries.</p>
 <ol>
 <li>Under <strong>Device</strong> and <strong>Setup</strong>, select <strong>Management</strong>.</li>
 <li>Select the <strong>Log Export and Reporting</strong> tab. </li>
@@ -1313,34 +1353,6 @@
 </li>
 <li>The data will begin uploading automatically.</li>
 </ol>
-<h2 id="palo-alto-networks-ngfw-data">Palo Alto Networks NGFW data<a class="headerlink" href="#palo-alto-networks-ngfw-data" title="Permanent link">↑</a></h2>
-<p>AQtive Guard ingests and analyzes the following <a href="../aqg-network-analyzer/reference/#handshake-data">TLS handshake data</a> directly from PANW NGFW traffic log files:</p>
-<ul>
-<li><code>Client Session Resumption</code></li>
-<li><code>Client TLS Cipher Suite</code></li>
-<li><code>Client TLS Elliptic Curve</code></li>
-<li><code>Client TLS Version</code></li>
-<li><code>Destination Port</code></li>
-<li><code>Destination address</code></li>
-<li><code>Hash Algorithm</code></li>
-<li><code>High Res Timestamp</code></li>
-<li><code>IP Protocol</code></li>
-<li><code>Issuer Subject Common Name</code></li>
-<li><code>Root Subject Common Name</code></li>
-<li><code>Server Certificate Signature Algorithm</code></li>
-<li><code>Server Name Indication</code></li>
-<li><code>Server PQC Selected Group</code></li>
-<li><code>Server Session Resumption</code></li>
-<li><code>Server TLS Cipher Suite</code></li>
-<li><code>Source Port</code></li>
-<li><code>Source address</code></li>
-<li><code>Subject Common Name</code></li>
-<li><code>cert_serial</code></li>
-<li><code>fingerprint</code></li>
-<li><code>notafter</code></li>
-<li><code>notbefore</code></li>
-<li><code>tls_version</code></li>
-</ul>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
