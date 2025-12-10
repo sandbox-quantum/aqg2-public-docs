@@ -557,6 +557,24 @@
       Upload a PCAP file
     </span>
 </a>
+<nav aria-label="Upload a PCAP file" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upload-a-pcap-through-the-command-line">
+<span class="md-ellipsis">
+      Upload a PCAP through the command line
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upload-a-pcap-through-the-ui">
+<span class="md-ellipsis">
+      Upload a PCAP through the UI
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1161,6 +1179,24 @@
       Upload a PCAP file
     </span>
 </a>
+<nav aria-label="Upload a PCAP file" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upload-a-pcap-through-the-command-line">
+<span class="md-ellipsis">
+      Upload a PCAP through the command line
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#upload-a-pcap-through-the-ui">
+<span class="md-ellipsis">
+      Upload a PCAP through the UI
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1182,26 +1218,45 @@
 <p>This <a href="http://www.alexonlinux.com/tcpdump-for-dummies#saving_captured_data" rel="noopener" target="_blank">tutorial</a> provides more information on using tcpdump.</p>
 <p>The AQG Network Analyzer can also process packet capture data through integrations with popular network security and monitoring platforms.</p>
 <h2 id="upload-a-pcap-file">Upload a PCAP file<a class="headerlink" href="#upload-a-pcap-file" title="Permanent link">↑</a></h2>
-<p>To upload a PCAP file to AQtive Guard:</p>
+<p>There are two ways to upload a PCAP file to AQtive Guard: through the <a href="#upload-a-pcap-through-the-command-line">command line</a> or through the <a href="#upload-a-pcap-through-the-ui">UI</a>.</p>
+<h3 id="upload-a-pcap-through-the-command-line">Upload a PCAP through the command line<a class="headerlink" href="#upload-a-pcap-through-the-command-line" title="Permanent link">↑</a></h3>
+<p>To upload a PCAP file to AQtive Guard through the command line:</p>
 <ol>
 <li>Select <strong>Settings</strong> from the main menu on the left.</li>
 <li>In the <em>Create Uploader Token</em> tile, select <strong>Create</strong>.</li>
-<li>Copy the provided token to a secure place.</li>
+<li>Copy the following values to a secure place:<ul>
+<li><code>client-id</code></li>
+<li><code>client-secret</code></li>
+</ul>
+</li>
 <li>Use the code below to push a PCAP file to AQtive Guard.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>export AQG_API_TOKEN='xxxxx'
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a># Parse and upload a trace to AQG
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>./yanadump --file capture.pcap --api-url https://API.AQG.DOMAIN/
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a># Optionally parameterize upload
-<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a># --slot-id “slt_&lt;32-hex-nibbles&gt;”
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>$ path/to/yanadump -f path/to/file.pcap \
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>  --api-url=https://your-domain.aqtiveguard.sandboxaq.com \
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>  --client-id=aqg-client-token-00000000-0000-0000-0000-000000000000-00000000000000 \
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>  --client-secret=00000000000000000000000000000000
 </code></pre></div>
 <p>In the above query:</p>
 <ul>
-<li><code>xxxxx</code> is the is the token provided earlier in step 3.</li>
-<li><code>https://API.AQG.DOMAIN/</code> is the base URL of the AQtive Guard instance, eg. <code>https://your-domain.aqtiveguard.sandboxaq.com</code>.</li>
+<li><code>api-url</code> is the base URL of your AQtive Guard instance (required). For example, <code>https://your-domain.aqtiveguard.sandboxaq.com</code>.</li>
+<li><code>client-id</code> is the client ID value you copied from step 3 (required).</li>
+<li><code>client-secret</code> is the client secret value you copied from step 3 (required).</li>
 </ul>
+<h3 id="upload-a-pcap-through-the-ui">Upload a PCAP through the UI<a class="headerlink" href="#upload-a-pcap-through-the-ui" title="Permanent link">↑</a></h3>
+<p>To upload a PCAP file to AQtive Guard through the UI:</p>
+<ol>
+<li>Navigate to <strong>Data sources</strong> from the main menu, then select <strong>Upload</strong> in the <em>AQG Network Analyzer</em> tile.</li>
+<li>To upload the PCAP, either:<ul>
+<li>Click in the target area and select the file from your local system.</li>
+<li>Drag and drop the file into the target upload area.</li>
+</ul>
+</li>
+</ol>
+<p>The data will begin uploading automatically.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The max file size that can be uploaded is 4GB.</p>
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
