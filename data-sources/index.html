@@ -1379,7 +1379,7 @@
 <p>You’ll also need cURL or another configurable HTTP client.</p>
 <h4 id="retrieve-your-client-id-and-secret">Retrieve your Client ID and Secret<a class="headerlink" href="#retrieve-your-client-id-and-secret" title="Permanent link">↑</a></h4>
 <p>To retrieve your Client ID and Secret, you’ll need to create a service identity to authenticate with the API. This process creates a persisted service identity.</p>
-<p>To generate this service identity, refer to <a href="../settings/#create-api-credentials">Settings</a> to create an API token, which will provide you with your Client ID and Secret.</p>
+<p>To generate this service identity, refer to <a href="../settings/#create-authentication-credentials">Settings</a> to create an API token, which will provide you with your Client ID and Secret.</p>
 <h4 id="obtain-a-temporary-access-token">Obtain a temporary access token<a class="headerlink" href="#obtain-a-temporary-access-token" title="Permanent link">↑</a></h4>
 <p>Once you have your Client ID and Client Secret, use the cURL command below to obtain the temporary access token:</p>
 <p><div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://&lt;cluster<span class="w"> </span>fqdn&gt;/authv2/realms/aqtiveguard/protocol/openid-connect/token<span class="w"> </span><span class="se">\</span>

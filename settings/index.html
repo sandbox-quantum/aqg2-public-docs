@@ -420,16 +420,70 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#important-security-considerations">
 <span class="md-ellipsis">
-      Important Security Considerations
+      Important security considerations
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-api-credentials">
+<a class="md-nav__link" href="#create-authentication-credentials">
 <span class="md-ellipsis">
-      Create API credentials
+      Create authentication credentials
     </span>
 </a>
+<nav aria-label="Create authentication credentials" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-client-credentials">
+<span class="md-ellipsis">
+      Create client credentials
+    </span>
+</a>
+<nav aria-label="Create client credentials" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-client-credentials">
+<span class="md-ellipsis">
+      View client credentials
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revoke-client-credentials">
+<span class="md-ellipsis">
+      Revoke client credentials
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-an-api-token">
+<span class="md-ellipsis">
+      Create an API token
+    </span>
+</a>
+<nav aria-label="Create an API token" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-api-tokens">
+<span class="md-ellipsis">
+      View API tokens
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revoke-an-api-token">
+<span class="md-ellipsis">
+      Revoke an API token
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1284,16 +1338,70 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#important-security-considerations">
 <span class="md-ellipsis">
-      Important Security Considerations
+      Important security considerations
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#create-api-credentials">
+<a class="md-nav__link" href="#create-authentication-credentials">
 <span class="md-ellipsis">
-      Create API credentials
+      Create authentication credentials
     </span>
 </a>
+<nav aria-label="Create authentication credentials" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-client-credentials">
+<span class="md-ellipsis">
+      Create client credentials
+    </span>
+</a>
+<nav aria-label="Create client credentials" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-client-credentials">
+<span class="md-ellipsis">
+      View client credentials
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revoke-client-credentials">
+<span class="md-ellipsis">
+      Revoke client credentials
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#create-an-api-token">
+<span class="md-ellipsis">
+      Create an API token
+    </span>
+</a>
+<nav aria-label="Create an API token" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#view-api-tokens">
+<span class="md-ellipsis">
+      View API tokens
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#revoke-an-api-token">
+<span class="md-ellipsis">
+      Revoke an API token
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1303,14 +1411,19 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">↑</a></h1>
-<p>Admins can generate credentials for working with the AQtive Guard API. These credentials authenticate automation and data exchanges, with each type corresponding to a specific user role and associated privileges:</p>
+<p>Admins can generate <strong><a href="#create-client-credentials">client credentials</a></strong> or an <strong><a href="#create-an-api-token">API token</a></strong> for working with the AQtive Guard API. These methods authenticate automation and data exchanges, with each type corresponding to a specific user role and associated privileges:</p>
 <ul>
-<li><strong>Uploader credentials</strong> - Authenticates uploads of data generated using an <a href="../data-sources/">AQtive Guard sensor</a> or supported external file format.</li>
-<li><strong>Admin credentials</strong> - Grants full administrator privileges for configuring data sources and automation using the AQG API. These credentials consist of a Client ID and Client Secret.</li>
+<li><strong>Client credentials</strong> - consist of a <code>client ID</code> and <code>client secret</code>.</li>
+<li><strong>API tokens</strong> - a single-string bearer token often used for command-line tools, or temporary access.</li>
+</ul>
+<p>Regardless of the method used, you must assign a role to define the level of access:</p>
+<ul>
+<li><strong>Uploader</strong> - Authenticates uploads of data generated using an <a href="../data-sources/">AQtive Guard sensor</a> or supported external file format.</li>
+<li><strong>Admin</strong> - Grants full administrator privileges for configuring data sources and automation using the AQG API.</li>
 </ul>
 <p>Refer to <a href="../login-and-user-roles/#assigning-user-roles">Assigning user roles</a> for more information about user roles and privileges. </p>
-<h2 id="important-security-considerations">Important Security Considerations<a class="headerlink" href="#important-security-considerations" title="Permanent link">↑</a></h2>
-<p><strong>Sharing Admin credentials poses a significant security risk</strong> to your AQtive Guard configuration and data. Admin credentials provide unrestricted access to your account, allowing the holder to:</p>
+<h2 id="important-security-considerations">Important security considerations<a class="headerlink" href="#important-security-considerations" title="Permanent link">↑</a></h2>
+<p><strong>Sharing admin-level credentials poses a significant security risk</strong> to your AQtive Guard configuration and data. Admin credentials provide unrestricted access to your account, allowing the holder to:</p>
 <ul>
 <li>Create and modify configurations.</li>
 <li>Set up automation.</li>
@@ -1322,21 +1435,58 @@
 <li>Only share Admin credentials with trusted administrators who have a legitimate need for full access. </li>
 <li>Ensure that all credentials are properly managed and revoked when no longer needed.</li>
 </ul>
-<h2 id="create-api-credentials">Create API credentials<a class="headerlink" href="#create-api-credentials" title="Permanent link">↑</a></h2>
-<p>To generate AQG API credentials: </p>
+<h2 id="create-authentication-credentials">Create authentication credentials<a class="headerlink" href="#create-authentication-credentials" title="Permanent link">↑</a></h2>
+<p>The following sections explain how to generate each type of authentication credentials. </p>
+<h3 id="create-client-credentials">Create client credentials<a class="headerlink" href="#create-client-credentials" title="Permanent link">↑</a></h3>
+<p>To generate AQG client credentials: </p>
 <ol>
 <li>Log in to AQtive Guard as an administrator. </li>
-<li>In <strong>Settings</strong>, select the option to create your desired credentials:<ul>
-<li>For the <em>Uploader</em> role, select <strong>Create Uploader</strong> token.</li>
-<li>For the <em>Admin</em> role, select <strong>Create Admin token</strong>.</li>
-</ul>
-</li>
-<li>Copy and securely save the generated credentials you require before closing the page. </li>
+<li>Select <strong>Settings</strong>, then <strong>Client credentials</strong>.</li>
+<li>Select <strong>Create credential</strong> and enter a name for the credential.</li>
+<li>Choose either an <strong>Admin</strong> or <strong>Uploader</strong> credential, then select <strong>Create</strong>.</li>
+<li>Copy and securely save the generated credentials you require before closing the page.</li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For security reasons, the credentials will not be displayed again after you leave the page. </p>
-</div>
+<h4 id="view-client-credentials">View client credentials<a class="headerlink" href="#view-client-credentials" title="Permanent link">↑</a></h4>
+<p>To view AQG client credential details:</p>
+<ol>
+<li>Log in to AQtive Guard as an administrator. </li>
+<li>Select <strong>Settings</strong>, then <strong>Client credentials</strong>.</li>
+<li>Locate the credential you’re interested in and select <strong>Details</strong> at the end of the row.</li>
+</ol>
+<h4 id="revoke-client-credentials">Revoke client credentials<a class="headerlink" href="#revoke-client-credentials" title="Permanent link">↑</a></h4>
+<p>To revoke AQG client credentials:</p>
+<ol>
+<li>Log in to AQtive Guard as an administrator. </li>
+<li>Select <strong>Settings</strong>, then <strong>Client credentials</strong>.</li>
+<li>Locate the credential you want to revoke in the table and select <strong>Details</strong> at the end of the row.</li>
+<li>Select <strong>Revoke</strong>.</li>
+<li>Confirm the action to instantly invalidate the credentials and block all future requests.</li>
+</ol>
+<h3 id="create-an-api-token">Create an API token<a class="headerlink" href="#create-an-api-token" title="Permanent link">↑</a></h3>
+<p>To generate an AQG API token:</p>
+<ol>
+<li>Log in to AQtive Guard as an administrator. </li>
+<li>Select <strong>Settings</strong>, then <strong>API tokens</strong>.</li>
+<li>Select <strong>Create API token</strong> and enter a name for the token.</li>
+<li>Choose either an <strong>Admin</strong> or <strong>Uploader</strong> token, then select <strong>Create</strong>.</li>
+<li>Copy and securely save the generated token you require before closing the page. </li>
+</ol>
+<h4 id="view-api-tokens">View API tokens<a class="headerlink" href="#view-api-tokens" title="Permanent link">↑</a></h4>
+<p>To view AQG API token details:</p>
+<ol>
+<li>Log in to AQtive Guard as an administrator. </li>
+<li>Select <strong>Settings</strong>, then <strong>API tokens</strong>.</li>
+<li>Locate the token you’re interested in and select <strong>Details</strong> at the end of the row.</li>
+</ol>
+<h4 id="revoke-an-api-token">Revoke an API token<a class="headerlink" href="#revoke-an-api-token" title="Permanent link">↑</a></h4>
+<p>To revoke an AQG API token:</p>
+<ol>
+<li>Log in to AQtive Guard as an administrator. </li>
+<li>Select <strong>Settings</strong>, then <strong>API tokens</strong>.</li>
+<li>Locate the token you want to revoke in the table and select <strong>Details</strong> at the end of the row.</li>
+<li>Select <strong>Revoke</strong>.</li>
+<li>Confirm the action to instantly invalidate the token and block all future requests.</li>
+</ol>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
