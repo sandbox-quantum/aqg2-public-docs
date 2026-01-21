@@ -8,13 +8,3 @@ a[target='_blank']:after {
   transform: translate(0.1em, 0.33em);
   margin-right: 0.1em;
 }
-
-/**
- * Override the default grid-template-rows for the navigation panel
- * to preserve correct vertical spacing between nav items.
- *
- * See https://github.com/squidfunk/mkdocs-material/issues/7978
- */
-.md-nav__toggle ~ .md-nav {
-  grid-template-rows: minmax(8px, 0fr);
-}

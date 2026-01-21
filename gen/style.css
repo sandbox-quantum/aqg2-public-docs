@@ -74,3 +74,13 @@ li.md-nav__item span:before {
   right: 0;
   background-color: white;
 }
+
+/**
+ * Override the default grid-template-rows for the navigation panel
+ * to preserve correct vertical spacing between nav items.
+ *
+ * See https://github.com/squidfunk/mkdocs-material/issues/7978
+ */
+.md-nav__toggle ~ .md-nav {
+  grid-template-rows: minmax(8px, 0fr);
+}
