@@ -180,7 +180,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../dashboard/">
 <span class="md-ellipsis">
-    Dashboard
+    Dashboards
   </span>
 </a>
 </li>
@@ -424,6 +424,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../tags/">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
@@ -431,19 +438,19 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_3">
+<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
@@ -480,19 +487,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_4">
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
 <span class="md-nav__icon md-icon"></span>
             AQG Java Tracer
           </label>
@@ -515,19 +522,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_6" id="__nav_18_6_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_5">
+<nav aria-expanded="false" aria-labelledby="__nav_18_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_6">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
@@ -707,13 +714,6 @@
 </a>
 <nav aria-label="Use" class="md-nav">
 <ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ingest-qualys-secrets">
-<span class="md-ellipsis">
-      Ingest Qualys secrets
-    </span>
-</a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#ingest-qualys-certificates">
 <span class="md-ellipsis">
@@ -1444,13 +1444,6 @@
 <nav aria-label="Use" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#ingest-qualys-secrets">
-<span class="md-ellipsis">
-      Ingest Qualys secrets
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#ingest-qualys-certificates">
 <span class="md-ellipsis">
       Ingest Qualys certificates
@@ -1491,19 +1484,12 @@
 <h1 id="qualys">Qualys<a class="headerlink" href="#qualys" title="Permanent link">↑</a></h1>
 <p>Integration with Qualys enables you to import scans from Qualys and generate a centralized cryptographic analysis of the available data:</p>
 <ul>
-<li><strong>Secrets</strong> - In Qualys, container secrets are digital credentials providing identity authentication and authorizing access to privileged accounts, applications, and services.</li>
 <li><strong>Certificates</strong> - Digitally signed documents used to verify the identity of a server or website.</li>
 <li><strong>TLS Configs</strong> - Capture the cryptography used in a handshake between a client and server to negotiate the encryption protocols and algorithms used for secure communication.</li>
 </ul>
 <h2 id="qualys-requirements">Qualys requirements<a class="headerlink" href="#qualys-requirements" title="Permanent link">↑</a></h2>
 <ul>
-<li>An active license for the following Qualys modules:<ul>
-<li>Certificate View (CertView)</li>
-<li>Container Security</li>
-</ul>
-</li>
-</ul>
-<ul>
+<li>An active license for the <strong>Certificate View (CertView)</strong> Qualys module.</li>
 <li>The <strong>Qualys Gateway URL</strong> you will connect to. Refer to <a href="https://www.qualys.com/platform-identification/" rel="noopener" target="_blank">Identify your Qualys platform</a>.</li>
 <li>A <strong>username</strong> and <strong>password</strong> for the Qualys admin account to be used for authentication.</li>
 </ul>
@@ -1528,25 +1514,17 @@
 <p>Following the principle of least privilege, enable only the modules and permissions required for API access. All other modules and permissions should be manually disabled (unchecked).</p>
 <ol>
 <li>Under <em>Edit permissions for this role</em>, enable <strong>API Access</strong> by selecting the checkbox.</li>
+<li>Search for the <strong>Certificate View</strong> module in the Modules dropdown and select it.</li>
 <li>
-<p>Search for the following required modules in the Modules dropdown and select them: </p>
+<p>To update permissions for the module, select <strong>Change</strong> and expand its list of permission groups. Configure the permissions as follows:</p>
 <ul>
-<li><strong>Certificate View</strong></li>
-<li><strong>Container Security</strong> 
-3. To update permissions for each module, select <strong>Change</strong> and expand its list of permission groups. Configure permissions as follows:</li>
-<li><strong>Certificate View</strong> <strong>module</strong> <p>* Under <em>CERTVIEW Permissions,</em> enable <code>CERTVIEW API Access</code><strong>.</strong> </p>
-</li>
+<li>Under <em>CERTVIEW Permissions</em>, enable <code>CERTVIEW API Access</code><strong>.</strong> </li>
 </ul>
-<ul>
+</li>
 <li>
-<p><strong>Container Security module</strong> </p>
-<p>* Under <em>CS Image Permissions</em>, select <code>List Image/s</code>.</p>
-<p>* Under <em>CS Permissions</em>, select <code>CS API Access</code>. 
-4. Once you’ve selected the required modules and permissions, select <strong>Continue</strong>.
-5. Under <em>Review and confirm role permissions</em>, select <strong>Finish</strong>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../images/qualys-permissions.png"><img alt="Qualys Review and confirm role permissions tab showing Name is AQTIVE GUARD and only required permissions are selected" src="../../images/qualys-permissions.png" width="550"/></a></p>
+<p>Once you’ve selected the required modules and permissions, select <strong>Continue</strong>.</p>
 </li>
-</ul>
+<li>Under <em>Review and confirm role permissions</em>, select <strong>Finish</strong>.<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../images/qualys-permissions.png"><img alt="Qualys Review and confirm role permissions tab showing Name is AQTIVE GUARD and only required permissions are selected" src="../../images/qualys-permissions.png" width="550"/></a></p>
 </li>
 </ol>
 <h3 id="create-an-aqtive-guard-user">Create an AQtive Guard user<a class="headerlink" href="#create-an-aqtive-guard-user" title="Permanent link">↑</a></h3>
@@ -1591,12 +1569,12 @@
 <p>Selecting <strong>Submit</strong> performs the same check as the <em>Test connection</em> button, in addition to verifying the username and password are valid.</p>
 </div>
 <h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">↑</a></h2>
-<p>Once the integration is configured, there are three types of Qualys ingestions available: Secrets, Certificates, and Handshakes. </p>
+<p>Once the integration is configured, there are two types of Qualys ingestions available: Certificates and Handshakes. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Only one type of ingestion can be active at a time.</p>
 </div>
-<p>All of these processes:</p>
+<p>Both of these processes:</p>
 <ol>
 <li>Ping the Qualys API.  </li>
 <li>Extract the relevant data.  </li>
@@ -1607,12 +1585,6 @@
 <p class="admonition-title">Note</p>
 <p>If the Qualys settings aren’t configured, the ingestion options will be disabled.</p>
 </div>
-<h3 id="ingest-qualys-secrets">Ingest Qualys secrets<a class="headerlink" href="#ingest-qualys-secrets" title="Permanent link">↑</a></h3>
-<p>To ingest secrets data from Qualys:</p>
-<ol>
-<li>Select <strong>Data sources</strong> from the main menu, then select <strong>Details</strong> in the <em>Qualys</em> panel.</li>
-<li>Select <strong>Start secrets ingestion</strong> to trigger the ingestion of secrets data into AQtive Guard.</li>
-</ol>
 <h3 id="ingest-qualys-certificates">Ingest Qualys certificates<a class="headerlink" href="#ingest-qualys-certificates" title="Permanent link">↑</a></h3>
 <p>To ingest certificate data from Qualys:</p>
 <ol>
@@ -1628,7 +1600,7 @@
 <h3 id="view-qualys-data">View Qualys data<a class="headerlink" href="#view-qualys-data" title="Permanent link">↑</a></h3>
 <p>Once the ingestion is complete, any relevant data will begin populating. To find it:</p>
 <ul>
-<li>From <a href="../../inventory/"><strong>Inventory</strong></a>, select either the <strong>Secrets</strong>, <strong>Certificates</strong>, <strong>Handshakes</strong>, <strong>Hosts</strong> or <strong>Container images</strong> tab, depending on the ingestion type. </li>
+<li>From <a href="../../inventory/"><strong>Inventory</strong></a>, select either the <strong>Certificates</strong>, <strong>Handshakes</strong>, <strong>Hosts</strong> or <strong>Container images</strong> tab, depending on the ingestion type. </li>
 </ul>
 <p>Look for the <em>Qualys</em> tag in the <em>Data sources</em> column.</p>
 <h2 id="unlink-the-qualys-integration">Unlink the Qualys integration<a class="headerlink" href="#unlink-the-qualys-integration" title="Permanent link">↑</a></h2>

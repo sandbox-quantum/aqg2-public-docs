@@ -5,18 +5,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://docs.aqtiveguard.com/ai-spm-rules-reference/missing-model-evaluation-6/" rel="canonical"/>
-<link href="../missing-input-guardrails-3/" rel="prev"/>
-<link href="../missing-model-metadata-1a/" rel="next"/>
+<link href="https://docs.aqtiveguard.com/data-sources/tags/" rel="canonical"/>
+<link href="../" rel="prev"/>
+<link href="../aqg-file-inspector/" rel="next"/>
 <link href="../../images/icons/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.27" name="generator"/>
-<title>Missing model evaluation - AQtive Guard User Guide</title>
+<title>Tags - AQtive Guard User Guide</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../../gen/style.css" rel="stylesheet"/>
 <link href="../../__static__/css/style.css" rel="stylesheet"/>
 <link href="../../stylesheets/custom-admonition.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta flags="EnableInventoryTagsDisplay" flagvalues="" name="flags" redirectto="../..">
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -26,18 +27,19 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></link></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></link></meta></head>
 <body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#login-required">
+<a class="md-skip" href="#tags">
           Skip to content
         </a>
 </div>
 <div data-md-component="announce">
 </div>
+<div id="saq-ff-overlay"></div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="AQtive Guard User Guide" class="md-header__button md-logo" data-md-component="logo" href="../.." title="AQtive Guard User Guide">
@@ -54,8 +56,7 @@
 </div>
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
-            
-              Missing model evaluation
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
             
           </span>
 </div>
@@ -405,10 +406,10 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_18" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../data-sources/">
+<a class="md-nav__link" href="../">
 <span class="md-ellipsis">
     Data sources
   </span>
@@ -417,21 +418,172 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_18_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_18">
 <span class="md-nav__icon md-icon"></span>
             Data sources
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/tags/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
 <ff flags="EnableInventoryTagsDisplay"></ff>Tags
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tag-structure">
+<span class="md-ellipsis">
+      Tag structure
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-file-inspector/">
+<a class="md-nav__link" href="#adding-tags-during-a-scan">
+<span class="md-ellipsis">
+      Adding tags during a scan
+    </span>
+</a>
+<nav aria-label="Adding tags during a scan" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standard-tagging">
+<span class="md-ellipsis">
+      Standard tagging
+    </span>
+</a>
+<nav aria-label="Standard tagging" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example">
+<span class="md-ellipsis">
+      Example
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#literal-tagging">
+<span class="md-ellipsis">
+      Literal tagging
+    </span>
+</a>
+<nav aria-label="Literal tagging" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example_1">
+<span class="md-ellipsis">
+      Example
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inventory">
+<span class="md-ellipsis">
+      Inventory
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#secret-details">
+<span class="md-ellipsis">
+      Secret details
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialized-scanning-use-cases">
+<span class="md-ellipsis">
+      Specialized scanning use cases
+    </span>
+</a>
+<nav aria-label="Specialized scanning use cases" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#windows-certificate-stores">
+<span class="md-ellipsis">
+      Windows certificate stores
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tagging-parameters-reference">
+<span class="md-ellipsis">
+      Tagging parameters reference
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-world-example-multi-region-compliance-audit">
+<span class="md-ellipsis">
+      Real-world example: Multi-region compliance audit
+    </span>
+</a>
+<nav aria-label="Real-world example: Multi-region compliance audit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-goal">
+<span class="md-ellipsis">
+      The goal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation">
+<span class="md-ellipsis">
+      Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-aqtive-guard-helps">
+<span class="md-ellipsis">
+      How AQtive Guard helps
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
   </span>
@@ -440,7 +592,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../data-sources/aqg-filesystem-scanner/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
@@ -456,28 +608,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-filesystem-scanner/windows-getting-started-guide/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/windows-getting-started-guide/">
 <span class="md-ellipsis">
     Windows getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-filesystem-scanner/linux-getting-started-guide/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/linux-getting-started-guide/">
 <span class="md-ellipsis">
     Linux getting started guide
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-filesystem-scanner/supported-formats/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/supported-formats/">
 <span class="md-ellipsis">
     Supported formats
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-filesystem-scanner/reference/">
+<a class="md-nav__link" href="../aqg-filesystem-scanner/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -489,7 +641,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../data-sources/aqg-java-tracer/">
+<a class="md-nav__link" href="../aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
@@ -505,14 +657,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-java-tracer/getting-started/">
+<a class="md-nav__link" href="../aqg-java-tracer/getting-started/">
 <span class="md-ellipsis">
     Getting started
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-java-tracer/reference/">
+<a class="md-nav__link" href="../aqg-java-tracer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -524,7 +676,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/">
+<a class="md-nav__link" href="../aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
@@ -540,42 +692,42 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/getting-started-with-pcap-upload/">
+<a class="md-nav__link" href="../aqg-network-analyzer/getting-started-with-pcap-upload/">
 <span class="md-ellipsis">
     Getting started with PCAP Upload
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
+<a class="md-nav__link" href="../aqg-network-analyzer/getting-started-with-live-network-traffic-monitoring/">
 <span class="md-ellipsis">
     Getting started with Live Network Traffic Monitoring
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/memory/">
+<a class="md-nav__link" href="../aqg-network-analyzer/memory/">
 <span class="md-ellipsis">
     Memory usage
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
+<a class="md-nav__link" href="../aqg-network-analyzer/gcp-packet-mirroring-tutorial/">
 <span class="md-ellipsis">
     GCP Packet Mirroring Tutorial
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/troubleshooting/">
+<a class="md-nav__link" href="../aqg-network-analyzer/troubleshooting/">
 <span class="md-ellipsis">
     Troubleshooting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aqg-network-analyzer/reference/">
+<a class="md-nav__link" href="../aqg-network-analyzer/reference/">
 <span class="md-ellipsis">
     Reference
   </span>
@@ -585,63 +737,63 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aws/">
+<a class="md-nav__link" href="../aws/">
 <span class="md-ellipsis">
 <ff flags="EnableAwsV2"></ff>AWS
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/aws-kms/">
+<a class="md-nav__link" href="../aws-kms/">
 <span class="md-ellipsis">
 <ff flags="EnableAwsKmsDataSource"></ff>AWS Key Management Service
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/cbom/">
+<a class="md-nav__link" href="../cbom/">
 <span class="md-ellipsis">
     CBOM
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/crowdstrike/">
+<a class="md-nav__link" href="../crowdstrike/">
 <span class="md-ellipsis">
     CrowdStrike
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/github/">
+<a class="md-nav__link" href="../github/">
 <span class="md-ellipsis">
     GitHub
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/palo-alto-networks/">
+<a class="md-nav__link" href="../palo-alto-networks/">
 <span class="md-ellipsis">
     Palo Alto Networks
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/qualys/">
+<a class="md-nav__link" href="../qualys/">
 <span class="md-ellipsis">
     Qualys
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/sentinelone/">
+<a class="md-nav__link" href="../sentinelone/">
 <span class="md-ellipsis">
     SentinelOne
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../data-sources/servicenow/">
+<a class="md-nav__link" href="../servicenow/">
 <span class="md-ellipsis">
     ServiceNow
   </span>
@@ -678,10 +830,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_20" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_20" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/">
 <span class="md-ellipsis">
     AI-SPM rules reference
   </span>
@@ -690,106 +842,105 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_20_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_20_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_20">
 <span class="md-nav__icon md-icon"></span>
             AI-SPM rules reference
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../excessive-tool-autonomy-without-guardrails-4/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/excessive-tool-autonomy-without-guardrails-4/">
 <span class="md-ellipsis">
     Excessive tool autonomy without guardrails
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../insufficient-guardrail-coverage-for-tools-5/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/insufficient-guardrail-coverage-for-tools-5/">
 <span class="md-ellipsis">
     Insufficient guardrails for tools
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-jailbreak-resistance-score-7/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-jailbreak-resistance-score-7/">
 <span class="md-ellipsis">
     Low jailbreak resistance score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-misuse-score-10/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-misuse-score-10/">
 <span class="md-ellipsis">
     Low misuse score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-overall-evaluation-score-12/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-overall-evaluation-score-12/">
 <span class="md-ellipsis">
     Low overall evaluation score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-robustness-score-8/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-robustness-score-8/">
 <span class="md-ellipsis">
     Low robustness score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-security-score-9/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-security-score-9/">
 <span class="md-ellipsis">
     Low security score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../low-toxicity-resistance-score-11/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/low-toxicity-resistance-score-11/">
 <span class="md-ellipsis">
     Low toxicity resistance score
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../missing-agent-metadata-1b/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/missing-agent-metadata-1b/">
 <span class="md-ellipsis">
     Missing agent metadata
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../missing-input-guardrails-3/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/missing-input-guardrails-3/">
 <span class="md-ellipsis">
     Missing input guardrails
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/missing-model-evaluation-6/">
 <span class="md-ellipsis">
     Missing model evaluation
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../missing-model-metadata-1a/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/missing-model-metadata-1a/">
 <span class="md-ellipsis">
     Missing model metadata
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../missing-output-guardrails-2/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/missing-output-guardrails-2/">
 <span class="md-ellipsis">
     Missing output guardrails
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../model-serialization-issues-detected-13/">
+<a class="md-nav__link" href="../../ai-spm-rules-reference/model-serialization-issues-detected-13/">
 <span class="md-ellipsis">
     Model serialization issues detected
   </span>
@@ -1255,14 +1406,287 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tag-structure">
+<span class="md-ellipsis">
+      Tag structure
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#adding-tags-during-a-scan">
+<span class="md-ellipsis">
+      Adding tags during a scan
+    </span>
+</a>
+<nav aria-label="Adding tags during a scan" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#standard-tagging">
+<span class="md-ellipsis">
+      Standard tagging
+    </span>
+</a>
+<nav aria-label="Standard tagging" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example">
+<span class="md-ellipsis">
+      Example
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#literal-tagging">
+<span class="md-ellipsis">
+      Literal tagging
+    </span>
+</a>
+<nav aria-label="Literal tagging" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example_1">
+<span class="md-ellipsis">
+      Example
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use">
+<span class="md-ellipsis">
+      Use
+    </span>
+</a>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inventory">
+<span class="md-ellipsis">
+      Inventory
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#secret-details">
+<span class="md-ellipsis">
+      Secret details
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#specialized-scanning-use-cases">
+<span class="md-ellipsis">
+      Specialized scanning use cases
+    </span>
+</a>
+<nav aria-label="Specialized scanning use cases" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#windows-certificate-stores">
+<span class="md-ellipsis">
+      Windows certificate stores
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tagging-parameters-reference">
+<span class="md-ellipsis">
+      Tagging parameters reference
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#real-world-example-multi-region-compliance-audit">
+<span class="md-ellipsis">
+      Real-world example: Multi-region compliance audit
+    </span>
+</a>
+<nav aria-label="Real-world example: Multi-region compliance audit" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-goal">
+<span class="md-ellipsis">
+      The goal
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementation">
+<span class="md-ellipsis">
+      Implementation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-aqtive-guard-helps">
+<span class="md-ellipsis">
+      How AQtive Guard helps
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="login-required">Login required<a class="headerlink" href="#login-required" title="Permanent link">↑</a></h1>
-<p>To view this content, please log in to your AQtive Guard account.</p>
+<h1 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">↑</a></h1>
+<p>Tags are key-value pairs used to label inventory items, such as certificates, keys, secrets, and assets, during data collection. Applying tags when running a scan allows you to organize your security posture by business context, such as <strong>Environment</strong>, <strong>Owner</strong>, <strong>Department</strong>, or <strong>Application</strong>.</p>
+<p>Once ingested, these tags become primary filters in the AQtive Guard <strong>Inventory</strong> dashboard. AQtive Guard tracks the <em>last seen</em> date for every tag association, ensuring your inventory remains current as your environment evolves.</p>
+<h2 id="tag-structure">Tag structure<a class="headerlink" href="#tag-structure" title="Permanent link">↑</a></h2>
+<p>AQtive Guard uses a two-part structure to organize metadata:</p>
+<ul>
+<li><strong>Category:</strong> The broad label or key that defines the type of metadata, such as <strong>Region</strong>, <strong>Department</strong>, or <strong>Application</strong>.</li>
+<li><strong>Value:</strong> The specific descriptor assigned to a category. For example, if the category is <strong>Region</strong>, the value might be <strong>EMEA</strong> or <strong>US-East</strong>.</li>
+</ul>
+<p>Together, a category and value form a single tag (<code>category=value</code>).</p>
+<h2 id="adding-tags-during-a-scan">Adding tags during a scan<a class="headerlink" href="#adding-tags-during-a-scan" title="Permanent link">↑</a></h2>
+<p>When running a sensor, such as the <a href="../aqg-filesystem-scanner/">Filesystem Scanner</a>, you can provide tags through command-line arguments. AQtive Guard supports two primary methods for inputting tags to handle both simple and complex metadata.</p>
+<h3 id="standard-tagging">Standard tagging<a class="headerlink" href="#standard-tagging" title="Permanent link">↑</a></h3>
+<p>Standard tagging uses the <code>--tag</code> parameter and provides a streamlined way to manually categorize data. This method parses categories and values based on specific delimiters, assuming the following characters are not part of the actual tag text:</p>
+<ul>
+<li><strong>Equals sign</strong> (<code>=</code>): Use an equals sign to link a category to its value (for example, category=<code>value</code>).</li>
+<li><strong>Comma</strong> (<code>,</code>): Use a comma to assign several values to one category at once (for example, category=<code>value1</code>,<code>value2</code>).</li>
+</ul>
+<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">↑</a></h4>
+<p>The following PowerShell command demonstrates how to apply multiple tags during a scan:</p>
+<div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">.\</span><span class="n">cs-host-scanner</span><span class="p">.</span><span class="n">exe</span> <span class="p">`</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>  <span class="p">-</span><span class="n">-root</span> <span class="n">C</span><span class="p">:\</span><span class="n">data</span> <span class="p">`</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>  <span class="p">-</span><span class="n">-tag</span> <span class="n">env</span><span class="p">=</span><span class="n">production</span><span class="p">,</span><span class="n">web-server</span> <span class="p">`</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>  <span class="p">-</span><span class="n">-tag</span> <span class="n">team</span><span class="p">=</span><span class="n">finance</span> <span class="p">`</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>  <span class="p">-</span><span class="n">-output</span> <span class="n">scan</span><span class="p">.</span><span class="n">cst</span><span class="p">.</span><span class="n">gz</span>
+</code></pre></div>
+<p>This example assigns “production” and “web-server” values to the <code>env</code> key, while the <code>team</code> key is labeled as “finance.”</p>
+<h3 id="literal-tagging">Literal tagging<a class="headerlink" href="#literal-tagging" title="Permanent link">↑</a></h3>
+<p>Literal tagging uses the <code>--tag-pair</code> parameter when your categories or values contain special characters, such as commas or equals signs, that must be preserved. This captures the string exactly as typed.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This flag requires two distinct parameters: the <strong>Category</strong> name followed by the <strong>Value</strong>.</p>
+</div>
+<h4 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">↑</a></h4>
+<p>The following Bash command demonstrates how to use literal tagging to handle values containing special characters:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>./cs-host-scanner<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span>--root<span class="w"> </span>/etc/crypto<span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span>--tag-pair<span class="w"> </span>business-unit<span class="w"> </span><span class="s2">"Sales, Marketing &amp; PR"</span><span class="w"> </span><span class="se">\</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span>--tag-pair<span class="w"> </span>version<span class="w"> </span><span class="s2">"v1.0=stable"</span>
+</code></pre></div>
+<p>This example assigns “Sales, Marketing &amp; PR” to the <code>business-unit</code> key, while the <code>version</code> key is labeled as “v1.0=stable.”</p>
+<h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">↑</a></h2>
+<p>Once your data is uploaded, you can view your tags directly in AQtive Guard.</p>
+<h3 id="inventory">Inventory<a class="headerlink" href="#inventory" title="Permanent link">↑</a></h3>
+<p>Across all tabs in the <em><a href="../../inventory/">Inventory</a></em> table, tags are displayed in the <strong>Imported tags</strong> column. This provides a high-level view of the metadata associated with each discovered item, allowing you to quickly identify ownership or environment at a glance.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Beyond just viewing, you can use these tags to narrow down your inventory list. By applying a tag filter, you can create custom views focused on specific business contexts (for example, viewing only “Production” secrets). Refer to <a href="../../filters-and-data-enrichment/filters/">Filters</a> for details.</p>
+</div>
+<p>To view imported tags:</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Inventory</strong> from the main menu.</li>
+<li>Under the <em>Cryptography</em> section, select the data type you’re interested in.</li>
+<li>Locate the specific entry you’re interested in and view the <em>Imported tags</em> column to see the metadata associated with that record.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don’t see the <strong>Imported tags</strong> column, select the <strong>Columns</strong> button, check the box for <strong>Imported tags</strong>, and select <strong>Apply</strong> to make it visible.</p>
+</div>
+<h3 id="secret-details">Secret details<a class="headerlink" href="#secret-details" title="Permanent link">↑</a></h3>
+<p>For more granular inspection within the <strong>Secrets</strong> tab, you can click on <strong>Details</strong> for any specific entry. This view presents the raw imported tags, ensuring you can see the exact key-value pairs assigned during the scan—including those containing special characters applied via literal tagging.</p>
+<p>To view secret details:</p>
+<ol>
+<li>Log in to AQtive Guard and select <strong>Inventory</strong> from the main menu.</li>
+<li>Under the <em>Cryptography</em> section, select <strong>Secrets</strong>.</li>
+<li>Locate the specific secret you’re interested in and select <strong>Details</strong> at the end of the row.</li>
+<li>Under the <em>Overview</em> tab, select <strong>Raw imported tags</strong>.</li>
+</ol>
+<p>This view shows the raw imported tags, ensuring you can see the exact key-value pairs assigned during the scan, including those containing special characters applied through <a href="#literal-tagging">literal tagging</a>.</p>
+<h2 id="specialized-scanning-use-cases">Specialized scanning use cases<a class="headerlink" href="#specialized-scanning-use-cases" title="Permanent link">↑</a></h2>
+<p>Certain scanning environments require specific tagging strategies to ensure that the unique properties of the assets, such as store types or host-specific data, are preserved and easily searchable.</p>
+<h3 id="windows-certificate-stores">Windows certificate stores<a class="headerlink" href="#windows-certificate-stores" title="Permanent link">↑</a></h3>
+<p>For certificate store scans, use tags to categorize data by machine location or administrative ownership.</p>
+<p>The following code demonstrates how to scan local stores while applying both literal and standard tags:</p>
+<div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">.\</span><span class="n">cs-host-scanner</span><span class="p">.</span><span class="n">exe</span> <span class="p">`</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>  <span class="p">-</span><span class="n">-scan-windows-stores</span> <span class="p">`</span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>  <span class="p">-</span><span class="n">-tag-pair</span> <span class="s2">"store-type"</span> <span class="s2">"local-machine"</span> <span class="p">`</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>  <span class="p">-</span><span class="n">-tag</span> <span class="n">env</span><span class="p">=</span><span class="n">prod</span> <span class="p">`</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>  <span class="p">-</span><span class="n">-output</span> <span class="n">cert-scan</span><span class="p">.</span><span class="n">cst</span><span class="p">.</span><span class="n">gz</span>
+</code></pre></div>
+<p>This example assigns the literal value “local-machine” to the <code>store-type</code> key, while the <code>env</code> key is labeled as “prod.”</p>
+<h2 id="tagging-parameters-reference">Tagging parameters reference<a class="headerlink" href="#tagging-parameters-reference" title="Permanent link">↑</a></h2>
+<p>The following parameters are used to configure tagging behavior and data transformation:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>--tag</code></td>
+<td style="text-align: left;">Ingestion</td>
+<td style="text-align: left;">Standard format; interprets <code>=</code> and <code>,</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>--tag-pair</code></td>
+<td style="text-align: left;">Ingestion</td>
+<td style="text-align: left;">Literal format; requires 2 arguments (Key Value).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>--tag-rewrite</code></td>
+<td style="text-align: left;">Transform</td>
+<td style="text-align: left;">Maps a source tag to a destination tag.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>--tag-rewrites-may-delete</code></td>
+<td style="text-align: left;">Safety</td>
+<td style="text-align: left;">Required to allow a rewrite rule to delete a tag.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="real-world-example-multi-region-compliance-audit">Real-world example: Multi-region compliance audit<a class="headerlink" href="#real-world-example-multi-region-compliance-audit" title="Permanent link">↑</a></h2>
+<p>Imagine your organization is undergoing a security audit. You need to scan all Windows servers across two different data centers (New York and London) to identify expiring certificates. To ensure the results are actionable, you need to know exactly which team owns the server, and which regulatory environment it falls under.</p>
+<h3 id="the-goal">The goal<a class="headerlink" href="#the-goal" title="Permanent link">↑</a></h3>
+<p>The objective is to label scan data so that upon uploading to AQtive Guard, you can instantly filter for <strong>“High-Priority”</strong> servers located in the <strong>“London”</strong> office.</p>
+<h3 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">↑</a></h3>
+<p>To achieve this, use a combination of <strong>Standard tagging</strong> for quick categorization and <strong>Literal tagging</strong> for data containing special characters (such as any team names with ampersands).</p>
+<p>An example command is shown below:</p>
+<div class="highlight"><span class="filename">PowerShell</span><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">.\</span><span class="n">cs-host-scanner</span><span class="p">.</span><span class="n">exe</span> <span class="p">`</span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>  <span class="p">-</span><span class="n">-scan-windows-stores</span> <span class="p">`</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>  <span class="p">-</span><span class="n">-tag</span> <span class="n">env</span><span class="p">=</span><span class="n">production</span><span class="p">,</span><span class="n">region</span><span class="p">=</span><span class="n">london</span> <span class="p">`</span>
+<a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>  <span class="p">-</span><span class="n">-tag-pair</span> <span class="s2">"owner"</span> <span class="s2">"DevOps &amp; Security"</span> <span class="p">`</span>
+<a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a>  <span class="p">-</span><span class="n">-output</span> <span class="n">london_prod_scan</span><span class="p">.</span><span class="n">cst</span><span class="p">.</span><span class="n">gz</span>
+</code></pre></div>
+<h3 id="how-aqtive-guard-helps">How AQtive Guard helps<a class="headerlink" href="#how-aqtive-guard-helps" title="Permanent link">↑</a></h3>
+<ul>
+<li><strong>Filtering</strong>: A compliance officer can navigate to the <em>Inventory</em> table and look at the <em>Imported tags</em> column for <code>region=london</code> to isolate UK-based assets.</li>
+<li><strong>Accountability</strong>: If a vulnerable certificate is identified, the <em>Secret Details</em> view displays the raw tag <code>owner=DevOps &amp; Security</code>, identifying the exact point of contact for remediation.</li>
+<li><strong>Automation</strong>: By tagging the <code>env</code> as “production”, you can prioritize the remediation of critical certificates before addressing staging or dev environments.</li>
+</ul>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

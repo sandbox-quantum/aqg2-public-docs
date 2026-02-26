@@ -180,7 +180,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../dashboard/">
 <span class="md-ellipsis">
-    Dashboard
+    Dashboards
   </span>
 </a>
 </li>
@@ -424,6 +424,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../data-sources/tags/">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
@@ -431,19 +438,19 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_3">
+<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
@@ -480,19 +487,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_4">
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
 <span class="md-nav__icon md-icon"></span>
             AQG Java Tracer
           </label>
@@ -515,19 +522,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_6" id="__nav_18_6_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_5">
+<nav aria-expanded="false" aria-labelledby="__nav_18_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_6">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
@@ -1346,9 +1353,13 @@
 <li>Select the <strong>Profile</strong> global filter.</li>
 <li>In the drop-down, choose one or more of the available built-in or custom profiles. </li>
 </ol>
-<p>Applying one or more profiles has the following affects in the <em>Issues</em> table:
-   - The table updates to display only issues for rules included in the selected profile(s).</p>
-<p>- The rule severity will indicate the highest level of severity of all occurrances, based on the rule criteria in the selected profile(s). </p>
+<p>Applying one or more profiles has the following effects in the <em>Issues</em> table:</p>
+<ul>
+<li>The table updates to display only issues for rules included in the selected profile(s).</li>
+</ul>
+<ul>
+<li>The rule severity will indicate the highest level of severity of all occurrences, based on the rule criteria in the selected profile(s). </li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Caution</p>
 <p>Critical issues may be hidden when you apply a profile. Select <strong>Reset</strong> in the <em>Profile</em> global filter to see all issues for all active rules.  </p>

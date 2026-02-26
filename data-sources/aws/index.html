@@ -181,7 +181,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../dashboard/">
 <span class="md-ellipsis">
-    Dashboard
+    Dashboards
   </span>
 </a>
 </li>
@@ -425,6 +425,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../tags/">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
@@ -432,19 +439,19 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_3">
+<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
@@ -481,19 +488,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_4">
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
 <span class="md-nav__icon md-icon"></span>
             AQG Java Tracer
           </label>
@@ -516,19 +523,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_6" id="__nav_18_6_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_5">
+<nav aria-expanded="false" aria-labelledby="__nav_18_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_6">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
@@ -658,26 +665,76 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set-up-the-integration">
+<a class="md-nav__link" href="#before-you-begin">
 <span class="md-ellipsis">
-      Set up the integration
-    </span>
-</a>
-<nav aria-label="Set up the integration" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#download-the-cloudformation-template-from-aqg">
-<span class="md-ellipsis">
-      Download the CloudFormation Template from AQG
+      Before you begin
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws">
+<a class="md-nav__link" href="#choose-your-deployment-method">
 <span class="md-ellipsis">
-      Run the CloudFormation template and configure IAM role in AWS
+      Choose your deployment method
     </span>
 </a>
+<nav aria-label="Choose your deployment method" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#single-region-setup">
+<span class="md-ellipsis">
+      Single region setup
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manual-multi-region-setup">
+<span class="md-ellipsis">
+      Manual multi-region setup
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-stacksets">
+<span class="md-ellipsis">
+      AWS StackSets
+    </span>
+</a>
+<nav aria-label="AWS StackSets" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-iam-roles-for-stacksets">
+<span class="md-ellipsis">
+      Configure IAM Roles for StackSets
+    </span>
+</a>
+<nav aria-label="Configure IAM Roles for StackSets" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#admin-role">
+<span class="md-ellipsis">
+      Admin role
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#execution-role">
+<span class="md-ellipsis">
+      Execution Role
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stackset-deployment-process-and-configuration">
+<span class="md-ellipsis">
+      StackSet deployment process and configuration
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#finish-setup-in-aqg">
@@ -695,15 +752,15 @@
       Use
     </span>
 </a>
-</li>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-an-ingestion">
 <span class="md-ellipsis">
       Start an ingestion
     </span>
 </a>
-<nav aria-label="Start an ingestion" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#edit-a-connected-aws-account">
 <span class="md-ellipsis">
@@ -720,6 +777,95 @@
       Unlink the AWS integration
     </span>
 </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      Troubleshooting
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aqtive-guard-cloudformation-template">
+<span class="md-ellipsis">
+      AQtive Guard CloudFormation template
+    </span>
+</a>
+<nav aria-label="AQtive Guard CloudFormation template" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-eventbridge-rule">
+<span class="md-ellipsis">
+      Verify EventBridge rule
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-target">
+<span class="md-ellipsis">
+      Verify rule target
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-connection-authorization">
+<span class="md-ellipsis">
+      Check connection authorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-stacksets-troubleshooting">
+<span class="md-ellipsis">
+      AWS StackSets troubleshooting
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-setup">
+<span class="md-ellipsis">
+      Custom setup
+    </span>
+</a>
+<nav aria-label="Custom setup" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-state">
+<span class="md-ellipsis">
+      Verify rule state
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-target_1">
+<span class="md-ellipsis">
+      Verify rule target
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-connection-authorization_1">
+<span class="md-ellipsis">
+      Check connection authorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#re-authenticate-the-connection">
+<span class="md-ellipsis">
+      Re-authenticate the connection
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1453,26 +1599,76 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set-up-the-integration">
+<a class="md-nav__link" href="#before-you-begin">
 <span class="md-ellipsis">
-      Set up the integration
-    </span>
-</a>
-<nav aria-label="Set up the integration" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#download-the-cloudformation-template-from-aqg">
-<span class="md-ellipsis">
-      Download the CloudFormation Template from AQG
+      Before you begin
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws">
+<a class="md-nav__link" href="#choose-your-deployment-method">
 <span class="md-ellipsis">
-      Run the CloudFormation template and configure IAM role in AWS
+      Choose your deployment method
     </span>
 </a>
+<nav aria-label="Choose your deployment method" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#single-region-setup">
+<span class="md-ellipsis">
+      Single region setup
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#manual-multi-region-setup">
+<span class="md-ellipsis">
+      Manual multi-region setup
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-stacksets">
+<span class="md-ellipsis">
+      AWS StackSets
+    </span>
+</a>
+<nav aria-label="AWS StackSets" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-iam-roles-for-stacksets">
+<span class="md-ellipsis">
+      Configure IAM Roles for StackSets
+    </span>
+</a>
+<nav aria-label="Configure IAM Roles for StackSets" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#admin-role">
+<span class="md-ellipsis">
+      Admin role
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#execution-role">
+<span class="md-ellipsis">
+      Execution Role
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stackset-deployment-process-and-configuration">
+<span class="md-ellipsis">
+      StackSet deployment process and configuration
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#finish-setup-in-aqg">
@@ -1490,15 +1686,15 @@
       Use
     </span>
 </a>
-</li>
+<nav aria-label="Use" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#start-an-ingestion">
 <span class="md-ellipsis">
       Start an ingestion
     </span>
 </a>
-<nav aria-label="Start an ingestion" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#edit-a-connected-aws-account">
 <span class="md-ellipsis">
@@ -1515,6 +1711,95 @@
       Unlink the AWS integration
     </span>
 </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+<span class="md-ellipsis">
+      Troubleshooting
+    </span>
+</a>
+<nav aria-label="Troubleshooting" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aqtive-guard-cloudformation-template">
+<span class="md-ellipsis">
+      AQtive Guard CloudFormation template
+    </span>
+</a>
+<nav aria-label="AQtive Guard CloudFormation template" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-eventbridge-rule">
+<span class="md-ellipsis">
+      Verify EventBridge rule
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-target">
+<span class="md-ellipsis">
+      Verify rule target
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-connection-authorization">
+<span class="md-ellipsis">
+      Check connection authorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aws-stacksets-troubleshooting">
+<span class="md-ellipsis">
+      AWS StackSets troubleshooting
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#custom-setup">
+<span class="md-ellipsis">
+      Custom setup
+    </span>
+</a>
+<nav aria-label="Custom setup" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-state">
+<span class="md-ellipsis">
+      Verify rule state
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#verify-rule-target_1">
+<span class="md-ellipsis">
+      Verify rule target
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#check-connection-authorization_1">
+<span class="md-ellipsis">
+      Check connection authorization
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#re-authenticate-the-connection">
+<span class="md-ellipsis">
+      Re-authenticate the connection
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1581,39 +1866,181 @@
 <li><code>ssm:ListTagsForResource</code></li>
 </ul>
 <p>For more information, refer to the <a href="https://docs.aws.amazon.com/general/latest/gr/ssm.html" rel="noopener" target="_blank">AWS SSM documentation</a>.</p>
-<h2 id="set-up-the-integration">Set up the integration<a class="headerlink" href="#set-up-the-integration" title="Permanent link">↑</a></h2>
-<p>To set up the AWS integration, you’ll need to:</p>
+<h2 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">↑</a></h2>
+<p>To set up the AWS integration, you’ll need the <strong>CloudFormation Template</strong> from AQG.</p>
 <ol>
-<li>Download the <strong>CloudFormation Template</strong> from AQG.</li>
-<li>Run the CloudFormation Template in your AWS account and copy the generated IAM role’s Amazon Resource Name (ARN) from the CloudFormation output.</li>
-<li>Return to AQG to complete the integration setup.</li>
+<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.  </li>
+<li>Select <strong>Configure</strong> in the <em>AWS</em> panel, then <strong>Download CloudFormation template</strong>. You’ll need it to complete the integration. </li>
 </ol>
-<p>The following sections provide details for completing these steps.</p>
-<h3 id="download-the-cloudformation-template-from-aqg">Download the CloudFormation Template from AQG<a class="headerlink" href="#download-the-cloudformation-template-from-aqg" title="Permanent link">↑</a></h3>
-<p>Complete the following steps to retrieve the CloudFormation template.</p>
-<ol>
-<li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
-<li>Select <strong>Configure</strong> in the <em>AWS</em> panel, then <strong>Download CloudFormation template</strong>.</li>
-</ol>
-<h3 id="run-the-cloudformation-template-and-configure-iam-role-in-aws">Run the CloudFormation template and configure IAM role in AWS<a class="headerlink" href="#run-the-cloudformation-template-and-configure-iam-role-in-aws" title="Permanent link">↑</a></h3>
-<p>Complete the following steps to configure an IAM role in AWS.</p>
+<h2 id="choose-your-deployment-method">Choose your deployment method<a class="headerlink" href="#choose-your-deployment-method" title="Permanent link">↑</a></h2>
+<p>Depending on your organization’s needs, choose one of the following three methods to run the template in your AWS account.</p>
+<ul>
+<li><a href="#single-region-setup">Single region setup</a> - Use this method if you only need to monitor a single AWS region.  </li>
+<li><a href="#manual-multi-region-setup">Manual multi-region setup</a> - Use this method if you want to monitor multiple regions without setting up additional IAM roles for orchestration.  </li>
+<li><a href="#aws-stacksets">AWS StackSets</a> - Use this method if you want to monitor multiple regions using CloudFormation’s StackSets to deploy stacks into multiple regions simultaneously.</li>
+</ul>
+<p>Refer to the linked sections for details.</p>
+<h3 id="single-region-setup">Single region setup<a class="headerlink" href="#single-region-setup" title="Permanent link">↑</a></h3>
+<p>Use this method if you only need to monitor a single AWS region.</p>
 <ol>
 <li>Log into the AWS console.</li>
 <li>From the AWS dashboard, search for and then select <strong>CloudFormation</strong>.</li>
-<li>Under <em>Stacks</em> in the left navigation pane, select <strong>Create stack</strong>.</li>
-<li>In the <em>Prerequisite - Prepare template</em> section, select <em>Choose an existing template</em>.</li>
-<li>In the <em>Specify template</em> section, select <em>Upload a template file</em>.</li>
+<li>
+<p>Select <em>Stacks</em> in the left navigation pane, then select <strong>Create stack</strong>:</p>
+<ul>
+<li>If this is your first stack, select the orange <strong>Create stack</strong> button.</li>
+</ul>
+<ul>
+<li>If you have existing stacks, select the <strong>Create stack</strong> button in the top-right corner and select <strong>With new resources (standard)</strong> from the dropdown.</li>
+</ul>
+</li>
+<li>
+<p>In the <em>Prerequisite - Prepare template</em> section, verify <strong>Choose an existing template</strong> is selected.</p>
+</li>
+<li>In the <em>Specify template</em> section, select <strong>Upload a template file</strong>.</li>
 <li>Select <strong>Choose file</strong>, upload the template you downloaded from AQG, and select <strong>Next</strong>.</li>
-<li>At the bottom of the next page, check the box that states <strong>I acknowledge that AWS CloudFormation might create IAM resources with customized names</strong> and select <strong>Next</strong>.</li>
-<li>Select <strong>Submit</strong> at the bottom of the page.</li>
-<li>Once the stack is created, navigate to the stack’s <em>Outputs</em> tab and copy the <strong>Amazon Resource Name (ARN)</strong> of the created role.</li>
+<li>
+<p>On the <em>Specify stack details</em> page:</p>
+<ul>
+<li>Enter a <strong>Stack name</strong>.</li>
+</ul>
+<ul>
+<li>
+<p>Enter your <strong>AQGAPIKeyParameter</strong>. If you don’t have a key, you can browse to the URL listed directly under this field in the AWS console to generate the required API token in AQtive Guard. The token should have at least <strong>Uploader</strong> permissions. Refer to <a href="../../settings/#create-an-api-token">Create an API token</a> for instructions.</p>
+<p>Then select <strong>Next</strong>. Refer to the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html" rel="noopener" target="_blank">AWS stacks documentation</a> for more information.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>At the bottom of the next page, check the box <strong>I acknowledge that AWS CloudFormation might create IAM resources with customized names</strong> and select <strong>Next</strong>.</p>
+</li>
+<li>Select <strong>Submit</strong>.</li>
+<li>Once the stack is created, navigate to the stack’s <em>Outputs</em> tab and copy the <strong>Amazon Resource Name (ARN)</strong> of the created IAM role named <code>AQtiveGuardReadOnlyAccessRole</code>.</li>
+</ol>
+<h3 id="manual-multi-region-setup">Manual multi-region setup<a class="headerlink" href="#manual-multi-region-setup" title="Permanent link">↑</a></h3>
+<p>Use this method if you want to monitor multiple regions without setting up additional IAM roles for orchestration.</p>
+<ol>
+<li>Complete the steps for the <strong><a href="#single-region-setup">Single region setup</a></strong> in your first region (for example, <code>us-east-1</code>).</li>
+<li>Once the first stack is finished, switch your AWS console to a different region (for example, <code>us-west-2</code>).</li>
+<li>Repeat the process for creating stacks using the same template.</li>
+<li>Continue this process for every region you wish to monitor.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You only need to copy the <strong>Amazon Resource Name (ARN)</strong> from your <strong>primary region</strong> stack to finish the setup in AQG.</p>
+</div>
+<h3 id="aws-stacksets">AWS StackSets<a class="headerlink" href="#aws-stacksets" title="Permanent link">↑</a></h3>
+<p>This approach involves using CloudFormation’s <a href="https://docs.aws.amazon.com/servicecatalog/latest/adminguide/using-stacksets.html" rel="noopener" target="_blank">StackSets</a> to deploy stacks into multiple regions simultaneously.</p>
+<h4 id="configure-iam-roles-for-stacksets">Configure IAM Roles for StackSets<a class="headerlink" href="#configure-iam-roles-for-stacksets" title="Permanent link">↑</a></h4>
+<p>Before uploading the template, you’ll need to first configure two specific IAM roles:</p>
+<h5 id="admin-role">Admin role<a class="headerlink" href="#admin-role" title="Permanent link">↑</a></h5>
+<p>The <em>Admin</em> role allows the CloudFormation service to manage your StackSets.</p>
+<ol>
+<li>Log in to the <strong>IAM Console</strong>.</li>
+<li>Select <strong>Roles</strong>, then <strong>Create role</strong>.</li>
+<li>For <strong>Trusted entity type</strong>, select <strong>Custom trust policy</strong> and paste the following:
+    <div class="highlight"><span class="filename">JSON</span><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nt">"Version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-10-17"</span><span class="p">,</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="nt">"Statement"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">        </span><span class="p">{</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">            </span><span class="nt">"Effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Allow"</span><span class="p">,</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">            </span><span class="nt">"Principal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">                </span><span class="nt">"Service"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cloudformation.amazonaws.com"</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">            </span><span class="p">},</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="nt">"Action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sts:AssumeRole"</span>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">}</span>
+</code></pre></div></li>
+<li>Select <strong>Next</strong>. </li>
+<li>Select the AWS managed policy <code>AWSCloudFormationFullAccess</code>, then select <strong>Next</strong>.</li>
+<li>Add a <em>Role name</em> and any required <em>Tags</em>, then select <strong>Create role</strong>.</li>
+<li>Locate your newly created role in the <em>IAM Roles</em> list and select its name to view the details.</li>
+<li>In the <em>Permission policies</em> section, select the <strong>Add permissions</strong> dropdown and select <strong>Create inline policy</strong>.</li>
+<li>Select the <strong>JSON</strong> tab and paste the following:
+    <div class="highlight"><span class="filename">JSON</span><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="p">{</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nt">"Version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-10-17"</span><span class="p">,</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nt">"Statement"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">        </span><span class="p">{</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">            </span><span class="nt">"Effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Allow"</span><span class="p">,</span>
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">            </span><span class="nt">"Action"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">                </span><span class="s2">"cloudformation:*StackSet*"</span><span class="p">,</span>
+<a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">                </span><span class="s2">"iam:PassRole"</span><span class="p">,</span>
+<a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">                </span><span class="s2">"sts:AssumeRole"</span>
+<a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">            </span><span class="p">],</span>
+<a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">            </span><span class="nt">"Resource"</span><span class="p">:</span><span class="w"> </span><span class="s2">"*"</span>
+<a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">}</span>
+</code></pre></div></li>
+<li>Name the policy (for example, StackSetAdminInlinePolicy), then select <strong>Create policy</strong>.</li>
+</ol>
+<h5 id="execution-role">Execution Role<a class="headerlink" href="#execution-role" title="Permanent link">↑</a></h5>
+<p>The <em>Execution</em> role assumes the stack creation process in different regions.</p>
+<ol>
+<li>In the <strong>IAM Console</strong>, select <strong>Roles</strong>, then <strong>Create role</strong>.</li>
+<li>For <strong>Trusted entity type</strong>, select <strong>Custom trust policy</strong> and paste the following, replacing <code>&lt;ADMIN ROLE ARN&gt;</code> with the ARN of the Admin role created in <a href="#admin-role">admin role</a>):
+    <div class="highlight"><span class="filename">JSON</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nt">"Version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-10-17"</span><span class="p">,</span>
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">"Statement"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">        </span><span class="p">{</span>
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">            </span><span class="nt">"Effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Allow"</span><span class="p">,</span>
+<a href="#__codelineno-2-6" id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">            </span><span class="nt">"Principal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">                </span><span class="nt">"AWS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;ADMIN ROLE ARN&gt;"</span>
+<a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">            </span><span class="p">},</span>
+<a href="#__codelineno-2-9" id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">            </span><span class="nt">"Action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sts:AssumeRole"</span>
+<a href="#__codelineno-2-10" id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">        </span><span class="p">}</span>
+<a href="#__codelineno-2-11" id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">    </span><span class="p">]</span>
+<a href="#__codelineno-2-12" id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="p">}</span>
+</code></pre></div></li>
+<li>Select <strong>Next</strong>.</li>
+<li>Select the AWS managed policy <code>AdministratorAccess</code>.</li>
+<li>Name the role <code>AWSCloudFormationStackSetExecutionRole</code> and select <strong>Create role</strong>.</li>
+</ol>
+<h4 id="stackset-deployment-process-and-configuration">StackSet deployment process and configuration<a class="headerlink" href="#stackset-deployment-process-and-configuration" title="Permanent link">↑</a></h4>
+<ol>
+<li>Log into the AWS console and navigate to <strong>CloudFormation</strong>. </li>
+<li>Select <strong>StackSets</strong>, then <strong>Create stack set</strong>.</li>
+<li>Select the desired <em>Admin</em> and <em>Execution</em> roles.</li>
+<li>
+<p>Upload the <code>cloudformation-template.json</code> file that you downloaded previously.</p>
+</li>
+<li>
+<p>On the <em>Specify stack details</em> page:</p>
+<ul>
+<li>Enter a <strong>Stack name</strong>.</li>
+</ul>
+<ul>
+<li>Enter your <strong>AQGAPIKeyParameter</strong>. If you don’t have a key, you can browse to the URL listed directly under this field in the AWS console to generate the required API token in AQtive Guard. The token should have at least <strong>Uploader</strong> permissions. Refer to <a href="../../settings/#create-an-api-token">Create an API token</a> for instructions.</li>
+</ul>
+<ul>
+<li>
+<p>Select your central hub region from the <strong>PrimaryRegion</strong> dropdown.</p>
+<p>Then select <strong>Next</strong>. Refer to the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html" rel="noopener" target="_blank">AWS stacks documentation</a> for more information.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Under <strong>Execution configuration</strong>, select whichever option better suits your environment.</p>
+</li>
+<li>Check the box <strong>I acknowledge that AWS CloudFormation might create IAM resources with customized names</strong> and select <strong>Next</strong>.</li>
+<li>In the <em>Add stacks to stack set</em> section, verify that <strong>Deploy new stacks</strong> is selected. </li>
+<li>
+<p>In the <em>Accounts area</em>, verify that <strong>Deploy stacks in accounts</strong> is selected and add the <strong>Account number</strong>. </p>
+<p>You can find your 12-digit account number by selecting your account name in the top-right corner of the AWS Console, or by looking at your role’s ARN. In the ARN, it’s the numeric segment (for example, <code>arn:aws:iam::</code><strong><code>123456789012</code></strong><code>:role/...</code>)</p>
+</li>
+<li>
+<p>In the <strong>Specify regions</strong> area, select all regions you wish to monitor. You <strong>must</strong> pick at least the same region you selected earlier as the <strong>PrimaryRegion</strong>.</p>
+</li>
+<li>Configure any <strong>Deployment options</strong> you want to be active. We recommend setting your <strong>Failure tolerance</strong> to <code>0</code>. This will catch any errors immediately.</li>
+<li>Select <strong>Submit</strong>.</li>
 </ol>
 <h3 id="finish-setup-in-aqg">Finish setup in AQG<a class="headerlink" href="#finish-setup-in-aqg" title="Permanent link">↑</a></h3>
 <p>Complete the following steps in AQG to finish the setup.</p>
 <ol>
 <li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
 <li>Select <strong>Configure</strong> in the <em>AWS</em> panel.</li>
-<li>Enter the <em>Amazon Resource Name (ARN)</em> for the role you created in the AWS console.</li>
+<li>Enter the <em>Amazon Resource Name (ARN)</em> for the role you created in the AWS console (if using StackSets, use the ARN from your primary Region stack).</li>
 <li>
 <p>Select <strong>Submit</strong>.</p>
 <p>You’ll see a notification confirming that the configuration has succeeded.</p>
@@ -1625,7 +2052,7 @@
 </div>
 <h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">↑</a></h2>
 <p>Once the integration is configured, you can trigger an AWS data ingestion.</p>
-<h2 id="start-an-ingestion">Start an ingestion<a class="headerlink" href="#start-an-ingestion" title="Permanent link">↑</a></h2>
+<h3 id="start-an-ingestion">Start an ingestion<a class="headerlink" href="#start-an-ingestion" title="Permanent link">↑</a></h3>
 <p>To start an ingestion:</p>
 <ol>
 <li>Log in to AQtive Guard and select <strong>Data sources</strong> from the main menu.</li>
@@ -1657,6 +2084,97 @@
 <li>Select <strong>Edit</strong>, then <strong>Unlink</strong>.</li>
 <li>Select <strong>Confirm and unlink Amazon Web Services</strong>.</li>
 </ol>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">↑</a></h2>
+<p>If your events aren’t reaching their destination, follow the troubleshooting steps that correspond to your deployment method:</p>
+<ul>
+<li><strong><a href="#aqtive-guard-cloudformation-template">AQtive Guard CloudFormation Template</a></strong> troubleshooting</li>
+<li><strong><a href="#aws-stacksets-troubleshooting">AWS StackSets troubleshooting</a></strong></li>
+<li><strong><a href="#custom-setup">Custom setup</a></strong> troubleshooting</li>
+</ul>
+<p>The sections below outline the troubleshooting steps for each method.</p>
+<h3 id="aqtive-guard-cloudformation-template">AQtive Guard CloudFormation template<a class="headerlink" href="#aqtive-guard-cloudformation-template" title="Permanent link">↑</a></h3>
+<p>If you used the AQtive Guard CloudFormation template, the following specific naming conventions and configurations are required for the integration to succeed.</p>
+<h4 id="verify-eventbridge-rule">Verify EventBridge rule<a class="headerlink" href="#verify-eventbridge-rule" title="Permanent link">↑</a></h4>
+<p>To verify that the EventBridge rule is set up correctly:</p>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Rules</strong> in the menu on the left.</li>
+<li>Under <em>Event pattern rules</em>, locate the rule named <code>AQtiveGuardFilteredEventsRule</code>.</li>
+<li>Ensure that the <em>Status</em> column shows <strong>Enabled (with CloudTrail read-only Management events)</strong>.</li>
+</ol>
+<h4 id="verify-rule-target">Verify rule target<a class="headerlink" href="#verify-rule-target" title="Permanent link">↑</a></h4>
+<p>To verify that the rule target is set up correctly in AWS:</p>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Rules</strong> in the menu on the left.</li>
+<li>Under <em>Event pattern rules</em>, locate the rule named <code>AQtiveGuardFilteredEventsRule</code> and select it.</li>
+<li>On the <em>Rule details</em> page, select the <strong>Targets</strong> tab. </li>
+<li>Look for the API destination named <code>AQGAWSDestinationApiRoute</code> and select it.</li>
+<li>Under the <em>API destination details</em>, ensure that the status is <strong>Active</strong>.</li>
+</ol>
+<h4 id="check-connection-authorization">Check connection authorization<a class="headerlink" href="#check-connection-authorization" title="Permanent link">↑</a></h4>
+<p>To verify that your connection is authorized:</p>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Connections</strong> in the menu on the left.</li>
+<li>Locate the connection named <code>AQGAWSConnectionKey</code> and select it.</li>
+<li>Under the <em>Connection details</em>, ensure that the status is <strong>Authorized</strong>. </li>
+</ol>
+<p>If the status is <strong>Deauthorized</strong>, you’ll need to <a href="#re-authenticate-the-connection">re-authenticate</a> the connection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Connections can become deauthorized for several reasons, such as credential expiration or manual revocation. For a full list of scenarios, refer to the <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-connection-deauthorize.html" rel="noopener" target="_blank">AWS documentation</a>.</p>
+</div>
+<p>If your rule is enabled, your destination is active, and your connection is authorized but events are still not flowing, please contact us through our <a href="https://support.sandboxaq.com/" rel="noopener" target="_blank">support portal</a>.</p>
+<h3 id="aws-stacksets-troubleshooting">AWS StackSets troubleshooting<a class="headerlink" href="#aws-stacksets-troubleshooting" title="Permanent link">↑</a></h3>
+<p>Because StackSet outcomes vary based on your specific deployment preferences (such as failure tolerance and region order), progress should be monitored directly through the AWS Console. You can track the real-time status of each region and account under the <em>Operations</em> and <em>Stack instances</em> tabs.</p>
+<ul>
+<li><strong>Primary region check</strong>: Ensure the region you designated as <code>PrimaryRegion</code> in the parameters was actually selected in the <em>Regions</em> deployment step. If the primary region stack fails, regional forwarders will have no destination.</li>
+<li><strong>Stack instances</strong>: Check the <strong>Stack instances</strong> tab in your StackSet. If an individual region shows <code>OUTDATED</code> or <code>FAILED</code>, drill down into that specific stack’s events to see the error.</li>
+<li><strong>Permissions check</strong>: Verify that your <em>Administration</em> role has an inline policy allowing it to <code>sts:AssumeRole</code> the Execution role.</li>
+</ul>
+<h3 id="custom-setup">Custom setup<a class="headerlink" href="#custom-setup" title="Permanent link">↑</a></h3>
+<p>If you manually configured your EventBridge resources, verify the status and configuration of your custom components.</p>
+<h4 id="verify-rule-state">Verify rule state<a class="headerlink" href="#verify-rule-state" title="Permanent link">↑</a></h4>
+<p>To verify that your custom rule is set up correctly:</p>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Rules</strong> in the menu on the left.</li>
+<li>Under <em>Event pattern rules</em>, locate your custom rule.</li>
+<li>Ensure that your rule is <strong>Enabled</strong>. A disabled rule will not process any incoming event patterns.</li>
+</ol>
+<h4 id="verify-rule-target_1">Verify rule target<a class="headerlink" href="#verify-rule-target_1" title="Permanent link">↑</a></h4>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Rules</strong> in the menu on the left.</li>
+<li>Under <em>Event pattern rules</em>, locate your custom rule and select it.</li>
+<li>On the <em>Rule details</em> page, select the <strong>Targets</strong> tab. </li>
+<li>Look for your custom API destination and select it.</li>
+<li>Under the <em>API destination details</em>, ensure that the status is <strong>Active</strong>.</li>
+</ol>
+<h4 id="check-connection-authorization_1">Check connection authorization<a class="headerlink" href="#check-connection-authorization_1" title="Permanent link">↑</a></h4>
+<p>To verify that your connection is authorized:</p>
+<ol>
+<li>Log in to your AWS console.</li>
+<li>Navigate to <strong>Amazon EventBridge</strong>, then select <strong>Connections</strong> in the menu on the left.</li>
+<li>Locate your manually created connection attached to your custom rule and select it.</li>
+<li>Under the <em>Connection details</em>, ensure that the status is <strong>Authorized</strong>. </li>
+</ol>
+<p>If the status is <strong>Deauthorized</strong>, you’ll need to <a href="#re-authenticate-the-connection">re-authenticate</a> the connection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Connections can become deauthorized for several reasons, such as credential expiration or manual revocation. For a full list of scenarios, refer to the <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-connection-deauthorize.html" rel="noopener" target="_blank">AWS documentation</a>.</p>
+</div>
+<h3 id="re-authenticate-the-connection">Re-authenticate the connection<a class="headerlink" href="#re-authenticate-the-connection" title="Permanent link">↑</a></h3>
+<p>Connections can become deauthorized for several reasons, such as credential expiration or manual revocation. If your connection status is <strong>Deauthorized</strong>, follow these steps to restore the integration.</p>
+<ol>
+<li>From the <em>Connection Details</em>, select <strong>Edit</strong> to edit the connection.</li>
+<li>In the <em>Configure authorization</em> section, select <strong>API key</strong>.</li>
+<li>In the <strong>API key name</strong> field, enter <code>X-API-Key</code>.</li>
+<li>In the <strong>Value</strong> field, enter your AQG API token. For details on retrieving or generating an AQG token, refer to <a href="../../settings/#create-an-api-token">Create an API token</a>.</li>
+<li>Select <strong>Update</strong> and confirm that the <em>Connection details</em> page now shows a status of <strong>Authorized</strong>.</li>
+</ol>
+<p>If your rule is enabled, your destination is active, and your connection is authorized but events are still not flowing, please contact us through our <a href="https://support.sandboxaq.com/" rel="noopener" target="_blank">support portal</a>.</p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

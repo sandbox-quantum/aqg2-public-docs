@@ -312,7 +312,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../dashboard/">
 <span class="md-ellipsis">
-    Dashboard
+    Dashboards
   </span>
 </a>
 </li>
@@ -556,6 +556,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../data-sources/tags/">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
@@ -563,19 +570,19 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_3">
+<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
@@ -612,19 +619,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_4">
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
 <span class="md-nav__icon md-icon"></span>
             AQG Java Tracer
           </label>
@@ -647,19 +654,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_6" id="__nav_18_6_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_5">
+<nav aria-expanded="false" aria-labelledby="__nav_18_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_6">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
@@ -1556,8 +1563,8 @@
 <p>In AQG, <a href="../rules/"><strong>Rules</strong></a> are grouped together as <a href="../profiles/"><strong>Profiles</strong></a>. These profiles define the criteria for cryptographic analysis. When data is ingested, the system checks the detected cryptography against these rules. If a rule violation is triggered, it logs an <strong><a href="#issues">Issue</a></strong>.</p>
 <p>AQG offers built-in Profiles for NIST compliance and Post-Quantum Cryptography (PQC) readiness. For instance, the NIST Profile includes rules such as <em>Certificate validity too long</em> to help meet NIST recommendations. You can also create custom profiles and rules for specific organizational needs.</p>
 <h2 id="inventory">Inventory<a class="headerlink" href="#inventory" title="Permanent link">↑</a></h2>
-<p>Once data is ingested and rules are applied, information flows into a unified inventory that provides a comprehensive view of scanned cryptographic assets. This centralized visibility is a critical component of your transition to PQC, allowing you to browse, filter, and export data to manage and report on your cryptographic health. You can use global filters—such as profile, severity, source, and current scans—to refine the inventory and focus on specific data based on your triggered rules.</p>
-<p>You can use <a href="../filters-and-data-enrichment/filters/#global-filters">global filters</a>, such as <em>Profile</em>, <em>Severity</em>, <em>Source</em>, and <em>Current Scans</em>, to refine inventory views and focus on targeted details of triggered rules.</p>
+<p>Once data is ingested and rules are applied, information flows into a unified inventory that provides a comprehensive view of scanned cryptographic assets. This centralized visibility is a critical component of your transition to PQC, allowing you to browse, filter, and export data to manage and report on your cryptographic health.</p>
+<p>You can use <a href="../filters-and-data-enrichment/filters/#global-filters">global filters</a>, such as <span data-ff-with="EnableInventoryTagsDisplay"><em>Tags</em>, </span><em>Profile</em>, <em>Severity</em>, <em>Source</em>, and <em>Current Scans</em>, to refine inventory views and focus on targeted details of triggered rules.</p>
 <h3 id="protect">Protect<a class="headerlink" href="#protect" title="Permanent link">↑</a></h3>
 <p>AQG <a href="../aqg-protect/"><strong>Protect</strong></a> moves beyond discovery to the <em>last mile</em> of security by automating credential rotation and enforcing real-time policies essential for PQC transition management. By isolating sensitive credentials and securing access points used by AI agents, Protect eliminates credential exposure and blocks breaches at the source. </p>
 <h3 id="impact-assessment">Impact Assessment<a class="headerlink" href="#impact-assessment" title="Permanent link">↑</a></h3>

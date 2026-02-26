@@ -180,7 +180,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../dashboard/">
 <span class="md-ellipsis">
-    Dashboard
+    Dashboards
   </span>
 </a>
 </li>
@@ -424,6 +424,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../data-sources/tags/">
+<span class="md-ellipsis">
+<ff flags="EnableInventoryTagsDisplay"></ff>Tags
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../data-sources/aqg-file-inspector/">
 <span class="md-ellipsis">
     AQG File Inspector
@@ -431,19 +438,19 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_3" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-filesystem-scanner/">
 <span class="md-ellipsis">
     AQG Filesystem Scanner
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_3" id="__nav_18_3_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_3">
+<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_4">
 <span class="md-nav__icon md-icon"></span>
             AQG Filesystem Scanner
           </label>
@@ -480,19 +487,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_4" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-java-tracer/">
 <span class="md-ellipsis">
     AQG Java Tracer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_4" id="__nav_18_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_4_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_4">
+<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_5">
 <span class="md-nav__icon md-icon"></span>
             AQG Java Tracer
           </label>
@@ -515,19 +522,19 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_18_5" type="checkbox"/>
+<input class="md-nav__toggle md-toggle" id="__nav_18_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../data-sources/aqg-network-analyzer/">
 <span class="md-ellipsis">
     AQG Network Analyzer
   </span>
 </a>
-<label class="md-nav__link" for="__nav_18_5" id="__nav_18_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_18_6" id="__nav_18_6_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_18_5_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_18_5">
+<nav aria-expanded="false" aria-labelledby="__nav_18_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_18_6">
 <span class="md-nav__icon md-icon"></span>
             AQG Network Analyzer
           </label>
@@ -1487,7 +1494,7 @@
 <li><strong>Operations</strong> - a specific process or function, such as encryption, decryption, signing, or verification, that is performed on data using a key.</li>
 <li><strong>TLS configs</strong> - an inventory object that summarizes all connections received by a server or IP address.</li>
 <li><strong>Handshakes</strong> - processes to establish a secure connection between networked applications.</li>
-<li><strong>Secrets</strong> - non-standard or user-defined objects retrieved from an external data source.</li>
+<li><strong>Secrets</strong> - non-standard or user-defined objects retrieved from an external data source, as well as identified credentials (for example, AWS or GCP keys) and their current validation status.</li>
 <li><strong>Hosts</strong> - a physical or virtualized computing system, such as a server, workstation, or virtual machine, that serves as the operating environment for applications and container images. </li>
 <li><strong>Apps</strong> - a software program or service running on a host.</li>
 <li><strong>Container images</strong> - a packaged software component that was scanned, containing an application’s filesystem and configuration.</li>
@@ -1501,6 +1508,7 @@
 <li><strong>Type</strong> - the algorithm used to generate the key, such as RSA, DSA, DH, etc.</li>
 <li><strong>Length</strong> - the length of the key, in bits (1024, 2048, etc.)</li>
 <li><strong>Has private key</strong> - indicates whether the key has an associated private key.</li>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the key. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
 <li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
@@ -1528,6 +1536,7 @@
 <li><strong>Valid until</strong> - the certificate expiration date.</li>
 <li><strong>Validity period</strong> - the certificate validity period.</li>
 <li><strong>Digest algorithm</strong> - the hash function used.</li>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the certificate. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
 <li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
@@ -1554,6 +1563,7 @@
 <li><strong>Type</strong> - the cryptographic operation performed.</li>
 <li><strong>Timestamp</strong> - the date and time of the operation (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC. </li>
 <li><strong>Algorithms</strong> - the algorithm used, such as AES, RSA, HMAC, etc.</li>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the operation. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
 <li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
@@ -1584,6 +1594,7 @@
 <li><strong>Protocol</strong> - the transport protocol used, such as TCP, UDP, etc.</li>
 <li><strong>Supported versions</strong> - the TLS versions that have been observed through successful handshakes.</li>
 <li><strong>Unsupported versions</strong> - the TLS versions that have been actively confirmed to not be supported. This data can only be reported by <a href="../data-sources/qualys/">Qualys</a> due to its active scanning approach.</li>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the TLS config. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
 <li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
@@ -1641,6 +1652,7 @@
 <li><strong>Min. client TLS Version</strong> - the earliest version of TLS that the client will accept.</li>
 <li><strong>Status</strong> - whether the handshake was performed successfully or not.</li>
 <li><strong>Target port</strong> - the port number used by the target host to receive the connection.</li>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the handshake. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
 <li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
@@ -1668,12 +1680,29 @@
 </div>
 <p>To access a JSON object containing all handshake metadata, scroll to the bottom of the panel and select <strong>View full handshake</strong>.</p>
 <h2 id="secrets">Secrets<a class="headerlink" href="#secrets" title="Permanent link">↑</a></h2>
-<p>The <strong>Secrets</strong> tab displays an inventory of non-standard or user-defined objects retrieved from an external data source.</p>
+<p>The <strong>Secrets</strong> tab displays an inventory of non-standard or user-defined objects retrieved from an external data source, as well as identified credentials retrieved from external data sources.</p>
 <ul>
-<li><strong>Type</strong> - the secret type.</li>
+<li><strong>Location</strong> - the specific location of the secret. If the secret has been found in more than one location, this displays <strong>{X} locations</strong>.</li>
+<li><strong>Type</strong> - the type of secret. Possible values include:<ul>
+<li><strong>Opaque</strong> - the type and value are unknown.</li>
+<li><strong>AWS IAM User Access Key</strong> - credentials for Amazon Web Services Identity and Access Management.</li>
+<li><strong>GCP Service Account Key File</strong> - authentication keys for Google Cloud Platform service accounts.</li>
+</ul>
+</li>
+<li><strong>Validation</strong> - indicates the current status of the secret. Possible values include:<ul>
+<li><strong>Active</strong> - a credential was identified and verified as both valid and active. </li>
+<li><strong>Inactive</strong> - a credential was identified but is no longer active when tested.</li>
+<li><strong>Validation error</strong> - an error occurred during the attempted validation.</li>
+<li><strong>No Validator</strong> - a credential was identified, but no method is currently available to validate it.</li>
+<li><strong>N/A</strong> - opaque or managed secrets that cannot be validated.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><span data-ff-hide-closest="li" data-ff-with="EnableInventoryTagsDisplay"><strong>Imported tags</strong> - any raw tags that were uploaded through the command line with the sensor that provided the secret. For more details, refer to <a href="../data-sources/tags/">Tags</a>. </span></li>
 <li><strong>Last scanned</strong> - the date and time of the most recent scan where the object was found (<code>MM/DD/YYYY HH:MM:SS AM/PM</code>), based on the time zone set in your browser, with system time in UTC.</li>
 <li><strong>Data sources</strong> - the integration or sensor that provided the data for the item.</li>
-<li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis. </li>
+<li><strong>Severity</strong> - when applicable, indicates the degree of non-compliance with policy as determined by the rule used for analysis.</li>
 </ul>
 <p>You may apply one or more <a href="../filters-and-data-enrichment/filters/#global-filters">global filters</a> at the top of the screen.</p>
 <h3 id="secrets-details">Secrets details<a class="headerlink" href="#secrets-details" title="Permanent link">↑</a></h3>
