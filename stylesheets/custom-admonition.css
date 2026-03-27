@@ -9,7 +9,7 @@
 
 /* Style the admonition title background */
 .md-typeset .admonition.custom-admonition > .admonition-title {
-  background-color: #ebb028; /* Your desired title background color */
+  background-color: #a1c9d2; /* Your desired title background color */
   color: #000000;
 }
 
@@ -18,9 +18,9 @@
   content: '' !important; /* This is the key to remove the font icon */
 
   /* Then add your custom SVG as a background-image */
-  background-image: url('../images/icons/sandboxaq-logo-black.svg') !important;
+  background-image: url('../images/icons-rebrand/sandboxaq-logo-black.svg') !important;
   background-repeat: no-repeat !important;
-  background-color: #ebb028 !important;
+  background-color: #a1c9d2 !important;
   background-position: center !important;
   background-size: 70% !important;
 
